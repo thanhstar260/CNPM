@@ -307,13 +307,48 @@ home.container{
     margin-top: -150px;
 }
 
+.product .heading h2{
+    display:inline-block;
+}
+
+.product .heading a{
+    display:inline-block;
+}
+
+.product .heading {
+    overflow: hidden; 
+}
+  
+.product .heading h2 {
+    float: left;
+}
+  
+.product .heading a {
+    float: right;
+}
+
+.product .heading a h3{
+    color:#000000;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.product .heading a h3:hover {
+    color: #0B7C6B;
+    transition: all 500ms ease-in-out;
+}
+
+.product .heading a h3 i{
+    margin-left: 3px;
+}
+
 .product .item {
     background: #ffffff;
     padding: 10px;
     border: 1px solid #0B7C6B;
     border-radius: 10px;
     width: 220px;
-    height: 400px;
+    height: 410px;
     margin-top: 20px;
     margin-bottom: 80px;
     transition: 0.5s;
@@ -326,7 +361,13 @@ home.container{
 .product .container {
     margin-bottom: 100px;
 }
-  
+
+.product h4 {
+    margin-top:10px;
+    color:#0B7C6B;
+    font-size: 12px;
+}
+
 .product h3 {
     font-size: 20px;
 }
