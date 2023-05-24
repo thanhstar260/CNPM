@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="head_container">
+      <div class="head flex">
+        <div class="logo flex">
+          <a href="#">
+            <h3>BOOKRENTAL</h3>
+          </a>
+
+          <div class="search">
+            <input type="text" placeholder="Nhập tên tác giả, thể loại, ..." name="" value="">
+            <i class="fa fa-search"></i>
+          </div>
+        </div>
+
+        <div class="left flex">
+          <div class="head_icon">
+            <i class="fa fa-user-circle"></i>
+            <label>Đăng nhập</label>
+          </div>
+          <div class="head_icon">
+            <i class="fa fa-gratipay"></i>
+            <label>Yêu thích</label>
+          </div>
+          <div class="head_icon">
+            <i class="fa fa-shopping-cart"></i>
+            <label>Giỏ hàng</label>
+          </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <nav>
+          <ul id="menuitem">
+            <li> <a href="#">Trang chủ</a> </li>
+            <li> <a href="#">Sách</a> </li>
+            <li> <a href="#">Khuyến mãi và gói thuê bao</a> </li>
+            <li> <a href="#">Về chúng tôi</a> </li>
+          </ul>
+        </nav>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "400px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+  </script>
+
+<!----------------------------------------- Home --------------------------------------------->
+  <section class="home">
+    <div class="slider">
+      <div class="slide active">
+        <div class="container">
+          <div class="caption">
+            <h1>Hè về giảm giá sốc</h1>
+            <p> Đọc sách giá rẻ nhiều thể loại</p>
+            <a href="#">Xem ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide  ">
+        <div class="container">
+          <div class="caption">
+            <h1>Hè về giảm giá sốc</h1>
+            <p> Đọc sách giá rẻ nhiều thể loại</p>
+            <a href="#">Xem ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide  ">
+        <div class="container">
+          <div class="caption">
+            <h1>Hè về giảm giá sốc</h1>
+            <p> Đọc sách giá rẻ nhiều thể loại</p>
+            <a href="#">Xem ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- control -->
+    <div class="control">
+      <div class="prev">
+        <i class="fa fa-arrow-circle-left"></i>
+      </div>
+      <div class="next">
+        <i class="fa fa-arrow-circle-right"></i>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const slide = document.querySelector(".slider").children;
+    const prev = document.querySelector(".prev");
+    const next = document.querySelector(".next");
+
+    let index = 0;
+
+    prev.addEventListener("click", function() {
+      prevslide()
+
+    })
+
+    next.addEventListener("click", function() {
+      nextslide()
+
+    })
+
+    function prevslide() {
+      if (index == 0) {
+        index = slide.length - 1;
+      } else {
+        index--;
+      }
+      changeSlide();
+    }
+
+    function nextslide() {
+      if (index == slide.length - 1) {
+        index = 0;
+      } else {
+        index++;
+      }
+      changeSlide();
+    }
+
+    function changeSlide() {
+      for (let i = 0; i < slide.length; i++) {
+        slide[i].classList.remove("active");
+      }
+      slide[index].classList.add("active");
+    }
+
+    function autoPlay() {
+      nextslide();
+    }
+    let timer = setInterval(autoPlay, 4000);
+  </script>
+
+<!-------------------------------------------- product ------------------------------------------------>
+
+  <section class="product">
+<!------------ Sach moi ------------->
+    <div class="container">
+      <div class="heading">
+        <h2>Sách mới </h2>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="img">
+            <img src="images/dac_nhan_tam.jpg">
+          </div>
+          <div class="text">
+            <h3>Đắc nhân tâm</h3>
+            <div class="rate flex">
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+            </div>
+            <h1>3000 vnd </h1>
+            <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="images/dam_nghi_lai.jpg">
+          </div>
+          <div class="text">
+            <h3>Dám nghĩ lại</h3>
+            <div class="rate flex">
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+            </div>
+            <h1>3000vnd </h1>
+            <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="images/dong_chay.jpg">
+          </div>
+          <div class="text">
+            <h3>Dòng chảy</h3>
+            <div class="rate flex">
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+            </div>
+            <h1>3000vnd </h1>
+            <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="images/do_thai.jpg">
+          </div>
+          <div class="text">
+            <h3>Lịch sử do thái</h3>
+            <div class="rate flex">
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+            </div>
+            <h1>3000vnd </h1>
+            <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="images/lsvv.jpg">
+          </div>
+          <div class="text">
+            <h3>Lịch sử vạn vật</h3>
+            <div class="rate flex">
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+            </div>
+            <h1>3000vnd </h1>
+            <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="images/mat_ma.jpg">
+          </div>
+          <div class="text">
+            <h3>Mật mã tiểu đường</h3>
+            <div class="rate flex">
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+            </div>
+            <h1>3000vnd </h1>
+            <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="images/mkns.jpg">
+          </div>
+          <div class="text">
+            <h3>Muôn kiếp nhân sinh</h3>
+            <div class="rate flex">
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+            </div>
+            <h1>3000vnd </h1>
+            <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="images/phuong_ho.jpg">
+          </div>
+          <div class="text">
+            <h3>Phượng hồ</h3>
+            <div class="rate flex">
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+            </div>
+            <h1>3000vnd </h1>
+            <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="images/thien.jpg">
+          </div>
+          <div class="text">
+            <h3>Thiền</h3>
+            <div class="rate flex">
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+            </div>
+            <h1>3000vnd </h1>
+            <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="images/tu_duy.jpg">
+          </div>
+          <div class="text">
+            <h3>Tư duy</h3>
+            <div class="rate flex">
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+              <i class="fa fa-star "></i>
+            </div>
+            <h1>3000vnd </h1>
+            <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+          </div>
+        </div>
+      </div>
+
+<!------------ Sach hot -------------->
+      <div class="container">
+        <div class="heading">
+          <h2>Sách hot </h2>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="img">
+              <img src="images/dac_nhan_tam.jpg">
+            </div>
+            <div class="text">
+              <h3>Đắc nhân tâm</h3>
+              <div class="rate flex">
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+              </div>
+              <h1>3000 vnd </h1>
+              <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="images/dam_nghi_lai.jpg">
+            </div>
+            <div class="text">
+              <h3>Dám nghĩ lại</h3>
+              <div class="rate flex">
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+              </div>
+              <h1>3000vnd </h1>
+              <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="images/dong_chay.jpg">
+            </div>
+            <div class="text">
+              <h3>Dòng chảy</h3>
+              <div class="rate flex">
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+              </div>
+              <h1>3000vnd </h1>
+              <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="images/do_thai.jpg">
+            </div>
+            <div class="text">
+              <h3>Lịch sử do thái</h3>
+              <div class="rate flex">
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+              </div>
+              <h1>3000vnd </h1>
+              <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="images/lsvv.jpg">
+            </div>
+            <div class="text">
+              <h3>Lịch sử vạn vật</h3>
+              <div class="rate flex">
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+              </div>
+              <h1>3000vnd </h1>
+              <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="images/mat_ma.jpg">
+            </div>
+            <div class="text">
+              <h3>Mật mã tiểu đường</h3>
+              <div class="rate flex">
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+              </div>
+              <h1>3000vnd </h1>
+              <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="images/mkns.jpg">
+            </div>
+            <div class="text">
+              <h3>Muôn kiếp nhân sinh</h3>
+              <div class="rate flex">
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+              </div>
+              <h1>3000vnd </h1>
+              <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="images/phuong_ho.jpg">
+            </div>
+            <div class="text">
+              <h3>Phượng hồ</h3>
+              <div class="rate flex">
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+              </div>
+              <h1>3000vnd </h1>
+              <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="images/thien.jpg">
+            </div>
+            <div class="text">
+              <h3>Thiền</h3>
+              <div class="rate flex">
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+              </div>
+              <h1>3000vnd </h1>
+              <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="images/tu_duy.jpg">
+            </div>
+            <div class="text">
+              <h3>Tư duy</h3>
+              <div class="rate flex">
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+                <i class="fa fa-star "></i>
+              </div>
+              <h1>3000vnd </h1>
+              <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+            </div>
+          </div>
+        </div>
+
+<!------------ Sach pho bien -------------->
+        <div class="container">
+          <div class="heading">
+            <h2>Sách phổ biến </h2>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="img">
+                <img src="images/dac_nhan_tam.jpg">
+              </div>
+              <div class="text">
+                <h3>Đắc nhân tâm</h3>
+                <div class="rate flex">
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                </div>
+                <h1>3000 vnd </h1>
+                <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="images/dam_nghi_lai.jpg">
+              </div>
+              <div class="text">
+                <h3>Dám nghĩ lại</h3>
+                <div class="rate flex">
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                </div>
+                <h1>3000vnd </h1>
+                <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="images/dong_chay.jpg">
+              </div>
+              <div class="text">
+                <h3>Dòng chảy</h3>
+                <div class="rate flex">
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                </div>
+                <h1>3000vnd </h1>
+                <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="images/do_thai.jpg">
+              </div>
+              <div class="text">
+                <h3>Lịch sử do thái</h3>
+                <div class="rate flex">
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                </div>
+                <h1>3000vnd </h1>
+                <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="images/lsvv.jpg">
+              </div>
+              <div class="text">
+                <h3>Lịch sử vạn vật</h3>
+                <div class="rate flex">
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                </div>
+                <h1>3000vnd </h1>
+                <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="images/mat_ma.jpg">
+              </div>
+              <div class="text">
+                <h3>Mật mã tiểu đường</h3>
+                <div class="rate flex">
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                </div>
+                <h1>3000vnd </h1>
+                <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="images/mkns.jpg">
+              </div>
+              <div class="text">
+                <h3>Muôn kiếp nhân sinh</h3>
+                <div class="rate flex">
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                </div>
+                <h1>3000vnd </h1>
+                <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="images/phuong_ho.jpg">
+              </div>
+              <div class="text">
+                <h3>Phượng hồ</h3>
+                <div class="rate flex">
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                </div>
+                <h1>3000vnd </h1>
+                <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="images/thien.jpg">
+              </div>
+              <div class="text">
+                <h3>Thiền</h3>
+                <div class="rate flex">
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                </div>
+                <h1>3000vnd </h1>
+                <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img">
+                <img src="images/tu_duy.jpg">
+              </div>
+              <div class="text">
+                <h3>Tịnh hóa tư duy</h3>
+                <div class="rate flex">
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                  <i class="fa fa-star "></i>
+                </div>
+                <h1>3000vnd </h1>
+                <button>Thêm vào giỏ hàng <span><i class="fa fa-shopping-cart "></i></span></button>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        responsive: {
+          412: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1000: {
+            items: 5
+          }
+        }
+      })
+    </script>
+
+</body>
+
+</html>
