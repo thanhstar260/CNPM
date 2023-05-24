@@ -300,3 +300,61 @@ home.container{
     color: #191919;
 }
 
+.product {
+  text-align: center;
+  margin-left: -50px;
+  margin-top: -100px;
+}
+
+.product .box {
+  background: #ffffff;
+  padding: 10px;
+  border: 1px solid #0B7C6B;
+  border-radius: 10px;
+  width: 300px;
+  height: 515px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.product .box:hover {
+  border: 3px solid #0B7C6B;
+}
+
+.product .container {
+  margin-bottom: 100px;
+}
+
+.product h3 {
+  font-size: 22px;
+}
+
+.product img {
+  padding: 5px;
+  width: 250px;
+  height: 350px;
+}
+
+.product .rate {
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: yellow;
+  font-size: 20px;
+}
+
+.product .rate i {
+  margin: 3px;
+  margin-bottom: 5px;
+}
+
+.product button {
+  width:250px;
+  height: 30px;
+  font-size: 18px;
+  margin-top: 10px;
+  background: #0B7C6B;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
