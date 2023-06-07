@@ -26,10 +26,6 @@
             android:exported="true">
         </activity>
 
-        <activity
-            android:name=".Book_Screen"
-            android:exported="true">
-        </activity>
 
     </application>
 

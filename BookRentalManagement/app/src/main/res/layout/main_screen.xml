@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="387dp"
+        android:layout_height="278dp"
+        android:background="@drawable/main_screen_gray_sqr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="118dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/main_button_shape"
+        android:drawableTop="@drawable/icon__book_"
+        android:text="@string/Main_Screen_Btn_Sach"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="118dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/main_button_shape"
+        android:drawableTop="@drawable/icon__people"
+        android:text="@string/Main_Screen_Btn_Khach"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="118dp"
+        android:layout_height="117dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/main_button_shape"
+        android:drawableTop="@drawable/icon__document_"
+        android:text="@string/Main_Screen_Btn_report"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="118dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/main_button_shape"
+        android:drawableTop="@drawable/icon__briefcase_"
+        android:text="@string/Main_Screen_Btn_NV"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="118dp"
+        android:layout_height="117dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/main_button_shape"
+        android:drawableTop="@drawable/icon__star_"
+        android:text="@string/Main_Screen_Btn_request"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="118dp"
+        android:layout_height="117dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/main_button_shape"
+        android:drawableTop="@drawable/icon__question_mark_"
+        android:text="@string/Main_Screen_Btn_HT"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
