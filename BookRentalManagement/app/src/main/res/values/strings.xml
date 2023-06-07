@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Book Rental Management</string>
-    <string name="title_activity_main2">MainActivity2</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="Main_Screen_Btn_Sach">Sách</string>
+    <string name="Main_Screen_Btn_Khach">Khách hàng</string>
+    <string name="Main_Screen_Btn_NV">Nhân viên</string>
+    <string name="Main_Screen_Btn_HT">Hỗ trợ</string>
+    <string name="Main_Screen_Btn_report">Báo cáo</string>
+    <string name="Main_Screen_Btn_request">Đơn hàng</string>
 </resources>
