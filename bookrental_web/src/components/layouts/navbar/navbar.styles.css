@@ -1,0 +1,29 @@
+.navbar-container{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.logo{
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: #ffffff;
+    font-family: Hanken Grotesk;
+}
+
+.logo span{
+    font-family: Chivo Mono;
+}
+
+.nav-links{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    transition: 0.1s ease-in;
+}
+
+.nav-links:hover{
+    color: var(--primary-color);
+}

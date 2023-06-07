@@ -1,0 +1,9 @@
+.product-listing-card{
+    border: 1px solid #aaa;
+    width: fit-content;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+}

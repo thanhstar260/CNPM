@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&family=Sora&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Hanken Grotesk;
+}
+
+:root{
+    --primary-color: #0B7C6B;
+    --primary-color-bright: #025d4f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: Hanken Grotesk;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.container{
+    width:90%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content:space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.text-primary{color: var(--primary-color);}
