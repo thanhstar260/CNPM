@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">Book Rental Management</string>
-    <string name="Main_Screen_Btn_Sach">Sách</string>
-    <string name="Main_Screen_Btn_Khach">Khách hàng</string>
-    <string name="Main_Screen_Btn_NV">Nhân viên</string>
-    <string name="Main_Screen_Btn_HT">Hỗ trợ</string>
-    <string name="Main_Screen_Btn_report">Báo cáo</string>
-    <string name="Main_Screen_Btn_request">Đơn hàng</string>
+    <string name="ng_nh_p_tit">LOGIN</string>
+    <string name="Main_Screen_Btn_Sach">BOOKS</string>
+    <string name="Main_Screen_Btn_Khach">CUSTOMER</string>
+    <string name="Main_Screen_Btn_NV">STAFF</string>
+    <string name="Main_Screen_Btn_HT">SUPPORT</string>
+    <string name="Main_Screen_Btn_report">REPORTS</string>
+    <string name="Main_Screen_Btn_request">ORDERS</string>
 </resources>
