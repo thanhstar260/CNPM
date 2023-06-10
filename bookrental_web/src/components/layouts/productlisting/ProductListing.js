@@ -6,7 +6,7 @@ import ProductListingCard from "../../cards/product-listing-card/ProductListingC
 const ProductListing = () => {
     return(
         <div className="product-listing-container">
-            <div className="container">
+            <div className="sub-product-container">
                 <a href="#" className="product-link">Sách mới</a>
                 <div className="listing-container">
                 <ProductListingCard />
@@ -17,7 +17,7 @@ const ProductListing = () => {
                 </div>
             </div>
 
-            <div className="container">
+            <div className="sub-product-container">
                 <a href="#" className="product-link">Sách hot</a>
                 <div className="listing-container">
                 <ProductListingCard />
@@ -28,7 +28,7 @@ const ProductListing = () => {
                 </div>
             </div>
 
-            <div className="container">
+            <div className="sub-product-container">
                 <a href="#" className="product-link">Sách phổ biến</a>
                 <div className="listing-container">
                 <ProductListingCard />

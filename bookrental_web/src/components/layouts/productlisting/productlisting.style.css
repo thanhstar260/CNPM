@@ -60,8 +60,10 @@
     
 }
 
-.container{
+.sub-product-container{
     padding-top:70px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .product-link{

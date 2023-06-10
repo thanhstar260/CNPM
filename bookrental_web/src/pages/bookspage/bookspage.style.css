@@ -1,0 +1,10 @@
+.search-container{
+    width: 40%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.search-container h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
