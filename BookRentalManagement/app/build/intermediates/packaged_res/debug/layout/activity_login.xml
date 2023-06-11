@@ -1,69 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/login_activ"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:clipToOutline="true"
     android:background="@drawable/login_activ">
 
-    <!-- Đăng nhập title -->
+
+    <!-- EditText Username -->
     <TextView
         android:id="@+id/ng_nh_p_tit"
-        android:layout_width="170dp"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="126dp"
-        android:gravity="top"
+        android:layout_width="164dp"
+        android:layout_height="67dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
         android:text="@string/ng_nh_p_tit"
         android:textAppearance="@style/ng_nh_p_tit" />
 
-    <!-- EditText Username -->
     <EditText
         android:id="@+id/edittext_us"
         android:layout_width="206dp"
         android:layout_height="48dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="77dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="201dp"
+        android:layout_below="@+id/ng_nh_p_tit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
         android:background="@drawable/rounded_border"
         android:hint="Username"
+        android:inputType="text"
         android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        />
-
-
+        android:paddingEnd="10dp" />
 
     <!-- EditText Password -->
     <EditText
         android:id="@+id/edittext_pa"
         android:layout_width="206dp"
         android:layout_height="48dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="77dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="280dp"
+        android:layout_below="@+id/edittext_us"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_border"
-        android:inputType="textPassword"
         android:hint="Password"
+        android:inputType="textPassword"
         android:paddingStart="10dp"
         android:paddingEnd="10dp" />
-
 
     <!-- Login Btn -->
     <Button
         android:id="@+id/login_btn"
         android:layout_width="206dp"
         android:layout_height="48dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="77dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="359dp"
+        android:layout_below="@+id/edittext_pa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
         android:background="@drawable/rounded_border"
         android:text="Login"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#000000" />
 </RelativeLayout>
 
