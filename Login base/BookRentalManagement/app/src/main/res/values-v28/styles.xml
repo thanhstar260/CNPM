@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="ng_nh_p_tit">
-        <item name="android:textSize">32sp</item>
-        <item name="android:textColor">#000000</item>
-        <item name="android:fontFamily">@font/Quicksand_Book</item>
-        <item name="android:lineHeight">40sp</item>
-    </style>
-</resources>
