@@ -8,8 +8,8 @@
 .grid-container{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 50px;
+    grid-column-gap: 70px;
+    grid-row-gap: 70px;
 }
 
 .grid-item{

@@ -4,7 +4,7 @@
             "outputFile": "com.kwan.bookrentalmanagement.app-mergeDebugResources-27:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kwan\\.gradle\\caches\\transforms-3\\44fc53ad3ef1477fcc7b5dbdbf1cb4c0\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\nguye\\.gradle\\caches\\transforms-3\\44fc53ad3ef1477fcc7b5dbdbf1cb4c0\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kwan\\.gradle\\caches\\transforms-3\\ec4f76f6c0c02de8ba18086e7bd9baf5\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\nguye\\.gradle\\caches\\transforms-3\\ec4f76f6c0c02de8ba18086e7bd9baf5\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
