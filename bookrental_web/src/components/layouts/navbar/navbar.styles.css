@@ -19,7 +19,7 @@
     font-family: Chivo Mono;
 }
 
-.nav-links{
+.nav-links, .nav-links-dark{
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
@@ -27,7 +27,15 @@
     transition: 0.1s ease-in;
 }
 
+.nav-links-dark{
+    color: #333;
+}
+
 .nav-links:hover{
+    color: var(--primary-color);
+}
+
+.nav-links-dark:hover{
     color: var(--primary-color);
 }
 

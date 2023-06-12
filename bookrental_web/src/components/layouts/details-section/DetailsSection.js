@@ -28,7 +28,7 @@ const DetailsSection = () => {
                         <p> <b>Số trang</b>: {bookData.print_length}</p>
                         <h3>{bookData.price} vnd</h3>
 
-                        <a href="#" className="cart-button">Thêm vào giỏ hàng</a>
+                        <a href="#" className="button-primary">Thêm vào giỏ hàng</a>
                     </div>
                 </div>
             </div>
