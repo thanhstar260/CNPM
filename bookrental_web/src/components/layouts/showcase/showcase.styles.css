@@ -11,11 +11,7 @@
 .overlay{
     height: 100%;
     width: 100%;
-<<<<<<< HEAD
-    background-color: rgba(0,0,0,0.1);
-=======
     background-color: rgba(0,0,0,0);
->>>>>>> 507ce1106c8e251e5e852e21b094b1c9992a120e
     position: absolute;
     top: 0;
 }
