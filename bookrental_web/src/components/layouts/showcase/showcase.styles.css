@@ -1,7 +1,7 @@
 .showcase-container{
     height: 100vh;
     width: 100%;
-    background-image: url('../../../assets/images/book3.jpg');
+    background-image: url('../../../assets/images/book3_1.jpg');
     position: relative;
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@
 .overlay{
     height: 100%;
     width: 100%;
-    
+    background-color: rgba(0,0,0,0.1);
     position: absolute;
     top: 0;
 }
