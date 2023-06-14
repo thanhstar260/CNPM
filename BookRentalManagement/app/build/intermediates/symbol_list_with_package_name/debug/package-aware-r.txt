@@ -1337,6 +1337,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color border_color
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -3014,6 +3015,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rounded_border
+drawable search_bar
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3027,6 +3029,7 @@ font quicksand_light_oblique
 id ALT
 id BOTTOM_END
 id BOTTOM_START
+id BookList_SearchBar
 id CTRL
 id FUNCTION
 id META
@@ -3238,6 +3241,7 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id guideline
 id header_title
 id hideable
 id home
@@ -3481,6 +3485,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3644,6 +3649,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
 layout activity_main
+layout book_list
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

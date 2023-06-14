@@ -1,4 +1,4 @@
-#Sun Jun 11 20:21:54 ICT 2023
-base.0=D\:\\workspace\\CNPM\\BookRentalManagement\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Wed Jun 14 21:07:52 ICT 2023
+base.0=D\:\\CNPM\\BookRentalManagement\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
