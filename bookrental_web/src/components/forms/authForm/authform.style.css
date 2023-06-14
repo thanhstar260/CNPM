@@ -1,0 +1,89 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+a, a:visited {
+    color: #000;
+}
+
+input[type="text"],
+input[type="password"],
+button,
+textarea {
+  font-family: Chivo Mono;
+  font-size: 22px;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+label {
+  margin-top: 1rem;
+  color: #000;
+  font-family: Chivo Mono;
+}
+
+button {
+  margin-top: 1rem;
+  color: #fff;
+  font-family: Chivo Mono;
+}
+
+button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: var(--primary-color);
+}
+
+button:hover{
+    background-color: #000;
+    cursor: pointer;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.line {
+    display: inline-block;
+}
