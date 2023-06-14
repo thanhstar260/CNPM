@@ -38,6 +38,10 @@
             android:name="com.kwan.bookrentalmanagement.Main_Screen"
             android:exported="true" >
         </activity>
+        <activity
+            android:name="com.kwan.bookrentalmanagement.Book_List"
+            android:exported="true" >
+        </activity>
 
         <provider
             android:name="androidx.startup.InitializationProvider"

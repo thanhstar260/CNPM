@@ -26,6 +26,11 @@
             android:exported="true">
         </activity>
 
+        <activity android:name=".Book_List"
+            android:exported="true">
+
+        </activity>
+
 
     </application>
 
