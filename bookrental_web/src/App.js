@@ -5,10 +5,6 @@ import BooksPage from "./pages/bookspage/BooksPage";
 import BookDetails from "./pages/bookdetailspage/BookDetails";
 import Signup from "./pages/signuppage/Signup";
 import Login from "./pages/loginpage/Login";
-<<<<<<< HEAD
-import CartPage from "./pages/cartpage/CartPage";
-=======
->>>>>>> 7f15eaa520d7510d12b9b6af4774a3d38478a826
 
 const App = () => {
     return(
@@ -19,10 +15,6 @@ const App = () => {
                 <Route path="/book-details/:id" element={<BookDetails />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/login" element={<Login />} />
-<<<<<<< HEAD
-                <Route path="/cart" element={<CartPage />} />
-=======
->>>>>>> 7f15eaa520d7510d12b9b6af4774a3d38478a826
 
             </Routes>
 

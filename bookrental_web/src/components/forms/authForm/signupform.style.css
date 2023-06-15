@@ -1,45 +1,43 @@
-form {
+.form-content {
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.auth-form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-grow: 1;
+    flex-grow: 2;
     padding-bottom: 1rem;
+
 }
 
-a, a:visited {
-    color: #000;
-}
 
 input[type="text"],
 input[type="password"],
-button,
 textarea {
   font-family: Chivo Mono;
-  font-size: 22px;
+  font-size: 16px;
   padding: 0.75rem;
   border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-label {
-  margin-top: 1rem;
-  color: #000;
-  font-family: Chivo Mono;
+.sign-up-btn{
+    border: 1 solid #ccc;
+    color:#fff;
+    background-color: var(--primary-color);
+    height: 3rem;
+    border-radius: 10px;
+    font-size: 16px;
 }
 
-button {
-  margin-top: 1rem;
-  color: #fff;
-  font-family: Chivo Mono;
-}
-
-button {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  background-color: var(--primary-color);
-}
-
-button:hover{
-    background-color: #000;
+.sign-up-btn:hover{
+    background-color: black;
     cursor: pointer;
 }
 
@@ -50,7 +48,7 @@ button:hover{
     color: #fff;
     padding: 0.25rem;
     position: relative;
-    bottom: -10px;
+    bottom: 5px;
 }
 
 .instructions > svg {
@@ -81,9 +79,13 @@ button:hover{
     color: firebrick;
     font-weight: bold;
     padding: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .line {
     display: inline-block;
+}
+
+a, a:visited {
+    color: #000;
 }

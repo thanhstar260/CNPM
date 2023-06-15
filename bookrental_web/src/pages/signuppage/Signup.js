@@ -2,6 +2,7 @@ import React from 'react'
 import './signup.style.css';
 import Book5Img from '../../assets/images/book5.jpg'
 import Navbar from '../../components/layouts/navbar/Navbar';
+import SignUpForm from '../../components/forms/authForm/SignupForm';
 
 const Signup = () => {
     return (
@@ -15,24 +16,7 @@ const Signup = () => {
                     <div className="content-wrapper">
                         <h2>Signup</h2>
                         <p>Create a new account with email and password</p>
-                        <form>
-                            <div className='form-group'>
-                                <label>Email</label>
-                                <input type="email" className="form-input" placeholder='Enter your email' />
-                            
-                            </div>
-
-                            <div className='form-group'>
-                                <label>Password</label>
-                                <input type="password" className="form-input" placeholder='Enter your password' />
-                            </div>
-
-                            <div className='form-group'>
-                                <input type="submit" className="button-primary" value="Sign up" />
-                            </div>
-
-
-                        </form>
+                        <SignUpForm />
                     </div>
 
                 </div>

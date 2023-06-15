@@ -3,13 +3,13 @@ import { useRef, useState, useEffect } from "react";
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "../../../api/axios";
-import './authform.style.css';
+import './signupform.style.css';
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-const REGISTER_URL = '/register';
+const REGISTER_URL = '/signup';
 
-const AuthForm = () => {
+const SignUpForm = () => {
     const userRef = useRef();
     const errRef = useRef();
 
@@ -90,9 +90,9 @@ const AuthForm = () => {
                     </p>
                 </section>
             ) : (
-                <section>
+                <section className="form-content">
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} className="auth-form">
                         <label htmlFor="username">
                             Username:
                             <FontAwesomeIcon icon={faCheck} className={validName ? "valid" : "hide"} />
@@ -164,7 +164,7 @@ const AuthForm = () => {
                             Must match the first password input field.
                         </p>
 
-                        <button disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>
+                        <button disabled={!validName || !validPwd || !validMatch ? true : false} className="sign-up-btn">Sign Up</button>
                     </form>
                     <p>
                         Already registered?<br />
@@ -179,5 +179,5 @@ const AuthForm = () => {
     )
 }
 
-export default AuthForm;
+export default SignUpForm;
 
