@@ -9,3 +9,13 @@
     gap: 3rem;
 }
 
+.product-link{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-product-container{
+    padding-top: 100px;
+}

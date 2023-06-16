@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import './signup.style.css';
-import Book5Img from '../../assets/images/book5.jpg'
+import Book5Img from '../../assets/images/book5.jpg';
 import Navbar from '../../components/layouts/navbar/Navbar';
-import SignUpForm from '../../components/forms/authForm/SignupForm';
+import AuthForm from '../../components/forms/authForm/AuthForm';
 
 const Signup = () => {
     return (
@@ -10,15 +10,17 @@ const Signup = () => {
             <Navbar darkText={true}/>
             <section className="signup-container">
                 <div className='signup-img-container'>
-                    <img src={Book5Img} alt="signup-background" />
+                    <img src={Book5Img} alt="authentication-background" />
                 </div>
-                <div className='signup-content-container'>
-                    <div className="content-wrapper">
-                        <h2>Signup</h2>
-                        <p>Create a new account with email and password</p>
-                        <SignUpForm />
-                    </div>
+                <div className="signup-content-container">
+                    <div className="container">
+                        <div className="content-wrapper">
+                            <h2>Signup</h2>
+                            <p>Create a new account with email and password.</p>
 
+                            <AuthForm buttonName="Sign Up" />
+                        </div>
+                    </div>
                 </div>
             </section>
         </React.Fragment>
