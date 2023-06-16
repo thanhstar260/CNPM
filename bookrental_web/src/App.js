@@ -9,6 +9,7 @@ import CartPage from "./pages/cartpage/CartPage";
 import BookDetails from "./pages/bookdetailspage/BookDetails";
 import Signup from "./pages/signuppage/Signup";
 import Login from "./pages/loginpage/Login";
+import SearchPage from "./pages/searchpage/SearchPage";
 
 export const UserContext = createContext({});
 export const CartContext = createContext({});
@@ -47,6 +48,7 @@ const App = () => {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/books" element={<BooksPage />} />
                     <Route path="/cart" element={<CartPage />} />
+                    <Route path="/search" element={<SearchPage />} />
                     <Route path="/book-details/:id" element={<BookDetails />} />
                     <Route path="/signup" element={<Signup />} />
                     <Route path="/login" element={<Login />} />

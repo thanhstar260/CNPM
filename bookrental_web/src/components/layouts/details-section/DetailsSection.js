@@ -45,9 +45,9 @@ const DetailsSection = () => {
                         <p><b>Ngôn ngữ</b>: {bookData.language}</p>
                         <p><b>Số trang</b> : {bookData.print_length}</p>
 
-                        <h3>{bookData.price}</h3>
+                        <h3>{bookData.price} vnd</h3>
 
-                        <a onClick={handleAddToCart} className="button-primary">Add To Cart</a>
+                        <a onClick={handleAddToCart} className="button-primary">Thêm vào giỏ hàng</a>
                     </div>
                 </div>
             </div>
