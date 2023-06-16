@@ -1,21 +1,39 @@
-import React, {useState,useEffect} from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import './detailsection.style.css';
-import BookDetailImg from '../../../assets/images/dam_nghi_lai.jpg';
-import {useParams} from 'react-router-dom';
+import {useParams, useNavigate} from 'react-router-dom';
 import {BookData} from '../../../util/BookData';
+import { UserContext, CartContext } from '../../../App';
+
 
 const DetailsSection = () => {
-    const{id} = useParams();
+    const { id } = useParams();
     const [bookData, setBookData] = useState({});
 
+    const user = useContext(UserContext);
+    const {cartItems, setCartItems} = useContext(CartContext);
+
+    const navigate = useNavigate();
+    
     useEffect(() => {
-        let newData=BookData.filter((book) => book.id===parseInt(id));
-        setBookData(newData[0]);
-    }, [])
+        let newData = BookData.filter((book) => book.id === parseInt(id));
+        setBookData(newData[0])
+    },[id])
+
+    const handleAddToCart = () => {
+        if(user) {
+            //add to cart
+            setCartItems([...cartItems, bookData]);
+            alert(`The book ${bookData.book_name} is added to the cart`);
+        } else {
+            navigate('/login');
+            alert("Please Login or Sign up first..");
+        }
+    }
+
     return (
-        <section>
-            <div className='detail-section-container'>
-                <div className='flex-container'>
+        <section className="detail-section-container">
+            <div className='container'>
+                <div className="flex-container">
                     <div className='book-img-container'>
                         <img src={bookData.book_url} alt="book" />
                     </div>
@@ -23,12 +41,13 @@ const DetailsSection = () => {
                     <div className='book-detail-container'>
                         <h2>{bookData.book_name}</h2>
                         <p className="text-primary">{bookData.author_name}</p>
-                        <p classname='book-description'>{bookData.book_description}</p>
+                        <p className="book-description">{bookData.book_description}</p>
                         <p><b>Ngôn ngữ</b>: {bookData.language}</p>
-                        <p> <b>Số trang</b>: {bookData.print_length}</p>
-                        <h3>{bookData.price} vnd</h3>
+                        <p><b>Số trang</b> : {bookData.print_length}</p>
 
-                        <a href="#" className="button-primary">Thêm vào giỏ hàng</a>
+                        <h3>{bookData.price}</h3>
+
+                        <a onClick={handleAddToCart} className="button-primary">Add To Cart</a>
                     </div>
                 </div>
             </div>

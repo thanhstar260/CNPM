@@ -1,40 +1,23 @@
-import React from "react";
-import "./productlisting.style.css";
-import ProductListingCard from "../../cards/product-listing-card/ProductListingCard";
-import { BookData } from "../../../util/BookData";
+import React from 'react';
+import "./productlistingcard.style.css";
+import {Link} from 'react-router-dom';
 
-const ProductListing = () => {
-    return(
-        <div className="product-listing-container">
-            <div className="sub-product-container">
-                <a href="#" className="product-link">Sách mới</a>
-                <div className="listing-container">
-                    {BookData.slice(0,5).map((book) => (
-                        <ProductListingCard bookData={book} />
-                    ))}
-                </div>
+const ProductListingCard = ({bookData}) => {
+    return (
+        <div className="product-listing-card">
+            <div className="product-listing-img-container">
+                <img src={bookData.book_url} alt="product-listing-image" className="product-listing-image"/>
             </div>
-
-            <div className="sub-product-container">
-                <a href="#" className="product-link">Sách hot</a>
-                <div className="listing-container">
-                    {BookData.slice(0,5).map((book) => (
-                        <ProductListingCard bookData={book} />
-                    ))}
-                </div>
+            <div className="product-listing-details-container">
+                <h3>{bookData.book_name}</h3>
+                <p className="author-name">{bookData.author_name}</p>
+                <p className="pricing">{bookData.price}</p>
+                
             </div>
-
-            <div className="sub-product-container">
-                <a href="#" className="product-link">Sách phổ biến</a>
-                <div className="listing-container">
-                    {BookData.slice(0,5).map((book) => (
-                        <ProductListingCard bookData={book} />
-                    ))}
-                </div>
+            <div className="card-btn-container">
+                <Link to={`/book-details/${bookData.id}`} className="product-listing-button">Thêm vào giỏ hàng</Link>
             </div>
-            
         </div>
     )
 }
-
-export default ProductListing;
+export default ProductListingCard;

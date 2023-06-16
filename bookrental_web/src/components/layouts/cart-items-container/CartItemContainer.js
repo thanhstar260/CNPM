@@ -1,19 +1,31 @@
-import React from "react";
+import React, {useContext} from "react";
 import './cart-item-container.style.css';
-import CartImg from '../../../assets/images/dam_nghi_lai.jpg'
+import CartItemCard from "../../cards/cart-item-card/CartItemCard";
+import { CartContext } from '../../../App';
 
-const CartItemContainer = () => {
-    return(
-        <section>
-            <div className="cart-item-container">
-                <h2>Cart</h2>
+const CartItemsContainer = () => {
+    const { cartItems, totalAmount } = useContext(CartContext);
 
-                <div className="cart-item">
-                    
-                </div>
+    return (
+        <section className="cart-item-container">
+            <div className="container">
+                {totalAmount === 0 ? (
+                    <h2>Currently your cart is empty</h2>
+                ):(
+                    <React.Fragment>
+                        <h2>Cart</h2>
+
+                        {cartItems.map((item) => (
+                            <CartItemCard key={item.id} bookData={item} />
+                        ))}
+
+                        <h2>Total Amount = {totalAmount}</h2>
+
+                    </React.Fragment>
+                )}
             </div>
         </section>
     )
 }
 
-export default CartItemContainer;
+export default CartItemsContainer;
