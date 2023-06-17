@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">Karakter yang dimasukkan %1$d dari %2$d</string>
     <string name="character_counter_overflowed_content_description">Melebihi batas karakter %1$d dari %2$d</string>
     <string name="clear_text_end_icon_content_description">Menghapus teks</string>
+    <string name="common_google_play_services_unknown_issue">%1$s mengalami masalah dengan layanan Google Play. Coba lagi.</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Tampilkan menu dropdown</string>
     <string name="icon_content_description">Ikon Dialog</string>

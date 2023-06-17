@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">Umeweka herufi %1$d kati ya %2$d</string>
     <string name="character_counter_overflowed_content_description">Umepitisha idadi ya juu ya herufi %1$d kati ya %2$d</string>
     <string name="clear_text_end_icon_content_description">Futa maandishi</string>
+    <string name="common_google_play_services_unknown_issue">%1$s inakumbwa na hitilafu ya huduma za Google Play. Tafadhali jaribu tena.</string>
     <string name="error_icon_content_description">Hitilafu</string>
     <string name="exposed_dropdown_menu_content_description">Onyesha menyu kunjuzi</string>
     <string name="icon_content_description">Aikoni ya Kidirisha</string>

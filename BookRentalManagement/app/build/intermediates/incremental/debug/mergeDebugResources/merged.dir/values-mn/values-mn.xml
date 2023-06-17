@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">%2$d-н %1$d тэмдэгтийг оруулсан</string>
     <string name="character_counter_overflowed_content_description">Тэмдэгтийн хязгаар %2$d-н %1$d-с хэтэрсэн</string>
     <string name="clear_text_end_icon_content_description">Текстийг арилгах</string>
+    <string name="common_google_play_services_unknown_issue">%1$s-г Google Play-н үйлчилгээгээр ашиглахад асуудал гарлаа. Дахин оролдоно уу.</string>
     <string name="error_icon_content_description">Алдаа</string>
     <string name="exposed_dropdown_menu_content_description">Доош унадаг цэсийг харуулах</string>
     <string name="icon_content_description">Харилцах цонхны дүрс тэмдэг</string>

@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">%1$d/%2$d таңба енгізілді</string>
     <string name="character_counter_overflowed_content_description">Таңба саны шегінен асты: %1$d/%2$d</string>
     <string name="clear_text_end_icon_content_description">Мәтінді өшіру</string>
+    <string name="common_google_play_services_unknown_issue">%1$s қолданбасында Google Play қызметіне байланысты белгісіз қате шықты. Әрекетті қайталаңыз.</string>
     <string name="error_icon_content_description">Қате</string>
     <string name="exposed_dropdown_menu_content_description">Ашылмалы мәзірді көрсету</string>
     <string name="icon_content_description">Диалог белгішесі</string>

@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">Innslegnir stafir %1$d af %2$d</string>
     <string name="character_counter_overflowed_content_description">Yfir hámarksstafafjölda, %1$d af %2$d</string>
     <string name="clear_text_end_icon_content_description">Hreinsa texta</string>
+    <string name="common_google_play_services_unknown_issue">%1$s á í vandræðum með þjónustu Google Play. Reyndu aftur.</string>
     <string name="error_icon_content_description">Villa</string>
     <string name="exposed_dropdown_menu_content_description">Sýna fellivalmynd</string>
     <string name="icon_content_description">Gluggatákn</string>

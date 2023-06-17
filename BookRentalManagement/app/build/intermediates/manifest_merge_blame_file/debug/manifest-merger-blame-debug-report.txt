@@ -10,89 +10,177 @@
 9        android:targetSdkVersion="33" />
 9-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
 10
-11    <permission
-11-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-12        android:name="com.kwan.bookrentalmanagement.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-14
-15    <uses-permission android:name="com.kwan.bookrentalmanagement.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
+11-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:23:5-79
+12-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:23:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:24:5-68
+13-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:24:22-65
+14    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+14-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:25:5-79
+14-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:25:22-76
+15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+15-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:26:5-110
+15-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:26:22-107
 16
-17    <application
-17-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:5:5-35:19
-18        android:allowBackup="true"
-18-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:6:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:7:9-65
-21        android:debuggable="true"
-22        android:fullBackupContent="@xml/backup_rules"
-22-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:8:9-54
-23        android:icon="@mipmap/ic_launcher"
-23-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:9:9-43
-24        android:label="@string/app_name"
-24-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:10:9-41
-25        android:supportsRtl="true"
-25-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:11:9-35
-26        android:theme="@style/Theme.BookRentalManagement" >
-26-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:12:9-58
-27        <activity
-27-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:14:9-22:20
-28            android:name="com.kwan.bookrentalmanagement.Login"
-28-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:15:13-34
-29            android:exported="true" >
-29-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:16:13-36
-30            <intent-filter>
-30-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:17:13-21:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:18:17-69
-31-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:18:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:20:17-77
-33-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:20:27-74
-34            </intent-filter>
-35        </activity>
-36        <activity
-36-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:24:9-27:20
-37            android:name="com.kwan.bookrentalmanagement.Main_Screen"
-37-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:25:13-40
-38            android:exported="true" >
-38-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:26:13-36
-39        </activity>
-40        <activity
-40-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:29:9-32:20
-41            android:name="com.kwan.bookrentalmanagement.Book_List"
-41-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:29:19-44
-42            android:exported="true" >
-42-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:30:13-36
-43        </activity>
-44
-45        <provider
-45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-46            android:name="androidx.startup.InitializationProvider"
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-47            android:authorities="com.kwan.bookrentalmanagement.androidx-startup"
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-48            android:exported="false" >
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-49            <meta-data
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-51                android:value="androidx.startup" />
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-52            <meta-data
-52-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\86041ab2b0d2128b301212662b855cec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\86041ab2b0d2128b301212662b855cec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-54                android:value="androidx.startup" />
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\86041ab2b0d2128b301212662b855cec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-55        </provider>
-56    </application>
-57
-58</manifest>
+17    <permission
+17-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+18        android:name="com.kwan.bookrentalmanagement.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.kwan.bookrentalmanagement.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+22
+23    <application
+23-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:5:5-35:19
+24        android:name="androidx.multidex.MultiDexApplication"
+25        android:allowBackup="true"
+25-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:6:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+27        android:dataExtractionRules="@xml/data_extraction_rules"
+27-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:7:9-65
+28        android:debuggable="true"
+29        android:fullBackupContent="@xml/backup_rules"
+29-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:8:9-54
+30        android:icon="@mipmap/ic_launcher"
+30-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:9:9-43
+31        android:label="@string/app_name"
+31-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:10:9-41
+32        android:supportsRtl="true"
+32-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:11:9-35
+33        android:theme="@style/Theme.BookRentalManagement" >
+33-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:12:9-58
+34        <activity
+34-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:14:9-22:20
+35            android:name="com.kwan.bookrentalmanagement.Login"
+35-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:15:13-34
+36            android:exported="true" >
+36-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:16:13-36
+37            <intent-filter>
+37-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:17:13-21:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:18:17-69
+38-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:18:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:20:17-77
+40-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:20:27-74
+41            </intent-filter>
+42        </activity>
+43        <activity
+43-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:24:9-27:20
+44            android:name="com.kwan.bookrentalmanagement.Main_Screen"
+44-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:25:13-40
+45            android:exported="true" >
+45-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:26:13-36
+46        </activity>
+47        <activity
+47-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:29:9-32:20
+48            android:name="com.kwan.bookrentalmanagement.Book_List"
+48-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:29:19-44
+49            android:exported="true" >
+49-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:30:13-36
+50        </activity>
+51
+52        <service
+52-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:28:9-34:19
+53            android:name="com.google.firebase.components.ComponentDiscoveryService"
+53-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:29:13-84
+54            android:directBootAware="true"
+54-->[com.google.firebase:firebase-common:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\69103d0ef05ac928504892254d5a956f\transformed\firebase-common-20.3.3\AndroidManifest.xml:34:13-43
+55            android:exported="false" >
+55-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:30:13-37
+56            <meta-data
+56-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:31:13-33:85
+57                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+57-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:32:17-139
+58                android:value="com.google.firebase.components.ComponentRegistrar" />
+58-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:33:17-82
+59            <meta-data
+59-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\kwan\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+60                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+60-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\kwan\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+61                android:value="com.google.firebase.components.ComponentRegistrar" />
+61-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\kwan\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+62        </service>
+63
+64        <provider
+64-->[com.google.firebase:firebase-common:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\69103d0ef05ac928504892254d5a956f\transformed\firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
+65            android:name="com.google.firebase.provider.FirebaseInitProvider"
+65-->[com.google.firebase:firebase-common:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\69103d0ef05ac928504892254d5a956f\transformed\firebase-common-20.3.3\AndroidManifest.xml:26:13-77
+66            android:authorities="com.kwan.bookrentalmanagement.firebaseinitprovider"
+66-->[com.google.firebase:firebase-common:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\69103d0ef05ac928504892254d5a956f\transformed\firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+67            android:directBootAware="true"
+67-->[com.google.firebase:firebase-common:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\69103d0ef05ac928504892254d5a956f\transformed\firebase-common-20.3.3\AndroidManifest.xml:28:13-43
+68            android:exported="false"
+68-->[com.google.firebase:firebase-common:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\69103d0ef05ac928504892254d5a956f\transformed\firebase-common-20.3.3\AndroidManifest.xml:29:13-37
+69            android:initOrder="100" />
+69-->[com.google.firebase:firebase-common:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\69103d0ef05ac928504892254d5a956f\transformed\firebase-common-20.3.3\AndroidManifest.xml:30:13-36
+70
+71        <receiver
+71-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:29:9-33:20
+72            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+72-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:30:13-85
+73            android:enabled="true"
+73-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:31:13-35
+74            android:exported="false" >
+74-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:32:13-37
+75        </receiver>
+76
+77        <service
+77-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:35:9-38:40
+78            android:name="com.google.android.gms.measurement.AppMeasurementService"
+78-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:36:13-84
+79            android:enabled="true"
+79-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:37:13-35
+80            android:exported="false" />
+80-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:38:13-37
+81        <service
+81-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:39:9-43:72
+82            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+82-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:40:13-87
+83            android:enabled="true"
+83-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:41:13-35
+84            android:exported="false"
+84-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:42:13-37
+85            android:permission="android.permission.BIND_JOB_SERVICE" />
+85-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:43:13-69
+86
+87        <meta-data
+87-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\kwan\.gradle\caches\transforms-3\ec1d0473320eafbc6e1a7cdc007dfb1a\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+88            android:name="com.google.android.gms.version"
+88-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\kwan\.gradle\caches\transforms-3\ec1d0473320eafbc6e1a7cdc007dfb1a\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+89            android:value="@integer/google_play_services_version" />
+89-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\kwan\.gradle\caches\transforms-3\ec1d0473320eafbc6e1a7cdc007dfb1a\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+90
+91        <provider
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+92            android:name="androidx.startup.InitializationProvider"
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+93            android:authorities="com.kwan.bookrentalmanagement.androidx-startup"
+93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+94            android:exported="false" >
+94-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+95            <meta-data
+95-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+96                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+96-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+97                android:value="androidx.startup" />
+97-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\721adc9a429ad61e677555b396bca518\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+98            <meta-data
+98-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+99                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+99-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+100                android:value="androidx.startup" />
+100-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+101        </provider>
+102    </application>
+103
+104</manifest>

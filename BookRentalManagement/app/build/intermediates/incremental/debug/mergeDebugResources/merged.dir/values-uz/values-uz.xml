@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">%1$d/%2$d ta belgi kiritildi</string>
     <string name="character_counter_overflowed_content_description">Harflar soni (%1$d) cheklovdan (%2$d) oshib ketdi</string>
     <string name="clear_text_end_icon_content_description">Matnni tozalash</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ilovasini Google Play xizmatlariga ulab bo‘lmadi. Qaytadan urinib ko‘ring.</string>
     <string name="error_icon_content_description">Xato</string>
     <string name="exposed_dropdown_menu_content_description">Pastga ochiluvchi menyuni ochish</string>
     <string name="icon_content_description">Muloqot ikonkasi</string>
