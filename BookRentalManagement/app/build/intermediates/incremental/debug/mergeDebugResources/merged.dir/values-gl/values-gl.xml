@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">Introducíronse %1$d caracteres de %2$d</string>
     <string name="character_counter_overflowed_content_description">Introducíronse %1$d caracteres, pero o límite é de %2$d</string>
     <string name="clear_text_end_icon_content_description">Borra texto</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ten problemas cos servizos de Google Play. Téntao de novo.</string>
     <string name="error_icon_content_description">Produciuse un erro</string>
     <string name="exposed_dropdown_menu_content_description">Mostra o menú despregable</string>
     <string name="icon_content_description">Icona de cadro de diálogo</string>

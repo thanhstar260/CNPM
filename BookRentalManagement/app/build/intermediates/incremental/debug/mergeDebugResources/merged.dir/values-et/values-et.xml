@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">Sisestatud tähemärgid: %1$d/%2$d</string>
     <string name="character_counter_overflowed_content_description">Tähemärgipiirang on ületatud: %1$d/%2$d</string>
     <string name="clear_text_end_icon_content_description">Kustuta tekst</string>
+    <string name="common_google_play_services_unknown_issue">Rakendusel %1$s on probleeme Google Play teenustega. Proovige uuesti.</string>
     <string name="error_icon_content_description">Viga</string>
     <string name="exposed_dropdown_menu_content_description">Kuva rippmenüü</string>
     <string name="icon_content_description">Dialoogi ikoon</string>

@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">已輸入 %1$d 個字元 (共 %2$d 個)</string>
     <string name="character_counter_overflowed_content_description">超出字元限制 %1$d 個字元 (上限 %2$d 個字元)</string>
     <string name="clear_text_end_icon_content_description">清除文字</string>
+    <string name="common_google_play_services_unknown_issue">「%1$s」存取 Google Play 服務時發生問題。請稍後再試一次。</string>
     <string name="error_icon_content_description">錯誤</string>
     <string name="exposed_dropdown_menu_content_description">顯示下拉式選單</string>
     <string name="icon_content_description">對話框圖示</string>

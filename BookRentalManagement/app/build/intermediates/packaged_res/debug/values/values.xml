@@ -15,7 +15,15 @@
     <string name="Main_Screen_Btn_report">REPORTS</string>
     <string name="Main_Screen_Btn_request">ORDERS</string>
     <string name="app_name">Book Rental Management</string>
+    <string name="default_web_client_id" translatable="false">301803774992-h9blgdjbvrpjubnnmd892ta7984a5oi9.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://bookrental-ae411-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">301803774992</string>
+    <string name="google_api_key" translatable="false">AIzaSyDlWieF5xv7efFtvMjIgXRoYjqN9-asaCU</string>
+    <string name="google_app_id" translatable="false">1:301803774992:android:679d0a584a9fb3bbe59695</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDlWieF5xv7efFtvMjIgXRoYjqN9-asaCU</string>
+    <string name="google_storage_bucket" translatable="false">bookrental-ae411.appspot.com</string>
     <string name="ng_nh_p_tit">LOGIN</string>
+    <string name="project_id" translatable="false">bookrental-ae411</string>
     <style name="Theme.BookRentalManagement" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">Izinhlamvu ezifakiwe ezingu-%1$d zokungu-%2$d</string>
     <string name="character_counter_overflowed_content_description">Umkhawulo wezinhlamvu udlule u-%1$d kokungu-%2$d</string>
     <string name="clear_text_end_icon_content_description">Sula umbhalo</string>
+    <string name="common_google_play_services_unknown_issue">%1$s inenkinga ngamasevisi e-Google Play. Sicela uzame futhi.</string>
     <string name="error_icon_content_description">Iphutha</string>
     <string name="exposed_dropdown_menu_content_description">Bonisa imenyu yokudonsela phansi</string>
     <string name="icon_content_description">Isithonjana sebhokisi</string>

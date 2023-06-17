@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">Karakters ingevoer: %1$d van %2$d</string>
     <string name="character_counter_overflowed_content_description">Karakterlimiet oorskry %1$d van %2$d</string>
     <string name="clear_text_end_icon_content_description">Vee teks uit</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ondervind probleme met Google Play Dienste. Probeer asseblief weer.</string>
     <string name="error_icon_content_description">Fout</string>
     <string name="exposed_dropdown_menu_content_description">Wys aftrekkieslys</string>
     <string name="icon_content_description">Dialoogikoon</string>

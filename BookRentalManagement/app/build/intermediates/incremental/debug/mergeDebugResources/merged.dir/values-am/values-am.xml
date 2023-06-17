@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">ቁምፊዎች %1$d ከ%2$d ገብተዋል</string>
     <string name="character_counter_overflowed_content_description">የቁምፊ ገደብ %1$d ከ%2$d አልፏል</string>
     <string name="clear_text_end_icon_content_description">ጽሑፍን አጽዳ</string>
+    <string name="common_google_play_services_unknown_issue">%1$s በGoogle Play አገልግሎቶች ላይ ችግሮች እያጋጠሙት ነው። እባክዎ እንደገና ይሞክሩ።</string>
     <string name="error_icon_content_description">ስህተት</string>
     <string name="exposed_dropdown_menu_content_description">ተቆልቋይ ምናሌን አሳይ</string>
     <string name="icon_content_description">የንግግር አዶ</string>

@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">Εισήχθησαν %1$d από %2$d χαρακτήρες</string>
     <string name="character_counter_overflowed_content_description">Υπέρβαση ορίου χαρακτήρων %1$d από %2$d</string>
     <string name="clear_text_end_icon_content_description">Διαγραφή κειμένου</string>
+    <string name="common_google_play_services_unknown_issue">Η εφαρμογή %1$s αντιμετωπίζει κάποιο πρόβλημα με τις υπηρεσίες Google Play. Προσπαθήστε ξανά.</string>
     <string name="error_icon_content_description">Σφάλμα</string>
     <string name="exposed_dropdown_menu_content_description">Εμφάνιση αναπτυσσόμενου μενού</string>
     <string name="icon_content_description">Εικονίδιο παραθύρου διαλόγου</string>

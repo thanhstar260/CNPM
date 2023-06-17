@@ -39,6 +39,7 @@
     <string name="character_counter_content_description">Մուտքագրված նիշեր՝ %1$d/%2$d</string>
     <string name="character_counter_overflowed_content_description">Նիշերի առավելագույն քանակը գերազանցվել է (%1$d/%2$d)</string>
     <string name="clear_text_end_icon_content_description">Ջնջել տեքստը</string>
+    <string name="common_google_play_services_unknown_issue">%1$s հավելվածը Google Play ծառայությունների հետ կապված խնդիր ունի: Փորձեք նորից:</string>
     <string name="error_icon_content_description">Սխալ</string>
     <string name="exposed_dropdown_menu_content_description">Ցույց տալ իջնող ընտրացանկը</string>
     <string name="icon_content_description">Երկխոսության պատուհանի պատկերակ</string>
