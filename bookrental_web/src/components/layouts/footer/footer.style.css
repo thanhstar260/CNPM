@@ -6,7 +6,7 @@
 }
 
 .footer-content{
-    display: inline-table;
+    display: grid;
     padding-right: 10rem;
     color:#fff;
 }
