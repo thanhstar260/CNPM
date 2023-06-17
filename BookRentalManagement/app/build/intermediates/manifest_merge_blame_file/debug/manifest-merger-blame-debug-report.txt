@@ -38,62 +38,61 @@
 24-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:10:9-41
 25        android:supportsRtl="true"
 25-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:11:9-35
-26        android:testOnly="true"
-27        android:theme="@style/Theme.BookRentalManagement" >
-27-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:12:9-58
-28        <activity
-28-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:14:9-22:20
-29            android:name="com.kwan.bookrentalmanagement.Login"
-29-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:15:13-34
-30            android:exported="true" >
-30-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:16:13-36
-31            <intent-filter>
-31-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:17:13-21:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:18:17-69
-32-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:18:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:20:17-77
-34-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:20:27-74
-35            </intent-filter>
-36        </activity>
-37        <activity
-37-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:24:9-27:20
-38            android:name="com.kwan.bookrentalmanagement.Main_Screen"
-38-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:25:13-40
-39            android:exported="true" >
-39-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:26:13-36
-40        </activity>
-41        <activity
-41-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:29:9-32:20
-42            android:name="com.kwan.bookrentalmanagement.Book_List"
-42-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:29:19-44
-43            android:exported="true" >
-43-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:30:13-36
-44        </activity>
-45
-46        <provider
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-47            android:name="androidx.startup.InitializationProvider"
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-48            android:authorities="com.kwan.bookrentalmanagement.androidx-startup"
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-49            android:exported="false" >
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-50            <meta-data
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-52                android:value="androidx.startup" />
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-53            <meta-data
-53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\86041ab2b0d2128b301212662b855cec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\86041ab2b0d2128b301212662b855cec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-55                android:value="androidx.startup" />
-55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\86041ab2b0d2128b301212662b855cec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-56        </provider>
-57    </application>
-58
-59</manifest>
+26        android:theme="@style/Theme.BookRentalManagement" >
+26-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:12:9-58
+27        <activity
+27-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:14:9-22:20
+28            android:name="com.kwan.bookrentalmanagement.Login"
+28-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:15:13-34
+29            android:exported="true" >
+29-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:16:13-36
+30            <intent-filter>
+30-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:17:13-21:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:18:17-69
+31-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:18:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:20:17-77
+33-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:20:27-74
+34            </intent-filter>
+35        </activity>
+36        <activity
+36-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:24:9-27:20
+37            android:name="com.kwan.bookrentalmanagement.Main_Screen"
+37-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:25:13-40
+38            android:exported="true" >
+38-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:26:13-36
+39        </activity>
+40        <activity
+40-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:29:9-32:20
+41            android:name="com.kwan.bookrentalmanagement.Book_List"
+41-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:29:19-44
+42            android:exported="true" >
+42-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:30:13-36
+43        </activity>
+44
+45        <provider
+45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+46            android:name="androidx.startup.InitializationProvider"
+46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+47            android:authorities="com.kwan.bookrentalmanagement.androidx-startup"
+47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+48            android:exported="false" >
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+49            <meta-data
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+51                android:value="androidx.startup" />
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\791b39fe68826e8543c46f2d7f8b152e\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+52            <meta-data
+52-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\86041ab2b0d2128b301212662b855cec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\86041ab2b0d2128b301212662b855cec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+54                android:value="androidx.startup" />
+54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\86041ab2b0d2128b301212662b855cec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+55        </provider>
+56    </application>
+57
+58</manifest>

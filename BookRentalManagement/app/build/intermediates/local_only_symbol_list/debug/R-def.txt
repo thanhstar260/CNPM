@@ -30,6 +30,7 @@ font quicksand_light
 font quicksand_light_oblique
 id BookList_SearchBar
 id button
+id button2
 id button4
 id button5
 id button6
@@ -44,9 +45,9 @@ id login_btn
 id ng_nh_p_tit
 id textView
 layout activity_login
-layout activity_main
 layout book_list
 layout main_screen
+layout order
 mipmap ic_launcher
 mipmap ic_launcher_round
 string Main_Screen_Btn_HT
