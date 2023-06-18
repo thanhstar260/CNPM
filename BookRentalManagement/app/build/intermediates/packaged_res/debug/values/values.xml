@@ -2,6 +2,7 @@
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="black">#FF000000</color>
     <color name="border_color">#FF000000</color>
+    <color name="order_tab_selected">#D9D9D9</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -22,7 +23,12 @@
     <string name="google_app_id" translatable="false">1:301803774992:android:679d0a584a9fb3bbe59695</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDlWieF5xv7efFtvMjIgXRoYjqN9-asaCU</string>
     <string name="google_storage_bucket" translatable="false">bookrental-ae411.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ng_nh_p_tit">LOGIN</string>
+    <string name="order_cancel_fragment">Cancel</string>
+    <string name="order_complete_fragment">Complete</string>
+    <string name="order_picking_fragment">Picking</string>
+    <string name="order_waiting_fragment">Waiting</string>
     <string name="project_id" translatable="false">bookrental-ae411</string>
     <style name="Theme.BookRentalManagement" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         

@@ -7,4 +7,12 @@
     <string name="Main_Screen_Btn_HT">SUPPORT</string>
     <string name="Main_Screen_Btn_report">REPORTS</string>
     <string name="Main_Screen_Btn_request">ORDERS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="order_waiting_fragment">Waiting</string>
+    <string name="order_picking_fragment">Picking</string>
+    <string name="order_complete_fragment">Complete</string>
+    <string name="order_cancel_fragment">Cancel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

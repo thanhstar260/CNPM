@@ -2023,6 +2023,7 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color order_tab_selected
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -3364,6 +3365,7 @@ id outline
 id outward
 id overshoot
 id packed
+id pager
 id parallax
 id parent
 id parentPanel
@@ -3465,7 +3467,9 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id tab
 id tabMode
+id tabs_name
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3487,6 +3491,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3667,6 +3672,10 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_order_cancel_list
+layout fragment_order_complete_list
+layout fragment_order_picking_list
+layout fragment_order_waiting_list
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3726,6 +3735,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout order
+layout order_screen
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3793,6 +3803,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -3896,6 +3907,10 @@ string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string ng_nh_p_tit
+string order_cancel_fragment
+string order_complete_fragment
+string order_picking_fragment
+string order_waiting_fragment
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
