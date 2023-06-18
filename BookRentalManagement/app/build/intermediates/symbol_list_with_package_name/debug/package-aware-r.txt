@@ -2023,6 +2023,7 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color order_tab_selected
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -3126,6 +3127,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id button
+id button2
 id button4
 id button5
 id button6
@@ -3363,6 +3365,7 @@ id outline
 id outward
 id overshoot
 id packed
+id pager
 id parallax
 id parent
 id parentPanel
@@ -3464,7 +3467,9 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id tab
 id tabMode
+id tabs_name
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3486,6 +3491,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3542,6 +3548,7 @@ integer cancel_button_image_alpha
 integer config_tooltipAnimTime
 integer design_snackbar_text_max_lines
 integer design_tab_indicator_anim_duration_ms
+integer google_play_services_version
 integer hide_password_duration
 integer m3_btn_anim_delay_ms
 integer m3_btn_anim_duration_ms
@@ -3648,7 +3655,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
-layout activity_main
 layout book_list
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3666,6 +3672,10 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_order_cancel_list
+layout fragment_order_complete_list
+layout fragment_order_picking_list
+layout fragment_order_waiting_list
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3724,6 +3734,8 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout order
+layout order_screen
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3731,6 +3743,7 @@ layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw firebase_common_keep
 string Main_Screen_Btn_HT
 string Main_Screen_Btn_Khach
 string Main_Screen_Btn_NV
@@ -3777,11 +3790,20 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string common_google_play_services_unknown_issue
+string default_web_client_id
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string firebase_database_url
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -3885,11 +3907,16 @@ string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string ng_nh_p_tit
+string order_cancel_fragment
+string order_complete_fragment
+string order_picking_fragment
+string order_waiting_fragment
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string project_id
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description

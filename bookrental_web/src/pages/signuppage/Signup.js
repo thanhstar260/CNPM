@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import './signup.style.css';
-import Book5Img from '../../assets/images/book5.jpg'
+import Book5Img from '../../assets/images/book5.jpg';
 import Navbar from '../../components/layouts/navbar/Navbar';
+import AuthForm from '../../components/forms/authForm/AuthForm';
 
 const Signup = () => {
     return (
@@ -9,32 +10,17 @@ const Signup = () => {
             <Navbar darkText={true}/>
             <section className="signup-container">
                 <div className='signup-img-container'>
-                    <img src={Book5Img} alt="signup-background" />
+                    <img src={Book5Img} alt="authentication-background" />
                 </div>
-                <div className='signup-content-container'>
-                    <div className="content-wrapper">
-                        <h2>Signup</h2>
-                        <p>Create a new account with email and password</p>
-                        <form>
-                            <div className='form-group'>
-                                <label>Email</label>
-                                <input type="email" className="form-input" placeholder='Enter your email' />
-                            
-                            </div>
+                <div className="signup-content-container">
+                    <div className="container">
+                        <div className="content-wrapper">
+                            <h2>Đăng kí</h2>
+                            <p>Tạo tài khoản mới với email và mật khẩu</p>
 
-                            <div className='form-group'>
-                                <label>Password</label>
-                                <input type="password" className="form-input" placeholder='Enter your password' />
-                            </div>
-
-                            <div className='form-group'>
-                                <input type="submit" className="button-primary" value="Sign up" />
-                            </div>
-
-
-                        </form>
+                            <AuthForm buttonName="Đăng kí" />
+                        </div>
                     </div>
-
                 </div>
             </section>
         </React.Fragment>

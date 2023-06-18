@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "301803774992",
+    "firebase_url": "https://bookrental-ae411-default-rtdb.firebaseio.com",
+    "project_id": "bookrental-ae411",
+    "storage_bucket": "bookrental-ae411.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301803774992:android:679d0a584a9fb3bbe59695",
+        "android_client_info": {
+          "package_name": "com.kwan.bookrentalmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301803774992-880jk1m052n918k71gagvv01u32nustu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kwan.bookrentalmanagement",
+            "certificate_hash": "1d63ededa3a3793052f0ad45a13bd553d494a512"
+          }
+        },
+        {
+          "client_id": "301803774992-h9blgdjbvrpjubnnmd892ta7984a5oi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlWieF5xv7efFtvMjIgXRoYjqN9-asaCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301803774992-h9blgdjbvrpjubnnmd892ta7984a5oi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

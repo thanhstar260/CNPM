@@ -11,11 +11,11 @@ const ProductListingCard = ({bookData}) => {
             <div className="product-listing-details-container">
                 <h3>{bookData.book_name}</h3>
                 <p className="author-name">{bookData.author_name}</p>
-                <p className="pricing">{bookData.price}</p>
+                <p className="pricing">{bookData.price} vnd</p>
                 
             </div>
             <div className="card-btn-container">
-                <Link to={`/book-details/${bookData.id}`} className="product-listing-button">Thêm vào giỏ hàng</Link>
+                <Link to={`/book-details/${bookData.id}`} className="product-listing-button">Xem chi tiết</Link>
             </div>
         </div>
     )

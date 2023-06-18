@@ -31,6 +31,9 @@
 
         </activity>
 
+        <activity android:name=".Order_screen"
+            android:exported="true"/>
+
 
     </application>
 
