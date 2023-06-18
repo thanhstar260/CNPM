@@ -12,6 +12,9 @@
         android:theme="@style/Theme.BookRentalManagement"
         tools:targetApi="31">
         <activity
+            android:name=".Add_Booklist"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="true">
             <intent-filter>
@@ -20,21 +23,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Main_Screen"
-            android:exported="true">
-        </activity>
-
-        <activity android:name=".Book_List"
-            android:exported="true">
-
-        </activity>
-
-        <activity android:name=".Order_screen"
-            android:exported="true"/>
-
-
+            android:exported="true"></activity>
+        <activity
+            android:name=".Book_List"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Order_screen"
+            android:exported="true" />
     </application>
 
 </manifest>

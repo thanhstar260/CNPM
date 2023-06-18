@@ -3020,6 +3020,7 @@ drawable search_bar
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable white_add_ic
 font quicksand_bold
 font quicksand_bold_oblique
 font quicksand_book
@@ -3099,6 +3100,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_button
 id alertTitle
 id aligned
 id all
@@ -3126,13 +3128,14 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button
-id button2
+id btn_book
+id btn_customer
+id btn_orders
+id btn_reports
+id btn_staff
+id btn_support
 id button4
-id button5
-id button6
 id button7
-id button8
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3654,6 +3657,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_booklist
 layout activity_login
 layout book_list
 layout custom_dialog
@@ -3734,7 +3738,6 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout order
 layout order_screen
 layout select_dialog_item_material
 layout select_dialog_multichoice_material

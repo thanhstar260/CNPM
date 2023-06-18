@@ -32,6 +32,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.BookRentalManagement" >
         <activity
+            android:name="com.kwan.bookrentalmanagement.Add_Booklist"
+            android:exported="false" />
+        <activity
             android:name="com.kwan.bookrentalmanagement.Login"
             android:exported="true" >
             <intent-filter>
@@ -42,12 +45,10 @@
         </activity>
         <activity
             android:name="com.kwan.bookrentalmanagement.Main_Screen"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name="com.kwan.bookrentalmanagement.Book_List"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name="com.kwan.bookrentalmanagement.Order_screen"
             android:exported="true" />

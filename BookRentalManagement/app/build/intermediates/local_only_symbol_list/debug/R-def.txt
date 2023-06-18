@@ -22,6 +22,7 @@ drawable main_button_shape
 drawable main_screen_gray_sqr
 drawable rounded_border
 drawable search_bar
+drawable white_add_ic
 font quicksand_bold
 font quicksand_bold_oblique
 font quicksand_book
@@ -30,13 +31,15 @@ font quicksand_dash
 font quicksand_light
 font quicksand_light_oblique
 id BookList_SearchBar
-id button
-id button2
+id add_button
+id btn_book
+id btn_customer
+id btn_orders
+id btn_reports
+id btn_staff
+id btn_support
 id button4
-id button5
-id button6
 id button7
-id button8
 id edittext_pa
 id edittext_us
 id guideline
@@ -49,6 +52,7 @@ id tab
 id tabs_name
 id textView
 id textView3
+layout activity_add_booklist
 layout activity_login
 layout book_list
 layout fragment_order_cancel_list
@@ -56,7 +60,6 @@ layout fragment_order_complete_list
 layout fragment_order_picking_list
 layout fragment_order_waiting_list
 layout main_screen
-layout order
 layout order_screen
 mipmap ic_launcher
 mipmap ic_launcher_round
