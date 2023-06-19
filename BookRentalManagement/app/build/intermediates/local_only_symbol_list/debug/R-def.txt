@@ -35,6 +35,10 @@ font quicksand_dash
 font quicksand_light
 font quicksand_light_oblique
 id BookList_SearchBar
+id addAuthor
+id addPrice
+id addSumary
+id addTitle
 id add_book_confirm
 id add_button
 id btn_book
@@ -45,11 +49,6 @@ id btn_staff
 id btn_support
 id button4
 id button7
-id editTextTextPersonName
-id editTextTextPersonName3
-id editText_Price
-id editText_Price4
-id editText_Price5
 id edittext_pa
 id edittext_us
 id genreCard
@@ -63,7 +62,6 @@ id tab
 id tabs_name
 id textView
 id textView10
-id textView12
 id textView13
 id textView2
 id textView3

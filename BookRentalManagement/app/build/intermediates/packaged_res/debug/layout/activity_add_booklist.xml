@@ -49,10 +49,10 @@
             android:text="Author"
             android:textColor="@color/black"
             android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/addTitle"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            app:layout_constraintStart_toStartOf="@+id/addTitle"
+            app:layout_constraintTop_toBottomOf="@+id/addTitle" />
 
         <TextView
             android:id="@+id/textView8"
@@ -62,13 +62,13 @@
             android:text="Price"
             android:textColor="@color/black"
             android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
+            app:layout_constraintEnd_toEndOf="@+id/addAuthor"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+            app:layout_constraintStart_toStartOf="@+id/addAuthor"
+            app:layout_constraintTop_toBottomOf="@+id/addAuthor" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/addTitle"
             android:layout_width="335dp"
             android:layout_height="46dp"
             android:layout_marginTop="8dp"
@@ -84,7 +84,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/addAuthor"
             android:layout_width="335dp"
             android:layout_height="46dp"
             android:layout_marginTop="8dp"
@@ -100,7 +100,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <EditText
-            android:id="@+id/editText_Price"
+            android:id="@+id/addPrice"
             android:layout_width="335dp"
             android:layout_height="46dp"
             android:background="@drawable/custom_edit_text"
@@ -118,22 +118,7 @@
 
 
         <EditText
-            android:id="@+id/editText_Price4"
-            android:layout_width="335dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/custom_edit_text"
-            android:ems="10"
-            android:hint="Language"
-            android:paddingLeft="10dp"
-            android:textColorHint="#A0A0A0"
-            app:layout_constraintEnd_toEndOf="@+id/textView12"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView12"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-        <EditText
-            android:id="@+id/editText_Price5"
+            android:id="@+id/addSumary"
             android:layout_width="334dp"
             android:layout_height="267dp"
             android:layout_marginTop="8dp"
@@ -147,7 +132,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/textView13"
             app:layout_constraintTop_toBottomOf="@+id/textView13"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/genreCard"
@@ -171,7 +156,7 @@
                     android:id="@+id/tvGenre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerInParent="true"
                     android:hint="Select genre"
                     android:paddingLeft="10dp"
@@ -200,36 +185,20 @@
             android:text="Genre"
             android:textColor="@color/black"
             android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/editText_Price"
+            app:layout_constraintEnd_toEndOf="@+id/addPrice"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editText_Price"
-            app:layout_constraintTop_toBottomOf="@+id/editText_Price" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Language"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/genreCard"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/genreCard"
-            app:layout_constraintTop_toBottomOf="@+id/genreCard" />
+            app:layout_constraintStart_toStartOf="@+id/addPrice"
+            app:layout_constraintTop_toBottomOf="@+id/addPrice" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:text="Description"
             android:textColor="@color/black"
             android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/editText_Price4"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editText_Price4"
-            app:layout_constraintTop_toBottomOf="@+id/editText_Price4" />
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="556dp" />
 
         <Button
             android:id="@+id/add_book_confirm"
