@@ -2908,6 +2908,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_arrow_drop_down_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2916,6 +2917,8 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable confirm_button
+drawable custom_edit_text
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3017,6 +3020,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rounded_border
 drawable search_bar
+drawable sharp_check_24
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3100,6 +3104,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_book_confirm
 id add_button
 id alertTitle
 id aligned
@@ -3209,6 +3214,11 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editTextTextPersonName
+id editTextTextPersonName3
+id editText_Price
+id editText_Price4
+id editText_Price5
 id edit_query
 id edittext_pa
 id edittext_us
@@ -3238,6 +3248,7 @@ id forever
 id fragment_container_view_tag
 id frost
 id fullscreen_header
+id genreCard
 id ghost_view
 id ghost_view_holder
 id gone
@@ -3494,7 +3505,14 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView10
+id textView12
+id textView13
+id textView2
 id textView3
+id textView4
+id textView7
+id textView8
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3520,6 +3538,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvGenre
 id unchecked
 id uniform
 id unlabeled

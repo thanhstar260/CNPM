@@ -9,6 +9,9 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable baseline_arrow_drop_down_24
+drawable confirm_button
+drawable custom_edit_text
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon__book_
@@ -22,6 +25,7 @@ drawable main_button_shape
 drawable main_screen_gray_sqr
 drawable rounded_border
 drawable search_bar
+drawable sharp_check_24
 drawable white_add_ic
 font quicksand_bold
 font quicksand_bold_oblique
@@ -31,6 +35,7 @@ font quicksand_dash
 font quicksand_light
 font quicksand_light_oblique
 id BookList_SearchBar
+id add_book_confirm
 id add_button
 id btn_book
 id btn_customer
@@ -40,8 +45,14 @@ id btn_staff
 id btn_support
 id button4
 id button7
+id editTextTextPersonName
+id editTextTextPersonName3
+id editText_Price
+id editText_Price4
+id editText_Price5
 id edittext_pa
 id edittext_us
+id genreCard
 id guideline
 id imageView
 id login_activ
@@ -51,7 +62,15 @@ id pager
 id tab
 id tabs_name
 id textView
+id textView10
+id textView12
+id textView13
+id textView2
 id textView3
+id textView4
+id textView7
+id textView8
+id tvGenre
 layout activity_add_booklist
 layout activity_login
 layout book_list
