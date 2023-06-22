@@ -3739,7 +3739,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_order_cancel_list
 layout fragment_order_complete_list
-layout fragment_order_picking_list
+layout fragment_order_renting_list
 layout fragment_order_waiting_list
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3990,7 +3990,7 @@ string mtrl_timepicker_confirm
 string ng_nh_p_tit
 string order_cancel_fragment
 string order_complete_fragment
-string order_picking_fragment
+string order_renting_fragment
 string order_waiting_fragment
 string password_toggle_content_description
 string path_password_eye

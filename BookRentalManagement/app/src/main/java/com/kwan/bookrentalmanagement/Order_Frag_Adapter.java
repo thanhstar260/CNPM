@@ -1,7 +1,5 @@
 package com.kwan.bookrentalmanagement;
 
-import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -25,13 +23,10 @@ public class Order_Frag_Adapter extends FragmentStateAdapter {
                 return new Order_WaitingList();
 
             case 1:
-                return new Order_PickingList();
+                return new Order_RentingList();
 
             case 2:
                 return new Order_CompleteList();
-
-            case 3:
-                return new Order_CancelList();
 
             default:
                 return new Order_WaitingList();
@@ -40,7 +35,7 @@ public class Order_Frag_Adapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 4;
+        return 3;
     }
 
     @Nullable
@@ -53,7 +48,7 @@ public class Order_Frag_Adapter extends FragmentStateAdapter {
                 title = "Waiting";
                 break;
             case 1:
-                title = "Picking";
+                title = "Renting";
                 break;
             case 2:
                 title = "Complete";
