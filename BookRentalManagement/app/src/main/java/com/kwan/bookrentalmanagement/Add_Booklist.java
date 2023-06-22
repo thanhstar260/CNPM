@@ -57,7 +57,7 @@ public class Add_Booklist extends AppCompatActivity {
         setContentView(R.layout.activity_add_booklist);
 
         // Firebase initialization
-        databaseReference = FirebaseDatabase.getInstance().getReference("books");
+        databaseReference = FirebaseDatabase.getInstance().getReference("Books");
         genreReference = FirebaseDatabase.getInstance().getReference("genres");
         storageReference = FirebaseStorage.getInstance().getReference("book_covers");
 
@@ -115,13 +115,14 @@ public class Add_Booklist extends AppCompatActivity {
         bookData.put("summary", summary);
         bookData.put("author", author);
         bookData.put("price", price);
-        // Save selected genres to the book data map
-        Map<String, Boolean> genreMap = new HashMap<>();
+
+
+        ArrayList<String> genres = new ArrayList<>();
         for (Integer genreIndex : genreList) {
             String genre = genreArray[genreIndex];
-            genreMap.put(genre, true);
+            genres.add(genre);
         }
-        bookData.put("genres", genreMap);
+        bookData.put("genres", genres);
 
         // Upload book data to the database
         databaseReference.child(bookId).setValue(bookData)

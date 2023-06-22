@@ -120,11 +120,13 @@
         <EditText
             android:id="@+id/addSumary"
             android:layout_width="334dp"
-            android:layout_height="267dp"
+            android:layout_height="wrap_content"
+            android:minHeight="46dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/custom_edit_text"
             android:ems="10"
             android:hint="Description"
+            android:maxHeight="400dp"
             android:paddingLeft="10dp"
             android:textColorHint="#A0A0A0"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -132,7 +134,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/textView13"
             app:layout_constraintTop_toBottomOf="@+id/textView13"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/genreCard"
@@ -194,11 +196,14 @@
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="Description"
             android:textColor="@color/black"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="37dp"
-            tools:layout_editor_absoluteY="556dp" />
+            app:layout_constraintEnd_toEndOf="@+id/genreCard"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/genreCard"
+            app:layout_constraintTop_toBottomOf="@+id/genreCard" />
 
         <Button
             android:id="@+id/add_book_confirm"
