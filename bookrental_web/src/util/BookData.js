@@ -7,7 +7,8 @@ export const BookData = [
         "print_length": "345 pages",
         "language": "English",
         "author_name": "J.K. Rowling",
-        "price": "305"
+        "price": 15000,
+        "genre": ["Fiction","Mystery","Adventure","Fantasy"] 
     },
     {
         "id": 2,
@@ -17,7 +18,8 @@ export const BookData = [
         "print_length": "172 pages",
         "language": "English",
         "author_name": "Paulo Coelho",
-        "price": "286"
+        "price": 12000,
+        "genre": ["Science","Business","Autobiography","Thriller","Romance"] 
     },
     {
         "id": 3,
@@ -27,7 +29,8 @@ export const BookData = [
         "print_length": "320 pages",
         "language": "English",
         "author_name": "Harper Lee",
-        "price": "138"
+        "price": 22000,
+        "genre": ["Autobiography","Thriller","Romance"] 
     },
     {
         "id": 4,
@@ -37,7 +40,8 @@ export const BookData = [
         "print_length": "320 pages",
         "language": "English",
         "author_name": "Ankur Warikoo",
-        "price": "312"
+        "price": 42000,
+        "genre": ["Horror","Biography","Fantasy","Thriller","Romance"] 
     },
     {
         "id": 5,
@@ -47,7 +51,8 @@ export const BookData = [
         "print_length": "224 pages",
         "language": "English",
         "author_name": "J.K. Rowling",
-        "price": "310"
+        "price": 34000,
+        "genre": ["Horror","Biography","Fantasy"] 
     },
     {
         "id": 6,
@@ -57,7 +62,8 @@ export const BookData = [
         "print_length": "384 pages",
         "language": "English",
         "author_name": "Mark Manson",
-        "price": "272"
+        "price": 26000,
+        "genre": ["Thriller","Biography","Fantasy","Biography"] 
     },
     {
         "id": 7,
@@ -67,7 +73,8 @@ export const BookData = [
         "print_length": "208 pages",
         "language": "English",
         "author_name": "Héctor García",
-        "price": "249"
+        "price": 30000,
+        "genre": ["Psychology","Travel","Fantasy","Autobiography"] 
     },
     {
         "id": 8,
@@ -77,7 +84,8 @@ export const BookData = [
         "print_length": "256 pages",
         "language": "English",
         "author_name": "Seth Godin",
-        "price": "294"
+        "price": 30000,
+        "genre": ["Technology","Art ","Fantasy","Poetry"]
     },
     {
         "id": 9,
@@ -87,7 +95,8 @@ export const BookData = [
         "print_length": "480 pages",
         "language": "English",
         "author_name": "J.K. Rowling",
-        "price": "305"
+        "price": 34000,
+        "genre": ["Technology","Art ","Fantasy","Poetry"]
     },
     {
         "id": 10,
@@ -97,7 +106,8 @@ export const BookData = [
         "print_length": "640 pages",
         "language": "English",
         "author_name": "J.K. Rowling",
-        "price": "439"
+        "price": 42000,
+        "genre": ["Psychology","Travel","Fantasy","Autobiography"] 
     },
     {
         "id": 11,
@@ -107,7 +117,8 @@ export const BookData = [
         "print_length": "816 pages",
         "language": "English",
         "author_name": "J.K. Rowling",
-        "price": "475"
+        "price": 22000,
+        "genre": ["Thriller","Biography","Fantasy","Biography"] 
     },
     {
         "id": 12,
@@ -117,7 +128,8 @@ export const BookData = [
         "print_length": "560 pages",
         "language": "English",
         "author_name": "J.K. Rowling",
-        "price": "429"
+        "price": 15000,        
+        "genre": ["Horror","Biography","Fantasy"] 
     },
     {
         "id": 13,
@@ -127,7 +139,8 @@ export const BookData = [
         "print_length": "640 pages",
         "language": "English",
         "author_name": "J.K. Rowling",
-        "price": "431"
+        "price": 34000,
+        "genre": ["Horror","Biography","Fantasy","Thriller","Romance"] 
     },
     {
         "id": 14,
@@ -137,7 +150,8 @@ export const BookData = [
         "print_length": "248 pages",
         "language": "English",
         "author_name": "Jules Verne",
-        "price": "140"
+        "price": 26000,
+        "genre": ["Science","Business","Autobiography","Thriller","Romance"] 
     },
     {
         "id": 15,
@@ -147,7 +161,8 @@ export const BookData = [
         "print_length": "200 pages",
         "language": "English",
         "author_name": "Rudyard Kipling",
-        "price": "340"
+        "price": 26000,
+        "genre": ["Fiction","Mystery","Adventure","Fantasy"] 
     },
     {
         "id": 16,
@@ -157,7 +172,8 @@ export const BookData = [
         "print_length": "236 pages",
         "language": "English",
         "author_name": "R.L. Stevenson",
-        "price": "108"
+        "price": 34000,
+        "genre": ["Fiction","Mystery","Adventure","Fantasy"] 
     },
     {
         "id": 17,
@@ -167,6 +183,7 @@ export const BookData = [
         "print_length": "240 pages",
         "language": "English",
         "author_name": "Jules Verne",
-        "price": "202"
+        "price": 17000,
+        "genre": ["Psychology","Travel","Fantasy","Autobiography"] 
     }
 ];
