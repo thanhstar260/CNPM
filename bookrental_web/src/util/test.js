@@ -29,24 +29,41 @@ function writeOrdersData(order_id, user_id,book_id, staff_id, order_status, retu
     })
         .then(() => {
         console.log("Data inserted successfully!");
-        // Ghi nhận khóa ngoại bằng cách cập nhật dữ liệu trong bảng User
+        
         const userReference = ref(database, "User/" + user_id + "/orders/" + order_id);
+        const staffReference = ref(database, "Staff/" + staff_id + "/orders/" + order_id);
+
+        // Ghi nhận khóa ngoại bằng cách cập nhật dữ liệu trong bảng User
         set(userReference, true)
             .then(() => {
             console.log("Foreign key inserted successfully!");
-            process.exit();
+            // process.exit();
             })
             .catch((error) => {
             console.error("Error inserting foreign key:", error);
-            process.exit();
+            // process.exit();
             });
+        
+        // Ghi nhận khóa ngoại bằng cách cập nhật dữ liệu trong bảng Staff
+        set(staffReference, true)
+        .then(() => {
+        console.log("Foreign key inserted successfully!");
+        // process.exit();
+        })
+        .catch((error) => {
+        console.error("Error inserting foreign key:", error);
+        // process.exit();
+        });
         })
         .catch((error) => {
         console.error("Error inserting data:", error);
-        process.exit();
+        // process.exit();
         });
+        
 }
 
 writeOrdersData(1,1,[2,5,10],1,"done","25/6","21/6")
 writeOrdersData(2,2,[3,10,8],1,"done","25/6","21/6")
-writeOrdersData(3,2,[2,6,4,3],1,"done","25/6","21/6")
+writeOrdersData(3,2,[2,6,4,3],2,"done","25/6","21/6")
+
+

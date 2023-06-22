@@ -323,6 +323,68 @@ writeUserData(
 );
 }
 
+
+// StaffData
+function writeStaffData(staff_id, username, password, email, first_name, last_name, phone_num, address) {
+    const primaryKey = staff_id;
+    const reference = ref(database, "Staff/" + primaryKey);
+    set(reference, {
+      "staffname": username,
+      "password": password,
+      "email": email,
+      "first_name": first_name,
+      "last_name": last_name,
+      "phone_num": phone_num,
+      "address": address
+    }).then(() => {
+        console.log("Data inserted successfully!");
+        process.exit();
+
+      })
+        .catch((error) => {
+            console.error("Error inserting data:", error);
+            process.exit();
+
+        });
+}
+const StaffData = [
+    {
+        "id": 1,
+        "username": "thanhstar",
+        "password": "123123qwe",
+        "email": "thanhstar260@gmail.com",
+        "first_name": "vo",
+        "last_name": "thanh",
+        "phone_num": "03211111111",
+        "address": "HCM city"
+    },
+    {
+        "id": 2,
+        "username": "thanhvo",
+        "password": "thanhngu",
+        "email": "123@gmail.com",
+        "first_name": "thanh",
+        "last_name": "minh vo",
+        "phone_num": "0321893121",
+        "address": "ThuDuc city"
+    }
+];
+      
+for (let i = 0; i < StaffData.length; i++) {
+const staff = StaffData[i];
+writeStaffData(
+    staff.id,
+    staff.username,
+    staff.password,
+    staff.email,
+    staff.first_name,
+    staff.last_name,
+    staff.phone_num,
+    staff.address
+);
+}
+
+
 // OrderData
 //
 function writeOrdersData(order_id, user_id,book_id, staff_id, order_status, return_date, verify_date) {
