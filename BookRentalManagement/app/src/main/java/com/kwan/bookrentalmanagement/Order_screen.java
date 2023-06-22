@@ -33,13 +33,10 @@ public class Order_screen extends AppCompatActivity {
                             tab.setText("Waiting");
                             break;
                         case 1:
-                            tab.setText("Picking");
+                            tab.setText("Renting");
                             break;
                         case 2:
                             tab.setText("Complete");
-                            break;
-                        case 3:
-                            tab.setText("Cancel");
                             break;
                     }
                 }).attach();

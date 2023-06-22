@@ -74,7 +74,7 @@ layout activity_login
 layout book_list
 layout fragment_order_cancel_list
 layout fragment_order_complete_list
-layout fragment_order_picking_list
+layout fragment_order_renting_list
 layout fragment_order_waiting_list
 layout main_screen
 layout order_screen
@@ -98,7 +98,7 @@ string hello_blank_fragment
 string ng_nh_p_tit
 string order_cancel_fragment
 string order_complete_fragment
-string order_picking_fragment
+string order_renting_fragment
 string order_waiting_fragment
 string project_id
 style Theme.BookRentalManagement

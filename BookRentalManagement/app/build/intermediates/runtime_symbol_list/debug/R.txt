@@ -3738,7 +3738,7 @@ int layout design_text_input_end_icon 0x7f0c002d
 int layout design_text_input_start_icon 0x7f0c002e
 int layout fragment_order_cancel_list 0x7f0c002f
 int layout fragment_order_complete_list 0x7f0c0030
-int layout fragment_order_picking_list 0x7f0c0031
+int layout fragment_order_renting_list 0x7f0c0072
 int layout fragment_order_waiting_list 0x7f0c0032
 int layout m3_alert_dialog 0x7f0c0033
 int layout m3_alert_dialog_actions 0x7f0c0034
@@ -3989,7 +3989,7 @@ int string mtrl_timepicker_confirm 0x7f1100b2
 int string ng_nh_p_tit 0x7f1100b3
 int string order_cancel_fragment 0x7f1100b4
 int string order_complete_fragment 0x7f1100b5
-int string order_picking_fragment 0x7f1100b6
+int string order_renting_fragment 0x7f1100c5
 int string order_waiting_fragment 0x7f1100b7
 int string password_toggle_content_description 0x7f1100b8
 int string path_password_eye 0x7f1100b9
