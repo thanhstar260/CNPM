@@ -1,4 +1,46 @@
-export const BookData = [
+
+// import BookData from './BookData.js';
+const { initializeApp } = require("firebase/app");
+const { getDatabase, ref, set } = require("firebase/database");
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCIUrrQTjBAWIsGBtBYVPMmZCNIja7Lh7c",
+    authDomain: "bookrental-ae411.firebaseapp.com",
+    databaseURL: "https://bookrental-ae411-default-rtdb.firebaseio.com",
+    projectId: "bookrental-ae411",
+    storageBucket: "bookrental-ae411.appspot.com",
+    messagingSenderId: "301803774992",
+    appId: "1:301803774992:web:93f14c21339ed1efe59695",
+    measurementId: "G-JNTVCTW899"
+};
+
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+
+
+// Insert bookdata
+//
+function writeBookData(id,title,author,sumary,price,stock,genre){
+    const reference = ref(database, "Books/" + id);
+    set(reference, {
+    title: title,
+    author: author,
+    sumary: sumary,
+    price: price,
+    stock: stock,
+    genre : genre
+    })
+    .then(() => {
+        console.log("Data inserted successfully!");
+        process.exit();
+    })
+    .catch((error) => {
+        console.error("Error inserting data:", error);
+        process.exit();
+    });
+}
+
+const BookData = [
     {
         "id": 1,
         "book_name": "Harry Potter and the Philosopher's Stone",
@@ -8,7 +50,8 @@ export const BookData = [
         "language": "English",
         "author_name": "J.K. Rowling",
         "price": 15000,
-        "genre": ["Fiction","Mystery","Adventure","Fantasy"] 
+        "genre": ["Fiction","Mystery","Adventure","Fantasy"],
+        "stock" : 10
     },
     {
         "id": 2,
@@ -19,7 +62,8 @@ export const BookData = [
         "language": "English",
         "author_name": "Paulo Coelho",
         "price": 12000,
-        "genre": ["Science","Business","Autobiography","Thriller","Romance"] 
+        "genre": ["Science","Business","Autobiography","Thriller","Romance"],
+        "stock" : 10
     },
     {
         "id": 3,
@@ -30,7 +74,8 @@ export const BookData = [
         "language": "English",
         "author_name": "Harper Lee",
         "price": 22000,
-        "genre": ["Autobiography","Thriller","Romance"] 
+        "genre": ["Autobiography","Thriller","Romance"] ,
+        "stock" : 10
     },
     {
         "id": 4,
@@ -41,7 +86,8 @@ export const BookData = [
         "language": "English",
         "author_name": "Ankur Warikoo",
         "price": 42000,
-        "genre": ["Horror","Biography","Fantasy","Thriller","Romance"] 
+        "genre": ["Horror","Biography","Fantasy","Thriller","Romance"] ,
+        "stock" : 10
     },
     {
         "id": 5,
@@ -52,7 +98,8 @@ export const BookData = [
         "language": "English",
         "author_name": "J.K. Rowling",
         "price": 34000,
-        "genre": ["Horror","Biography","Fantasy"] 
+        "genre": ["Horror","Biography","Fantasy"] ,
+        "stock" : 10
     },
     {
         "id": 6,
@@ -63,7 +110,8 @@ export const BookData = [
         "language": "English",
         "author_name": "Mark Manson",
         "price": 26000,
-        "genre": ["Thriller","Biography","Fantasy","Biography"] 
+        "genre": ["Thriller","Biography","Fantasy","Biography"] ,
+        "stock" : 10
     },
     {
         "id": 7,
@@ -74,7 +122,8 @@ export const BookData = [
         "language": "English",
         "author_name": "Héctor García",
         "price": 30000,
-        "genre": ["Psychology","Travel","Fantasy","Autobiography"] 
+        "genre": ["Psychology","Travel","Fantasy","Autobiography"] ,
+        "stock" : 10
     },
     {
         "id": 8,
@@ -85,7 +134,8 @@ export const BookData = [
         "language": "English",
         "author_name": "Seth Godin",
         "price": 30000,
-        "genre": ["Technology","Art ","Fantasy","Poetry"]
+        "genre": ["Technology","Art ","Fantasy","Poetry"],
+        "stock" : 10
     },
     {
         "id": 9,
@@ -96,7 +146,8 @@ export const BookData = [
         "language": "English",
         "author_name": "J.K. Rowling",
         "price": 34000,
-        "genre": ["Technology","Art ","Fantasy","Poetry"]
+        "genre": ["Technology","Art ","Fantasy","Poetry"],
+        "stock" : 10
     },
     {
         "id": 10,
@@ -107,7 +158,8 @@ export const BookData = [
         "language": "English",
         "author_name": "J.K. Rowling",
         "price": 42000,
-        "genre": ["Psychology","Travel","Fantasy","Autobiography"] 
+        "genre": ["Psychology","Travel","Fantasy","Autobiography"] ,
+        "stock" : 10
     },
     {
         "id": 11,
@@ -118,7 +170,8 @@ export const BookData = [
         "language": "English",
         "author_name": "J.K. Rowling",
         "price": 22000,
-        "genre": ["Thriller","Biography","Fantasy","Biography"] 
+        "genre": ["Thriller","Biography","Fantasy","Biography"] ,
+        "stock" : 10
     },
     {
         "id": 12,
@@ -129,7 +182,8 @@ export const BookData = [
         "language": "English",
         "author_name": "J.K. Rowling",
         "price": 15000,        
-        "genre": ["Horror","Biography","Fantasy"] 
+        "genre": ["Horror","Biography","Fantasy"] ,
+        "stock" : 10
     },
     {
         "id": 13,
@@ -140,7 +194,8 @@ export const BookData = [
         "language": "English",
         "author_name": "J.K. Rowling",
         "price": 34000,
-        "genre": ["Horror","Biography","Fantasy","Thriller","Romance"] 
+        "genre": ["Horror","Biography","Fantasy","Thriller","Romance"] ,
+        "stock" : 10
     },
     {
         "id": 14,
@@ -151,7 +206,8 @@ export const BookData = [
         "language": "English",
         "author_name": "Jules Verne",
         "price": 26000,
-        "genre": ["Science","Business","Autobiography","Thriller","Romance"] 
+        "genre": ["Science","Business","Autobiography","Thriller","Romance"] ,
+        "stock" : 10
     },
     {
         "id": 15,
@@ -162,7 +218,8 @@ export const BookData = [
         "language": "English",
         "author_name": "Rudyard Kipling",
         "price": 26000,
-        "genre": ["Fiction","Mystery","Adventure","Fantasy"] 
+        "genre": ["Fiction","Mystery","Adventure","Fantasy"] ,
+        "stock" : 10
     },
     {
         "id": 16,
@@ -173,7 +230,8 @@ export const BookData = [
         "language": "English",
         "author_name": "R.L. Stevenson",
         "price": 34000,
-        "genre": ["Fiction","Mystery","Adventure","Fantasy"] 
+        "genre": ["Fiction","Mystery","Adventure","Fantasy"] ,
+        "stock" : 10
     },
     {
         "id": 17,
@@ -184,6 +242,119 @@ export const BookData = [
         "language": "English",
         "author_name": "Jules Verne",
         "price": 17000,
-        "genre": ["Psychology","Travel","Fantasy","Autobiography"] 
+        "genre": ["Psychology","Travel","Fantasy","Autobiography"] ,
+        "stock" : 10
     }
 ];
+
+for (let i = 0; i < BookData.length; i++) {
+  const book = BookData[i];
+  writeBookData(
+    book.id,
+    book.book_name,
+    book.author_name,
+    book.book_description,
+    book.price,
+    book.stock,
+    book.genre
+  );
+}
+
+// Userdata
+//
+
+function writeUserData(user_id, username, password, email, first_name, last_name, phone_num, address) {
+    const primaryKey = user_id;
+    const reference = ref(database, "User/" + primaryKey);
+    set(reference, {
+      "username": username,
+      "password": password,
+      "email": email,
+      "first_name": first_name,
+      "last_name": last_name,
+      "phone_num": phone_num,
+      "address": address
+    }).then(() => {
+        console.log("Data inserted successfully!");
+        process.exit();
+
+      })
+        .catch((error) => {
+            console.error("Error inserting data:", error);
+            process.exit();
+
+        });
+}
+
+const UserData = [
+{
+    "id": 1,
+    "username": "thanhstar",
+    "password": "123123qwe",
+    "email": "thanhstar260@gmail.com",
+    "first_name": "vo",
+    "last_name": "thanh",
+    "phone_num": "03211111111",
+    "address": "HCM city"
+},
+{
+    "id": 2,
+    "username": "thanhvo",
+    "password": "thanhngu",
+    "email": "123@gmail.com",
+    "first_name": "thanh",
+    "last_name": "minh vo",
+    "phone_num": "0321893121",
+    "address": "ThuDuc city"
+}
+];
+  
+for (let i = 0; i < UserData.length; i++) {
+const user = UserData[i];
+writeUserData(
+    user.id,
+    user.username,
+    user.password,
+    user.email,
+    user.first_name,
+    user.last_name,
+    user.phone_num,
+    user.address
+);
+}
+
+// OrderData
+//
+function writeOrdersData(order_id, user_id,book_id, staff_id, order_status, return_date, verify_date) {
+    const reference = ref(database, "Order/" + order_id);
+    set(reference, {
+        user_id: user_id,
+        book_id: book_id,
+        staff_id: staff_id,
+        order_status: order_status,
+        return_date: return_date,
+        verify_date: verify_date
+    })
+        .then(() => {
+        console.log("Data inserted successfully!");
+        // Ghi nhận khóa ngoại bằng cách cập nhật dữ liệu trong bảng User
+        const userReference = ref(database, "User/" + user_id + "/orders/" + order_id);
+        set(userReference, true)
+            .then(() => {
+            console.log("Foreign key inserted successfully!");
+            process.exit();
+            })
+            .catch((error) => {
+            console.error("Error inserting foreign key:", error);
+            process.exit();
+            });
+        })
+        .catch((error) => {
+        console.error("Error inserting data:", error);
+        process.exit();
+        });
+}
+
+writeOrdersData(1,1,[2,5,10],1,"waiting","25/6","21/6")
+writeOrdersData(2,2,[3,10,8],1,"done","25/6","21/6")
+writeOrdersData(3,2,[2,6,4,3],1,"done","25/6","21/6")
