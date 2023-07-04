@@ -20,6 +20,7 @@ const CartItemsContainer = () => {
                         ))}
 
                         <h2>Total = {totalAmount} vnd</h2>
+                        <button className="button">Rent</button>
 
                     </React.Fragment>
                 )}

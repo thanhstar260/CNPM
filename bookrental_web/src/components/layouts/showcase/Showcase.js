@@ -9,8 +9,8 @@ const Showcase = () => {
             <Navbar darkTheme={false}/>
             <div className="overlay"></div>
             <div className="showcase-content">
-                <h1>Quality Books Are Available</h1>
-                <p>Rent various<span className="text-primary">book </span> at cheap price</p>
+                <h1>Best Books Are Available</h1>
+                <p>Rent various <span className="text-primary">book </span> at cheap price</p>
                 <SearchInputForm darkTheme={true}/>
             </div>
 

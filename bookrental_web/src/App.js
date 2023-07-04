@@ -10,9 +10,11 @@ import BookDetails from "./pages/bookdetailspage/BookDetails";
 import Signup from "./pages/signuppage/Signup";
 import Login from "./pages/loginpage/Login";
 import SearchPage from "./pages/searchpage/SearchPage";
+import NotificationPage from "./pages/notificationspages/NotificationPage";
 
 export const UserContext = createContext({});
 export const CartContext = createContext({});
+export const NotiContext = createContext({});
 
 const App = () => {
     const auth = getAuth(app);
@@ -52,6 +54,7 @@ const App = () => {
                     <Route path="/book-details/:id" element={<BookDetails />} />
                     <Route path="/signup" element={<Signup />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/notification" element={<NotificationPage />} />
                 </Routes>
             </CartContext.Provider>
         </UserContext.Provider>
