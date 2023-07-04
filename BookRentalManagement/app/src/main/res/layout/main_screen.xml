@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_book"
         android:layout_width="118dp"
         android:layout_height="117dp"
         android:layout_marginTop="8dp"
@@ -25,11 +25,12 @@
         android:text="@string/Main_Screen_Btn_Sach"
         android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_customer"
         android:layout_width="118dp"
         android:layout_height="117dp"
         android:layout_marginTop="8dp"
@@ -43,7 +44,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btn_reports"
         android:layout_width="118dp"
         android:layout_height="117dp"
         android:layout_marginBottom="12dp"
@@ -54,11 +55,11 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/btn_customer"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_staff"
         android:layout_width="118dp"
         android:layout_height="117dp"
         android:layout_marginTop="8dp"
@@ -68,11 +69,11 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/btn_customer"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btn_orders"
         android:layout_width="118dp"
         android:layout_height="117dp"
         android:layout_marginBottom="12dp"
@@ -85,7 +86,7 @@
         app:layout_constraintStart_toEndOf="@+id/button7" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btn_support"
         android:layout_width="118dp"
         android:layout_height="117dp"
         android:layout_marginBottom="12dp"
