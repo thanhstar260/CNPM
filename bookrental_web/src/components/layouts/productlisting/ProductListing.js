@@ -7,7 +7,7 @@ const ProductListing = () => {
     return(
         <div className="product-listing-container">
             <div className="sub-product-container">
-                <a href="#" className="product-link">Sách mới</a>
+                <a href="#" className="product-link">New Arrival</a>
                 <div className="listing-container">
                     {BookData.slice(0,5).map((book) => (
                         <ProductListingCard bookData={book} />
@@ -16,7 +16,7 @@ const ProductListing = () => {
             </div>
 
             <div className="sub-product-container">
-                <a href="#" className="product-link">Sách hot</a>
+                <a href="#" className="product-link">Hot</a>
                 <div className="listing-container">
                     {BookData.slice(0,5).map((book) => (
                         <ProductListingCard bookData={book} />
@@ -25,7 +25,7 @@ const ProductListing = () => {
             </div>
 
             <div className="sub-product-container">
-                <a href="#" className="product-link">Sách phổ biến</a>
+                <a href="#" className="product-link">Popular</a>
                 <div className="listing-container">
                     {BookData.slice(0,5).map((book) => (
                         <ProductListingCard bookData={book} />

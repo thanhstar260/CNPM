@@ -13,7 +13,7 @@ const AuthForm = ({ buttonName }) => {
         event.preventDefault();
         const auth = getAuth(app);
 
-        if(buttonName === 'Đăng nhập') {
+        if(buttonName === 'Login') {
             signInWithEmailAndPassword(auth, email, password)
             .then(() => {
                 navigate('/')
@@ -37,7 +37,7 @@ const AuthForm = ({ buttonName }) => {
 
     return (
         <form onSubmit={handleSubmit}>
-           {buttonName === "Đăng kí" && (
+           {buttonName === "Sign up" && (
                 <div className='form-group'>
                     <label>Username</label>
                     <input 

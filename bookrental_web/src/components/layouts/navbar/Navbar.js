@@ -23,18 +23,18 @@ const Navbar = ({darkTheme, darkText}) => {
     
     const showLoginAndSignUp = (
         <nav className="nav-links-container">
-            <Link to="/" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Trang chủ </Link>
-            <Link to="/books" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Sách</Link>
-            <Link to="/login" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Đăng nhập</Link>
-            <Link to="/signup" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Đăng kí</Link>
+            <Link to="/" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Home</Link>
+            <Link to="/books" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Books</Link>
+            <Link to="/login" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Login</Link>
+            <Link to="/signup" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Sign Up</Link>
         </nav>
     )
 
     const showLogoutAndCart = (
         <nav className="nav-links-container">
-            <Link to="/" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Trang chủ </Link>
-            <Link to="/books" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Sách</Link>
-            <a onClick={handleLogout} to="/logout" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Đăng xuất</a>
+            <Link to="/" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Home </Link>
+            <Link to="/books" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Books</Link>
+            <a onClick={handleLogout} to="/logout" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Logout</a>
             <Link to="/cart" className="cart-link"><Cart /></Link>
         </nav>
     )

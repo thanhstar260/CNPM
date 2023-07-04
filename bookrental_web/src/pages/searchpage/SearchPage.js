@@ -24,7 +24,7 @@ const SearchPage = () => {
             
             <div className='search-result-container'>
                 <div className="container">
-                    <h2>Kết quả tìm kiếm</h2>
+                    <h2>Search Results</h2>
 
                     {searchResult.map((result) => (
                         <SearchResultCard key={result.id} bookData={result} />

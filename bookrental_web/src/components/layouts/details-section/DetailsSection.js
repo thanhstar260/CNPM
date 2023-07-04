@@ -42,12 +42,13 @@ const DetailsSection = () => {
                         <h2>{bookData.book_name}</h2>
                         <p className="text-primary">{bookData.author_name}</p>
                         <p className="book-description">{bookData.book_description}</p>
-                        <p><b>Ngôn ngữ</b>: {bookData.language}</p>
-                        <p><b>Số trang</b> : {bookData.print_length}</p>
+                        <p><b>Language</b>: {bookData.language}</p>
+                        <p><b>Pages</b> : {bookData.print_length}</p>
+                        <p><b>Stock</b> : {bookData.stock}</p>
 
                         <h3>{bookData.price} vnd</h3>
 
-                        <a onClick={handleAddToCart} className="button-primary">Thêm vào giỏ hàng</a>
+                        <a onClick={handleAddToCart} className="button-primary">Add to cart</a>
                     </div>
                 </div>
             </div>

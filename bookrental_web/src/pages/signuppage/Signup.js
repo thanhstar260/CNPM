@@ -15,10 +15,10 @@ const Signup = () => {
                 <div className="signup-content-container">
                     <div className="container">
                         <div className="content-wrapper">
-                            <h2>Đăng kí</h2>
-                            <p>Tạo tài khoản mới với email và mật khẩu</p>
+                            <h2>Sign up</h2>
+                            <p>Create new account with email and password</p>
 
-                            <AuthForm buttonName="Đăng kí" />
+                            <AuthForm buttonName="Sign up" />
                         </div>
                     </div>
                 </div>

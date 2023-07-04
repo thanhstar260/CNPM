@@ -15,7 +15,7 @@ const ProductListingCard = ({bookData}) => {
                 
             </div>
             <div className="card-btn-container">
-                <Link to={`/book-details/${bookData.id}`} className="product-listing-button">Xem chi tiết</Link>
+                <Link to={`/book-details/${bookData.id}`} className="product-listing-button">Product Details</Link>
             </div>
         </div>
     )

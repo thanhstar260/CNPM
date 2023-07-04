@@ -5,10 +5,10 @@ const Footer = () => {
     return (
         <section className="footer-container" >
             <div class="footer-content">
-                <h3>THÔNG TIN LIÊN HỆ</h3>
-                <p>Địa chỉ: P. Linh Trung, Thủ Đức, TP.HCM</p>
-                <p>Mở cửa: 7h30 a.m</p>
-                <p>Đóng cửa: 9h p.m</p>
+                <h3>CONTACT US</h3>
+                <p>Address: P. Linh Trung, Thu Duc, HCMC</p>
+                <p>Open: 7h30 a.m</p>
+                <p>Close: 9h p.m</p>
                 <p>Hotline: 0328518596</p>
                 <p>Email: info@bookrental.com</p>
             </div>
@@ -22,11 +22,10 @@ const Footer = () => {
                 </a>
             </div>
             <div class="footer-content">
-                <h3>HƯỚNG DẪN</h3>
-                <div class="hd"><a href="">Điều khoản</a></div>
-                <div class="hd"><a href="">Hướng dẫn thuê sách</a></div>
-                <div class="hd"><a href="">Chính sách đổi trả</a></div>
-                <div class="hd"><a href="">Bảo mật thông tin</a></div>
+                <h3>SERVICES</h3>
+                <div class="hd"><a href="">Terms of service</a></div>
+                <div class="hd"><a href="">Return </a></div>
+                <div class="hd"><a href="">Private Policy</a></div>
             </div>
         </section>
     )

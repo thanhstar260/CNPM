@@ -23,11 +23,11 @@ const SearchInputForm = ({ darkTheme }) => {
             <input 
                 type="text" 
                 className='search-input' 
-                placeholder="Nhập tên sách, tên tác giả, ..." 
+                placeholder="Search books here" 
                 value={searchField}
                 onChange={handleChange}
             />
-            <button onClick={redirectToSearch} className="search-button">Tìm kiếm</button>
+            <button onClick={redirectToSearch} className="search-button">Search</button>
         </div>
     )
 }

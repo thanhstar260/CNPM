@@ -10,16 +10,16 @@ const CartItemsContainer = () => {
         <section className="cart-item-container">
             <div className="container">
                 {totalAmount === 0 ? (
-                    <h2>Giỏ hàng trống</h2>
+                    <h2>Empty Cart</h2>
                 ):(
                     <React.Fragment>
-                        <h2>Giỏ hàng</h2>
+                        <h2>Cart</h2>
 
                         {cartItems.map((item) => (
                             <CartItemCard key={item.id} bookData={item} />
                         ))}
 
-                        <h2>Tổng cộng = {totalAmount} vnd</h2>
+                        <h2>Total = {totalAmount} vnd</h2>
 
                     </React.Fragment>
                 )}
