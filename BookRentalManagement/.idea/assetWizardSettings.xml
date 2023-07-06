@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../../android_studio_sdk/icons/material/materialiconssharp/check/sharp_check_24.xml" />
+                                      <entry key="url" value="file:/$PROJECT_DIR$/../../android_studio_sdk/icons/material/materialicons/add/baseline_add_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,7 +28,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="sharp_check_24" />
+                            <entry key="outputName" value="baseline_add_24" />
                             <entry key="sourceFile" value="D:\CNPM\BookRentalManagement" />
                           </map>
                         </option>

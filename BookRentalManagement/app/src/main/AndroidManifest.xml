@@ -34,6 +34,7 @@
         <activity
             android:name=".Order_screen"
             android:exported="true" />
+        <activity android:name="com.kwan.bookrentalmanagement.Book_Detail_Activity" />
     </application>
 
 </manifest>

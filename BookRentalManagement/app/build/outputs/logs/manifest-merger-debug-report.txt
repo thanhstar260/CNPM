@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-40:12
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\d488f2c4c46007d73eddcd94b832f4ea\transformed\material-1.9.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\kwan\.gradle\caches\transforms-3\3229d8dbfb0c633e276edfd3e6294908\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\kwan\.gradle\caches\transforms-3\bc14915fedc1798a01b1f6b5d446b360\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -11,6 +11,7 @@ MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\kwan\.gradle\caches\tr
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:15:1-37:12
 MERGED from [com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\50ea824b80ddbc316298cc9344a7166c\transformed\firebase-storage-ktx-20.2.1\AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:15:1-38:12
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\12859bb4ecb38a1270e5105b23d6693a\transformed\glide-4.15.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\kwan\.gradle\caches\transforms-3\d8528c0e11c1c58924ed28aea4e75816\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\f56d8339397b00ee40c8d95bcb4828ec\transformed\firebase-common-ktx-20.3.3\AndroidManifest.xml:2:1-20:12
@@ -58,6 +59,8 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\kwan\.gradle\c
 MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\dd78907b48c0d0bc4118fbfd5a25959d\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\4e8c60a4fc21ab43b90958c81694363f\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\kwan\.gradle\caches\transforms-3\a965dd6a152e7911c5c958a51dedbb63\transformed\firebase-components-17.1.0\AndroidManifest.xml:15:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\d7a109d86fb3de5c7a61c200e3006859\transformed\gifdecoder-4.15.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\kwan\.gradle\caches\transforms-3\a2efe2b1471aa1e507f7414e1add5959\transformed\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\a4abacc364e01a9a795dff853bb605cd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\6742be9b3b7e4db23a7e28cecca2183a\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\ecac625faabffbb0784c9a9c31930ef0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
@@ -69,22 +72,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\kwan\.gradle\cac
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\98f72089a9c20152c64189bbd9e9696c\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\07d5b0f433294fb8566b4dccc1b96a3d\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\kwan\.gradle\caches\transforms-3\eb81fb53378604cc0225f33f394c7ec0\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-40:12
 	package
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-40:12
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-40:12
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-40:12
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:11-69
@@ -93,7 +96,7 @@ ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:5:5-80
 	android:name
 		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:5:22-77
 application
-ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:7:5-37:19
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:7:5-38:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\d488f2c4c46007d73eddcd94b832f4ea\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\d488f2c4c46007d73eddcd94b832f4ea\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\kwan\.gradle\caches\transforms-3\3229d8dbfb0c633e276edfd3e6294908\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -104,6 +107,8 @@ MERGED from [com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\kwan\.gra
 MERGED from [com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\50ea824b80ddbc316298cc9344a7166c\transformed\firebase-storage-ktx-20.2.1\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:28:5-36:19
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\12859bb4ecb38a1270e5105b23d6693a\transformed\glide-4.15.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\12859bb4ecb38a1270e5105b23d6693a\transformed\glide-4.15.1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\f56d8339397b00ee40c8d95bcb4828ec\transformed\firebase-common-ktx-20.3.3\AndroidManifest.xml:10:5-18:19
@@ -144,6 +149,8 @@ MERGED from [androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3
 MERGED from [androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\d7a109d86fb3de5c7a61c200e3006859\transformed\gifdecoder-4.15.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\d7a109d86fb3de5c7a61c200e3006859\transformed\gifdecoder-4.15.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\a4abacc364e01a9a795dff853bb605cd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\a4abacc364e01a9a795dff853bb605cd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\ecac625faabffbb0784c9a9c31930ef0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
@@ -206,6 +213,10 @@ ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:34:9-36
 		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:36:13-36
 	android:name
 		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:35:13-41
+activity#com.kwan.bookrentalmanagement.Book_Detail_Activity
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:37:9-87
+	android:name
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:37:19-84
 uses-sdk
 INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
@@ -224,6 +235,8 @@ MERGED from [com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\kwan\.gra
 MERGED from [com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\50ea824b80ddbc316298cc9344a7166c\transformed\firebase-storage-ktx-20.2.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\12859bb4ecb38a1270e5105b23d6693a\transformed\glide-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\12859bb4ecb38a1270e5105b23d6693a\transformed\glide-4.15.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\kwan\.gradle\caches\transforms-3\d8528c0e11c1c58924ed28aea4e75816\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
@@ -318,6 +331,10 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\kwan\.gradle\caches\tran
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\4e8c60a4fc21ab43b90958c81694363f\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\kwan\.gradle\caches\transforms-3\a965dd6a152e7911c5c958a51dedbb63\transformed\firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\kwan\.gradle\caches\transforms-3\a965dd6a152e7911c5c958a51dedbb63\transformed\firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\d7a109d86fb3de5c7a61c200e3006859\transformed\gifdecoder-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\d7a109d86fb3de5c7a61c200e3006859\transformed\gifdecoder-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\kwan\.gradle\caches\transforms-3\a2efe2b1471aa1e507f7414e1add5959\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\kwan\.gradle\caches\transforms-3\a2efe2b1471aa1e507f7414e1add5959\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\a4abacc364e01a9a795dff853bb605cd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\a4abacc364e01a9a795dff853bb605cd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\6742be9b3b7e4db23a7e28cecca2183a\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41

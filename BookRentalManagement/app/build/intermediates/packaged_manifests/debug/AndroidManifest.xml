@@ -57,6 +57,7 @@
         <activity
             android:name="com.kwan.bookrentalmanagement.Order_screen"
             android:exported="true" />
+        <activity android:name="com.kwan.bookrentalmanagement.Book_Detail_Activity" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
