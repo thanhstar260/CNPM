@@ -2,34 +2,48 @@ import React from "react";
 import "./productlisting.style.css";
 import ProductListingCard from "../../cards/product-listing-card/ProductListingCard";
 import { BookData } from "../../../util/BookData";
+import { ReactComponent as SeeAll } from "../../../assets/images/right.svg";
+import ProductSlider from "../productslide/ProductSlide";
 
 const ProductListing = () => {
     return(
         <div className="product-listing-container">
             <div className="sub-product-container">
-                <a href="#" className="product-link">New Arrival</a>
+                <div className="book-cate">
+                    <h2>New Arrival</h2>
+                    <div className="see-all">
+                        <a href="#" className="product-link">See all</a>
+                        <SeeAll />
+                    </div>
+                </div>
                 <div className="listing-container">
-                    {BookData.slice(0,5).map((book) => (
-                        <ProductListingCard bookData={book} />
-                    ))}
+                    <ProductSlider />
                 </div>
             </div>
 
             <div className="sub-product-container">
-                <a href="#" className="product-link">Hot</a>
+            <div className="book-cate">
+                    <h2>Hot</h2>
+                    <div className="see-all">
+                        <a href="#" className="product-link">See all</a>
+                        <SeeAll />
+                    </div>
+                </div>
                 <div className="listing-container">
-                    {BookData.slice(0,5).map((book) => (
-                        <ProductListingCard bookData={book} />
-                    ))}
+                    <ProductSlider />
                 </div>
             </div>
 
             <div className="sub-product-container">
-                <a href="#" className="product-link">Popular</a>
+            <div className="book-cate">
+                    <h2>Popular</h2>
+                    <div className="see-all">
+                        <a href="#" className="product-link">See all</a>
+                        <SeeAll />
+                    </div>
+                </div>
                 <div className="listing-container">
-                    {BookData.slice(0,5).map((book) => (
-                        <ProductListingCard bookData={book} />
-                    ))}
+                    <ProductSlider />
                 </div>
             </div>
             
