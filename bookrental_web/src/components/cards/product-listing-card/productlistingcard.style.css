@@ -50,7 +50,8 @@
     padding: 1rem 0;
     text-align: center;
     color: white;
-    font-family: Chivo Mono;
+    font-family: Sora;
+    font-size: 14px;
     text-decoration: none;
     transition: 0.2s ease-in;
 }

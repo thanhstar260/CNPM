@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import './productlistingall.styles.css';
 import ProductListingCard from '../../cards/product-listing-card/ProductListingCard';
 import { BookData } from '../../../util/BookData';
+import { Button } from '@chakra-ui/react';
+import { color } from 'framer-motion';
 
 const ProductListingAll = () => {
     const [currentPage, setCurrentPage] = useState(1)
@@ -33,15 +35,18 @@ const ProductListingAll = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='page-turn'>
 				{Array.from({ length: totalPages }, (_, i) => i + 1).map(
 					pageNumber => (
-						<button
+						<Button
 							key={pageNumber}
 							onClick={() => handlePageChange(pageNumber)}
+                            style={
+                                currentPage === pageNumber ? {background: 'var(--primary-color-bright)', color: '#fff'}:{background: '#eee', color: '#000'}
+                            }
 						>
 							{pageNumber}
-						</button>
+						</Button>
 					)
 				)}
 			</div>

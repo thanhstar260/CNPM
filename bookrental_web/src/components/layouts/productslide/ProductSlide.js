@@ -14,7 +14,7 @@ class ProductSlider extends Component {
       speed: 500,
       slidesToShow: 5,
       slidesToScroll: 1,
-      initialSlide: 5,
+      initialSlide: 0,
       responsive: [
         {
           breakpoint: 1024,

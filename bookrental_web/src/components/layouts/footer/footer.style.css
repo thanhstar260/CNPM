@@ -14,18 +14,21 @@
 }
 
 .footer-content h3{
-    font-family: Chivo Mono;
+    font-family: Sora;
     padding-bottom: 1rem;
 }
 
 .footer-content p{
-    font-family: Chivo Mono;
+    font-family: Sora;
     padding-bottom: 2px;
+    font-size: 16px;
 }
 
 .footer-content a{
     color: #fff;
     padding-bottom: 2px;
+    font-size: 16px;
+    font-family: Sora;
 }
 
 .footer-content a:hover{

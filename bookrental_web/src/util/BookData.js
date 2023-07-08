@@ -274,7 +274,7 @@ export const BookData = [
         "book_url": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/almiray.jpg",
         "print_length": "375 pages",
         "language": "English",
-        "author_name": "",
+        "author_name": "ThnahStar",
         "price": 15000,
         "genre": [
             "Horror",
