@@ -6,4 +6,33 @@
         <item name="android:font"> @font/quicksand_book</item>
         <item name="android:lineHeight">40sp</item>
     </style>
+
+    <style name="Feature_title">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="bookItem_book_title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="bookItem_book_info">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <style name="bookDetail_title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="bookDetail_info">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>

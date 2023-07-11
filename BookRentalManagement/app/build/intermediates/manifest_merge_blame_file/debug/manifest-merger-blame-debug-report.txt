@@ -13,98 +13,101 @@
 11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 11-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:5:5-80
 11-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:5:22-77
-12
-13    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-14    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79
-15-->[com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:22-76
-16    <uses-permission android:name="android.permission.INTERNET" />
-16-->[com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:5-67
-16-->[com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:22-64
-17    <uses-permission android:name="android.permission.WAKE_LOCK" />
-17-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:24:5-68
-17-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:24:22-65
-18    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-18-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:25:5-79
-18-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:25:22-76
-19    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-19-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:26:5-110
-19-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:26:22-107
-20
-21    <permission
-21-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-22        android:name="com.kwan.bookrentalmanagement.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-22-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-23        android:protectionLevel="signature" />
-23-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-24
-25    <uses-permission android:name="com.kwan.bookrentalmanagement.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-25-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-25-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-26
-27    <application
-27-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:7:5-37:19
-28        android:allowBackup="true"
-28-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:8:9-35
-29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-30        android:dataExtractionRules="@xml/data_extraction_rules"
-30-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:9:9-65
-31        android:debuggable="true"
-32        android:extractNativeLibs="false"
-33        android:fullBackupContent="@xml/backup_rules"
-33-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:10:9-54
-34        android:icon="@mipmap/ic_launcher"
-34-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:11:9-43
-35        android:label="@string/app_name"
-35-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:12:9-41
-36        android:supportsRtl="true"
-36-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:13:9-35
-37        android:testOnly="true"
-38        android:theme="@style/Theme.BookRentalManagement" >
-38-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:14:9-58
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:7:5-67
+12-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:8:5-79
+13-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="android.permission.WAKE_LOCK" />
+14-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:24:5-68
+14-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:24:22-65
+15    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+15-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:25:5-79
+15-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:25:22-76
+16    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+16-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:26:5-110
+16-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:26:22-107
+17
+18    <permission
+18-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+19        android:name="com.kwan.bookrentalmanagement.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+19-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+20        android:protectionLevel="signature" />
+20-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+21
+22    <uses-permission android:name="com.kwan.bookrentalmanagement.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+22-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+22-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+23
+24    <application
+24-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:10:5-43:19
+25        android:allowBackup="true"
+25-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:11:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+27        android:dataExtractionRules="@xml/data_extraction_rules"
+27-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:12:9-65
+28        android:debuggable="true"
+29        android:extractNativeLibs="false"
+30        android:fullBackupContent="@xml/backup_rules"
+30-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:13:9-54
+31        android:icon="@mipmap/ic_launcher"
+31-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:14:9-43
+32        android:label="@string/app_name"
+32-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:15:9-41
+33        android:supportsRtl="true"
+33-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:16:9-35
+34        android:testOnly="true"
+35        android:theme="@style/Theme.BookRentalManagement" >
+35-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:17:9-58
+36        <activity
+36-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:19:9-21:39
+37            android:name="com.kwan.bookrentalmanagement.Add_Booklist"
+37-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:20:13-41
+38            android:exported="true" />
+38-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:21:13-36
 39        <activity
-39-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:16:9-18:39
-40            android:name="com.kwan.bookrentalmanagement.Add_Booklist"
-40-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:17:13-41
-41            android:exported="true" />
-41-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:18:13-36
-42        <activity
-42-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:19:9-27:20
-43            android:name="com.kwan.bookrentalmanagement.Login"
-43-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:20:13-34
-44            android:exported="true" >
-44-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:21:13-36
-45            <intent-filter>
-45-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:22:13-26:29
-46                <action android:name="android.intent.action.MAIN" />
-46-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:23:17-69
-46-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:23:25-66
-47
-48                <category android:name="android.intent.category.LAUNCHER" />
-48-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:25:17-77
-48-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:25:27-74
-49            </intent-filter>
-50        </activity>
+39-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:22:9-30:20
+40            android:name="com.kwan.bookrentalmanagement.Login"
+40-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:23:13-34
+41            android:exported="true" >
+41-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:24:13-36
+42            <intent-filter>
+42-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:25:13-29:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:26:17-69
+43-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:26:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:28:17-77
+45-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:28:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity
+48-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:31:9-33:48
+49            android:name="com.kwan.bookrentalmanagement.Main_Screen"
+49-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:32:13-40
+50            android:exported="true" />
+50-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:33:13-36
 51        <activity
-51-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:28:9-30:48
-52            android:name="com.kwan.bookrentalmanagement.Main_Screen"
-52-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:29:13-40
+51-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:34:9-36:48
+52            android:name="com.kwan.bookrentalmanagement.Book_List"
+52-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:35:13-38
 53            android:exported="true" />
-53-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:30:13-36
+53-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:36:13-36
 54        <activity
-54-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:31:9-33:48
-55            android:name="com.kwan.bookrentalmanagement.Book_List"
-55-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:32:13-38
+54-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:37:9-39:39
+55            android:name="com.kwan.bookrentalmanagement.Order_screen"
+55-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:38:13-41
 56            android:exported="true" />
-56-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:33:13-36
+56-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:39:13-36
 57        <activity
-57-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:34:9-36:39
-58            android:name="com.kwan.bookrentalmanagement.Order_screen"
-58-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:35:13-41
+57-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:41:9-42:48
+58            android:name="com.kwan.bookrentalmanagement.Book_Detail_Activity"
+58-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:41:19-84
 59            android:exported="true" />
-59-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:36:13-36
+59-->D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:42:13-36
 60
 61        <service
 61-->[com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:28:9-34:19

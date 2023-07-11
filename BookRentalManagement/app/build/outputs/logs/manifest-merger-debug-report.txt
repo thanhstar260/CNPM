@@ -1,16 +1,19 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\d488f2c4c46007d73eddcd94b832f4ea\transformed\material-1.9.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\kwan\.gradle\caches\transforms-3\3229d8dbfb0c633e276edfd3e6294908\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\kwan\.gradle\caches\transforms-3\bc14915fedc1798a01b1f6b5d446b360\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\kwan\.gradle\caches\transforms-3\4a8fc8d4cffe1deef03672f2112cd6a4\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.firebaseui:firebase-ui-database:8.0.2] C:\Users\kwan\.gradle\caches\transforms-3\c28741fd6e408a339dabf60fd138d986\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.firebaseui:firebase-ui-storage:8.0.2] C:\Users\kwan\.gradle\caches\transforms-3\6e488d456ed8b23c49ecbf036ac92807\transformed\firebase-ui-storage-8.0.2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:15:1-37:12
 MERGED from [com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\50ea824b80ddbc316298cc9344a7166c\transformed\firebase-storage-ktx-20.2.1\AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:15:1-38:12
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\12859bb4ecb38a1270e5105b23d6693a\transformed\glide-4.15.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\kwan\.gradle\caches\transforms-3\d8528c0e11c1c58924ed28aea4e75816\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\f56d8339397b00ee40c8d95bcb4828ec\transformed\firebase-common-ktx-20.3.3\AndroidManifest.xml:2:1-20:12
@@ -19,12 +22,16 @@ MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\kwan\.gr
 MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\kwan\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:2:1-23:12
 MERGED from [com.google.firebase:firebase-common:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\69103d0ef05ac928504892254d5a956f\transformed\firebase-common-20.3.3\AndroidManifest.xml:15:1-39:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\df0de34a50359f5b25390e4067994d9d\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\68f44c29e46b634fbc8116523b883589\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.1] C:\Users\kwan\.gradle\caches\transforms-3\2b031a8e0d9eef3de1d46a2107367050\transformed\firebase-appcheck-interop-17.0.1\AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\kwan\.gradle\caches\transforms-3\bec261f32d79fd94f8bcdc9cd0c9e949\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\kwan\.gradle\caches\transforms-3\4a7f83fd254fa05cc8acd7d644c57a96\transformed\play-services-base-18.1.0\AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:17:1-46:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\f16b91ddbba00f8e8e9918bac97a8fff\transformed\play-services-measurement-sdk-21.3.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.paging:paging-rxjava3:3.0.0] C:\Users\kwan\.gradle\caches\transforms-3\9116043274f378ad2a75af6612fa5cae\transformed\paging-rxjava3-3.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.firebaseui:firebase-ui-common:8.0.2] C:\Users\kwan\.gradle\caches\transforms-3\5df7d79cf71382704b78646c7b0b89ac\transformed\firebase-ui-common-8.0.2\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\3fde1447ea9f27a7643921b5a2843c8c\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\a4b8143b02951d47e2db758cb0b9cd14\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6e73672de756379f458e1069f3907e06\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:17:1-32:12
 MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\kwan\.gradle\caches\transforms-3\cfda4afc1e6986bc506c9e8538407141\transformed\play-services-stats-17.0.2\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\b7f653f64008b075692937e78663edb4\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -47,10 +54,14 @@ MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\kwan\.
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\8cbf4bd2f84b4cebaf2ebd915b141d2e\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\kwan\.gradle\caches\transforms-3\3acc217bb9b3b502c69cf79759ac3988\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\kwan\.gradle\caches\transforms-3\255e705a61bb15f4c1c5e789d41737af\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\kwan\.gradle\caches\transforms-3\cceab27b0734f08a64844cb2c9785601\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\749c0200844607dfa543129b83a7b943\transformed\core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\ff6cc6d08b901ee3b261216fef5eda12\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\kwan\.gradle\caches\transforms-3\575127e79349351954d781caf9a1fe6c\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\3be5069522b067b49deff404856dafa8\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\kwan\.gradle\caches\transforms-3\5566a7dc31d5800061d3e6923fb91541\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\5dc65e3727186111a694992f8afbd292\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\8167d9cdef8698e06292fb743d46e17f\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\b50415115ee666ba2f468d47b82184f2\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\f8f83bd12de402fe80987a4a8708a3d1\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
@@ -58,6 +69,8 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\kwan\.gradle\c
 MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\kwan\.gradle\caches\transforms-3\dd78907b48c0d0bc4118fbfd5a25959d\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\4e8c60a4fc21ab43b90958c81694363f\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\kwan\.gradle\caches\transforms-3\a965dd6a152e7911c5c958a51dedbb63\transformed\firebase-components-17.1.0\AndroidManifest.xml:15:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\d7a109d86fb3de5c7a61c200e3006859\transformed\gifdecoder-4.15.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\kwan\.gradle\caches\transforms-3\a2efe2b1471aa1e507f7414e1add5959\transformed\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\a4abacc364e01a9a795dff853bb605cd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\6742be9b3b7e4db23a7e28cecca2183a\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\ecac625faabffbb0784c9a9c31930ef0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
@@ -69,22 +82,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\kwan\.gradle\cac
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\98f72089a9c20152c64189bbd9e9696c\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\07d5b0f433294fb8566b4dccc1b96a3d\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\kwan\.gradle\caches\transforms-3\eb81fb53378604cc0225f33f394c7ec0\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-45:12
 	package
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:2:11-69
@@ -92,8 +105,46 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:5:5-80
 	android:name
 		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:5:22-77
+uses-permission#android.permission.INTERNET
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:7:5-67
+MERGED from [com.firebaseui:firebase-ui-database:8.0.2] C:\Users\kwan\.gradle\caches\transforms-3\c28741fd6e408a339dabf60fd138d986\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:9:5-67
+MERGED from [com.firebaseui:firebase-ui-database:8.0.2] C:\Users\kwan\.gradle\caches\transforms-3\c28741fd6e408a339dabf60fd138d986\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:9:5-67
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\kwan\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:10:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\kwan\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:10:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6e73672de756379f458e1069f3907e06\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6e73672de756379f458e1069f3907e06\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\ce695fb7e9a751c646ebdf353e40e79a\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\ce695fb7e9a751c646ebdf353e40e79a\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:8:5-79
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\kwan\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\kwan\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:9:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6e73672de756379f458e1069f3907e06\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6e73672de756379f458e1069f3907e06\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\ce695fb7e9a751c646ebdf353e40e79a\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\ce695fb7e9a751c646ebdf353e40e79a\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:8:22-76
 application
-ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:7:5-37:19
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:10:5-43:19
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\d488f2c4c46007d73eddcd94b832f4ea\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\d488f2c4c46007d73eddcd94b832f4ea\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\kwan\.gradle\caches\transforms-3\3229d8dbfb0c633e276edfd3e6294908\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -104,6 +155,8 @@ MERGED from [com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\kwan\.gra
 MERGED from [com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\50ea824b80ddbc316298cc9344a7166c\transformed\firebase-storage-ktx-20.2.1\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:28:5-36:19
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\12859bb4ecb38a1270e5105b23d6693a\transformed\glide-4.15.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\12859bb4ecb38a1270e5105b23d6693a\transformed\glide-4.15.1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\f56d8339397b00ee40c8d95bcb4828ec\transformed\firebase-common-ktx-20.3.3\AndroidManifest.xml:10:5-18:19
@@ -144,6 +197,8 @@ MERGED from [androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3
 MERGED from [androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\kwan\.gradle\caches\transforms-3\0c7b599fb3c37e99776d9726f14f1858\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\d7a109d86fb3de5c7a61c200e3006859\transformed\gifdecoder-4.15.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\d7a109d86fb3de5c7a61c200e3006859\transformed\gifdecoder-4.15.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\a4abacc364e01a9a795dff853bb605cd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\a4abacc364e01a9a795dff853bb605cd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\ecac625faabffbb0784c9a9c31930ef0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
@@ -151,61 +206,67 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\kw
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:15:9-41
 	android:fullBackupContent
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:13:9-54
 	tools:targetApi
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:15:9-29
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:18:9-29
 	android:icon
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:14:9-58
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:17:9-58
 	android:dataExtractionRules
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:9:9-65
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:12:9-65
 activity#com.kwan.bookrentalmanagement.Add_Booklist
-ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:16:9-18:39
-	android:exported
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:18:13-36
-	android:name
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:17:13-41
-activity#com.kwan.bookrentalmanagement.Login
-ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:19:9-27:20
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:19:9-21:39
 	android:exported
 		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:21:13-36
 	android:name
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:20:13-34
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:22:13-26:29
-action#android.intent.action.MAIN
-ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:23:17-69
-	android:name
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:23:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:25:17-77
-	android:name
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:25:27-74
-activity#com.kwan.bookrentalmanagement.Main_Screen
-ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:28:9-30:48
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:20:13-41
+activity#com.kwan.bookrentalmanagement.Login
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:22:9-30:20
 	android:exported
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:24:13-36
 	android:name
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:29:13-40
-activity#com.kwan.bookrentalmanagement.Book_List
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:23:13-34
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:28:27-74
+activity#com.kwan.bookrentalmanagement.Main_Screen
 ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:31:9-33:48
 	android:exported
 		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:33:13-36
 	android:name
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:32:13-38
-activity#com.kwan.bookrentalmanagement.Order_screen
-ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:34:9-36:39
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:32:13-40
+activity#com.kwan.bookrentalmanagement.Book_List
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:34:9-36:48
 	android:exported
 		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:36:13-36
 	android:name
-		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:35:13-41
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:35:13-38
+activity#com.kwan.bookrentalmanagement.Order_screen
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:37:9-39:39
+	android:exported
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:39:13-36
+	android:name
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:38:13-41
+activity#com.kwan.bookrentalmanagement.Book_Detail_Activity
+ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:41:9-42:48
+	android:exported
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:42:13-36
+	android:name
+		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml:41:19-84
 uses-sdk
 INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
@@ -218,12 +279,18 @@ MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\kwan\.gradle
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\kwan\.gradle\caches\transforms-3\bc14915fedc1798a01b1f6b5d446b360\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\kwan\.gradle\caches\transforms-3\4a8fc8d4cffe1deef03672f2112cd6a4\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\kwan\.gradle\caches\transforms-3\4a8fc8d4cffe1deef03672f2112cd6a4\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [com.firebaseui:firebase-ui-database:8.0.2] C:\Users\kwan\.gradle\caches\transforms-3\c28741fd6e408a339dabf60fd138d986\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-database:8.0.2] C:\Users\kwan\.gradle\caches\transforms-3\c28741fd6e408a339dabf60fd138d986\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-storage:8.0.2] C:\Users\kwan\.gradle\caches\transforms-3\6e488d456ed8b23c49ecbf036ac92807\transformed\firebase-ui-storage-8.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-storage:8.0.2] C:\Users\kwan\.gradle\caches\transforms-3\6e488d456ed8b23c49ecbf036ac92807\transformed\firebase-ui-storage-8.0.2\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\50ea824b80ddbc316298cc9344a7166c\transformed\firebase-storage-ktx-20.2.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\50ea824b80ddbc316298cc9344a7166c\transformed\firebase-storage-ktx-20.2.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\12859bb4ecb38a1270e5105b23d6693a\transformed\glide-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\12859bb4ecb38a1270e5105b23d6693a\transformed\glide-4.15.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\kwan\.gradle\caches\transforms-3\d8528c0e11c1c58924ed28aea4e75816\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
@@ -240,6 +307,8 @@ MERGED from [com.google.firebase:firebase-common:20.3.3] C:\Users\kwan\.gradle\c
 MERGED from [com.google.firebase:firebase-common:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\69103d0ef05ac928504892254d5a956f\transformed\firebase-common-20.3.3\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\df0de34a50359f5b25390e4067994d9d\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\df0de34a50359f5b25390e4067994d9d\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\68f44c29e46b634fbc8116523b883589\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\68f44c29e46b634fbc8116523b883589\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.1] C:\Users\kwan\.gradle\caches\transforms-3\2b031a8e0d9eef3de1d46a2107367050\transformed\firebase-appcheck-interop-17.0.1\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.1] C:\Users\kwan\.gradle\caches\transforms-3\2b031a8e0d9eef3de1d46a2107367050\transformed\firebase-appcheck-interop-17.0.1\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\kwan\.gradle\caches\transforms-3\bec261f32d79fd94f8bcdc9cd0c9e949\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
@@ -250,8 +319,14 @@ MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\k
 MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\f16b91ddbba00f8e8e9918bac97a8fff\transformed\play-services-measurement-sdk-21.3.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\f16b91ddbba00f8e8e9918bac97a8fff\transformed\play-services-measurement-sdk-21.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.paging:paging-rxjava3:3.0.0] C:\Users\kwan\.gradle\caches\transforms-3\9116043274f378ad2a75af6612fa5cae\transformed\paging-rxjava3-3.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.paging:paging-rxjava3:3.0.0] C:\Users\kwan\.gradle\caches\transforms-3\9116043274f378ad2a75af6612fa5cae\transformed\paging-rxjava3-3.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.firebaseui:firebase-ui-common:8.0.2] C:\Users\kwan\.gradle\caches\transforms-3\5df7d79cf71382704b78646c7b0b89ac\transformed\firebase-ui-common-8.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-common:8.0.2] C:\Users\kwan\.gradle\caches\transforms-3\5df7d79cf71382704b78646c7b0b89ac\transformed\firebase-ui-common-8.0.2\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\3fde1447ea9f27a7643921b5a2843c8c\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\3fde1447ea9f27a7643921b5a2843c8c\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\a4b8143b02951d47e2db758cb0b9cd14\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\a4b8143b02951d47e2db758cb0b9cd14\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6e73672de756379f458e1069f3907e06\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6e73672de756379f458e1069f3907e06\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\kwan\.gradle\caches\transforms-3\cfda4afc1e6986bc506c9e8538407141\transformed\play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
@@ -296,14 +371,22 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\kwa
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\kwan\.gradle\caches\transforms-3\3acc217bb9b3b502c69cf79759ac3988\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\kwan\.gradle\caches\transforms-3\255e705a61bb15f4c1c5e789d41737af\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\kwan\.gradle\caches\transforms-3\255e705a61bb15f4c1c5e789d41737af\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\kwan\.gradle\caches\transforms-3\cceab27b0734f08a64844cb2c9785601\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\kwan\.gradle\caches\transforms-3\cceab27b0734f08a64844cb2c9785601\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\749c0200844607dfa543129b83a7b943\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\749c0200844607dfa543129b83a7b943\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\ff6cc6d08b901ee3b261216fef5eda12\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\ff6cc6d08b901ee3b261216fef5eda12\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\kwan\.gradle\caches\transforms-3\575127e79349351954d781caf9a1fe6c\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\kwan\.gradle\caches\transforms-3\575127e79349351954d781caf9a1fe6c\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\3be5069522b067b49deff404856dafa8\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\3be5069522b067b49deff404856dafa8\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\kwan\.gradle\caches\transforms-3\5566a7dc31d5800061d3e6923fb91541\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\kwan\.gradle\caches\transforms-3\5566a7dc31d5800061d3e6923fb91541\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\5dc65e3727186111a694992f8afbd292\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\5dc65e3727186111a694992f8afbd292\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\8167d9cdef8698e06292fb743d46e17f\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\8167d9cdef8698e06292fb743d46e17f\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\b50415115ee666ba2f468d47b82184f2\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\b50415115ee666ba2f468d47b82184f2\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.9.0] C:\Users\kwan\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\f8f83bd12de402fe80987a4a8708a3d1\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -318,6 +401,10 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\kwan\.gradle\caches\tran
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\4e8c60a4fc21ab43b90958c81694363f\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\kwan\.gradle\caches\transforms-3\a965dd6a152e7911c5c958a51dedbb63\transformed\firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\kwan\.gradle\caches\transforms-3\a965dd6a152e7911c5c958a51dedbb63\transformed\firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\d7a109d86fb3de5c7a61c200e3006859\transformed\gifdecoder-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\d7a109d86fb3de5c7a61c200e3006859\transformed\gifdecoder-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\kwan\.gradle\caches\transforms-3\a2efe2b1471aa1e507f7414e1add5959\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\kwan\.gradle\caches\transforms-3\a2efe2b1471aa1e507f7414e1add5959\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\a4abacc364e01a9a795dff853bb605cd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\kwan\.gradle\caches\transforms-3\a4abacc364e01a9a795dff853bb605cd\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\kwan\.gradle\caches\transforms-3\6742be9b3b7e4db23a7e28cecca2183a\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -350,38 +437,6 @@ INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
 		ADDED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
 		INJECTED from D:\CNPM\BookRentalManagement\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:25:5-79
-MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\kwan\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:9:5-79
-MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\kwan\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:9:5-79
-MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6e73672de756379f458e1069f3907e06\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6e73672de756379f458e1069f3907e06\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\ce695fb7e9a751c646ebdf353e40e79a\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\ce695fb7e9a751c646ebdf353e40e79a\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:24:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:22-76
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:26:5-67
-MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:26:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\kwan\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:10:5-67
-MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\kwan\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:10:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\b9afe44192fdd09bbe0a6774559efacf\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6e73672de756379f458e1069f3907e06\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6e73672de756379f458e1069f3907e06\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\ce695fb7e9a751c646ebdf353e40e79a\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\ce695fb7e9a751c646ebdf353e40e79a\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-database:20.2.2] C:\Users\kwan\.gradle\caches\transforms-3\d4a85f67f1c7f5cd209b801efeaa7c9d\transformed\firebase-database-20.2.2\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\50ea824b80ddbc316298cc9344a7166c\transformed\firebase-storage-ktx-20.2.1\AndroidManifest.xml:11:9-17:19
