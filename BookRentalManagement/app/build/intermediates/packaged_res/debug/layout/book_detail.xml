@@ -22,15 +22,17 @@
             android:orientation="vertical">
 
             <ImageView
+                android:src="@drawable/no_image_available"
                 android:layout_width="80dp"
                 android:layout_height="120dp"
                 android:layout_margin="10dp"
+                android:scaleType="fitCenter"
                 android:id="@+id/bookDetail_thumbnail">
 
             </ImageView>
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
@@ -56,26 +58,22 @@
                 style="@style/bookDetail_info"
                 android:id="@+id/bookDetail_Author"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Author">
-
-            </TextView>
+                android:layout_height="24dp"
+                android:text="Author"></TextView>
 
             <TextView
-                style="@style/bookDetail_info"
                 android:id="@+id/bookDetail_Genre"
+                style="@style/bookDetail_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="genre"></TextView>
+                android:text="Genre"></TextView>
 
             <TextView
                 style="@style/bookDetail_info"
                 android:id="@+id/bookDetail_Price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="price">
-
-            </TextView>
+                android:text="price"></TextView>
 
         </LinearLayout>
 

@@ -2,6 +2,7 @@ package com.kwan.bookrentalmanagement;
 
 import android.content.Context;
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,26 +15,26 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.database.FirebaseDatabase;
+
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-public class Book_List_Adapter extends RecyclerView.Adapter<MyViewHolder> {
+public class Book_List_Adapter extends RecyclerView.Adapter<Book_List_Adapter.MyViewHolder> {
+
     private Context context;
-    private List<BookData> bookDataList;
-
-    public void setSearchList(List<BookData> dataSearchList)
-    {
-        this.bookDataList = dataSearchList;
-        notifyDataSetChanged();
-    }
-
+    private List<BookData> dataList;
     public Book_List_Adapter(Context context, List<BookData> dataList)
     {
         this.context = context;
-        this.bookDataList = dataList;
+        this.dataList = dataList;
     }
+
+
 
     @NonNull
     @Override
@@ -44,60 +45,64 @@ public class Book_List_Adapter extends RecyclerView.Adapter<MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        String thumbnailUrl = bookDataList.get(position).getThumbnail();
-        if (TextUtils.isEmpty(thumbnailUrl)) {
-            // Nếu thumbnail trống, sử dụng ảnh mặc định thay thế
-            Glide.with(context).load(R.drawable.no_image_available).into(holder.Thumbnail);
-        } else {
-            // Nếu có thumbnail, tải và hiển thị ảnh
-            Glide.with(context).load(thumbnailUrl).into(holder.Thumbnail);
+        Glide.with(context).load((dataList).get(position).getThumbnail()).placeholder(R.drawable.no_image_available).into(holder.bookThumbnail);
+        holder.bookTitle.setText(dataList.get(position).getTitle());
+        holder.bookAuthor.setText("author:" + dataList.get(position).getAuthor());
+        holder.bookStock.setText("stock: " + String.valueOf(dataList.get(position).getStock()));
+        List<String> genres = dataList.get(position).getGenre();
+        StringBuilder genreString = new StringBuilder();
+        for (String genre : genres) {
+            genreString.append(genre).append(", ");
         }
-        holder.bookTitle.setText(bookDataList.get(position).getTitle());
-        HashMap<String, String> genres = bookDataList.get(position).getGenre();
-        String genreText = TextUtils.join(", ", genres.values());
-        holder.bookGenre.setText(genreText);
-        holder.bookAuthor.setText(bookDataList.get(position).getTitle());
-        holder.bookPrice.setText(bookDataList.get(position).getPrice());
-        holder.bookStock.setText(bookDataList.get(position).getStock());
+        if (genreString.length() > 0) {
+            genreString.deleteCharAt(genreString.length() - 1); // Xóa dấu ',' cuối cùng
+        }
+        holder.bookGenre.setText("genre: " + genreString.toString());
+        holder.bookPrice.setText("price: " + String.valueOf(dataList.get(position).getPrice()));
 
         holder.bookCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, Book_Detail_Activity.class);
-                intent.putExtra("thumbnail", bookDataList.get(holder.getAdapterPosition()).getThumbnail());
-                intent.putExtra("title", bookDataList.get(holder.getAdapterPosition()).getTitle());
-                intent.putExtra("author", bookDataList.get(holder.getAdapterPosition()).getAuthor());
-                intent.putExtra("price", bookDataList.get(holder.getAdapterPosition()).getPrice());
-                intent.putExtra("genre", bookDataList.get(holder.getAdapterPosition()).getGenre());
-                intent.putExtra("sumary", bookDataList.get(holder.getAdapterPosition()).getSumary());
-                intent.putExtra("stock", bookDataList.get(holder.getAdapterPosition()).getStock());
+                intent.putExtra("Image", dataList.get(holder.getAdapterPosition()).getThumbnail());
+                intent.putExtra("Title", dataList.get(holder.getAdapterPosition()).getTitle());
+                intent.putExtra("Author", dataList.get(holder.getAdapterPosition()).getAuthor());
+                intent.putExtra("Stock", dataList.get(holder.getAdapterPosition()).getStock());
+                List<String> genres = dataList.get(holder.getAdapterPosition()).getGenre();
+                String genreString = TextUtils.join(", ", genres);
+                intent.putExtra("Genre", genreString);
+                intent.putExtra("Price", dataList.get(holder.getAdapterPosition()).getPrice());
+                intent.putExtra("Sumary", dataList.get(holder.getAdapterPosition()).getSumary());
 
                 context.startActivity(intent);
+
             }
         });
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return dataList.size();
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder
+    {
+        ImageView bookThumbnail;
+        TextView bookTitle, bookAuthor, bookPrice, bookStock, bookGenre;
+        CardView bookCard;
+
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            bookCard = itemView.findViewById(R.id.book_list_card);
+            bookTitle = itemView.findViewById(R.id.book_title);
+            bookAuthor = itemView.findViewById(R.id.book_author);
+            bookPrice = itemView.findViewById(R.id.book_price);
+            bookThumbnail = itemView.findViewById(R.id.book_list_card_image);
+            bookStock = itemView.findViewById(R.id.book_stock);
+            bookGenre = itemView.findViewById(R.id.book_genre);
+        }
     }
 }
 
-class MyViewHolder extends RecyclerView.ViewHolder
-{
-    ImageView Thumbnail;
-    TextView bookTitle, bookAuthor, bookPrice, bookGenre, bookStock;
-    CardView bookCard;
-
-    public MyViewHolder(@NonNull View itemView) {
-        super(itemView);
-
-        bookCard = itemView.findViewById(R.id.book_list_card);
-        bookTitle = itemView.findViewById(R.id.book_title);
-        bookAuthor = itemView.findViewById(R.id.book_author);
-        bookGenre = itemView.findViewById(R.id.book_genre);
-        bookPrice = itemView.findViewById(R.id.book_price);
-        Thumbnail = itemView.findViewById(R.id.book_list_card_image);
-        bookStock = itemView.findViewById(R.id.book_stock);
-    }
-}

@@ -12,6 +12,7 @@ public class Book_Detail_Activity extends AppCompatActivity {
 
     TextView detailTitle, detailAuthor, detailGenre, detailPrice, detailSumary, detailStock;
     ImageView detailThumbnail;
+    String imageUrl = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,13 +30,14 @@ public class Book_Detail_Activity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         if(bundle != null)
         {
-            detailSumary.setText(bundle.getString("sumary"));
-            detailGenre.setText(bundle.getString("genre"));
-            detailTitle.setText(bundle.getString("title"));
-            detailStock.setText(bundle.getString("stock"));
-            detailAuthor.setText(bundle.getString("author"));
-            detailPrice.setText(bundle.getString("price"));
-            Glide.with(this).load(bundle.getString("thumbnail"));
+            detailSumary.setText(bundle.getString("Sumary"));
+            detailGenre.setText("Genre: " + bundle.getString("Genre"));
+            detailTitle.setText(bundle.getString("Title"));
+            detailStock.setText("Stock:" + String.valueOf(bundle.getInt("Stock")));
+            detailAuthor.setText("Author: " + bundle.getString("Author"));
+            detailPrice.setText("Price: " + String.valueOf(bundle.getInt("Price")));
+            imageUrl = bundle.getString("Image");
+            Glide.with(this).load(bundle.getString("Image")).placeholder(R.drawable.no_image_available).into(detailThumbnail);
         }
     }
 }

@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -40,8 +41,8 @@ public class Book_List extends AppCompatActivity {
         fab = findViewById(R.id.add_button);
         recyclerView = findViewById(R.id.book_list_recyclerView);
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(Book_List.this, 1);
-        recyclerView.setLayoutManager(gridLayoutManager);
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         AlertDialog.Builder builder = new AlertDialog.Builder(Book_List.this);
         builder.setCancelable(false);
@@ -63,9 +64,6 @@ public class Book_List extends AppCompatActivity {
                 dataList.clear();
 
                 for(DataSnapshot itemSnapshot: snapshot.getChildren()) {
-
-
-
                     String bookID = itemSnapshot.getKey();
 
                     BookData bookData = itemSnapshot.getValue(BookData.class);
