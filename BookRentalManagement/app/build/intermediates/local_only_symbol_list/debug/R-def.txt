@@ -24,6 +24,7 @@ drawable icon__star_
 drawable login_activ
 drawable main_button_shape
 drawable main_screen_gray_sqr
+drawable no_image
 drawable no_image_available
 drawable rounded_border
 drawable search_bar

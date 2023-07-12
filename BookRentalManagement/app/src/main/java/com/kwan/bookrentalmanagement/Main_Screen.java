@@ -50,11 +50,11 @@ public class Main_Screen extends AppCompatActivity implements View.OnClickListen
             case R.id.btn_reports:
                 intent = new Intent(MainActivity.this, ReportActivity.class);
                 startActivity(intent);
-                break;
-            case R.id.btn_staff:
-                intent = new Intent(MainActivity.this, NVActivity.class);
-                startActivity(intent);
                 break;*/
+//            case R.id.btn_staff:
+//                intent = new Intent(Main_Screen.this, StaffActivity.class);
+//                startActivity(intent);
+//                break;
             case R.id.btn_orders:
                 intent = new Intent(Main_Screen.this, Order_screen.class);
                 startActivity(intent);

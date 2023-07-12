@@ -2,7 +2,6 @@ package com.kwan.bookrentalmanagement;
 
 import android.content.Context;
 import android.content.Intent;
-import android.provider.ContactsContract;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,11 +14,6 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.google.firebase.database.FirebaseDatabase;
-
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
-
 
 import java.util.ArrayList;
 import java.util.List;
