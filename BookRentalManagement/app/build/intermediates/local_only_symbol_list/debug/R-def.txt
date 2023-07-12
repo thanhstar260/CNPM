@@ -10,6 +10,7 @@ color teal_200
 color teal_700
 color white
 drawable baseline_add_24
+drawable baseline_add_photo_alternate_24
 drawable baseline_arrow_drop_down_24
 drawable confirm_button
 drawable custom_edit_text
@@ -39,7 +40,9 @@ font quicksand_light_oblique
 id BookList_SearchBar
 id addAuthor
 id addPrice
+id addStock
 id addSumary
+id addThumbnail
 id addTitle
 id add_book_confirm
 id add_button
@@ -85,8 +88,10 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textView6
 id textView7
 id textView8
+id textView9
 id tvGenre
 layout activity_add_booklist
 layout activity_login

@@ -2931,6 +2931,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_add_24
+drawable baseline_add_photo_alternate_24
 drawable baseline_arrow_drop_down_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3152,7 +3153,9 @@ id activity_chooser_view_content
 id add
 id addAuthor
 id addPrice
+id addStock
 id addSumary
+id addThumbnail
 id addTitle
 id add_book_confirm
 id add_button
@@ -3582,8 +3585,10 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textView6
 id textView7
 id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

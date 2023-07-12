@@ -4,20 +4,28 @@ import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ServerValue;
@@ -44,12 +52,16 @@ public class Add_Booklist extends AppCompatActivity {
     String [] genreArray = {"Fiction ","Non-fiction", "Mystery", "Science Fiction", "Fantasy", "Romance", "Horror", "Thriller", "Biography", "Autobiography", "History", "Self-help", "Business", "Psychology", "Philosophy", "Travel", "Science", "Technology", "Art", "Poetry"};
 
     Button saveButton;
-    EditText addTitle, addSummary, addAuthor, addPrice;
+    EditText addTitle, addSummary, addAuthor, addPrice, addStock;
+    String imageURL;
+    ImageView addThumbnail;
+    Uri uri;
 
     // Firebase
     private DatabaseReference databaseReference;
     private DatabaseReference genreReference;
     private StorageReference storageReference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +85,8 @@ public class Add_Booklist extends AppCompatActivity {
         addAuthor = findViewById(R.id.addAuthor);
         addPrice = findViewById(R.id.addPrice);
         saveButton = findViewById(R.id.add_book_confirm);
+        addThumbnail = findViewById(R.id.addThumbnail);
+        addStock = findViewById(R.id.addStock);
 
         ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
@@ -81,30 +95,72 @@ public class Add_Booklist extends AppCompatActivity {
                     public void onActivityResult(ActivityResult result) {
                         if (result.getResultCode() == Activity.RESULT_OK ){
                             Intent data = result.getData();
+                            uri = data.getData();
+                            addThumbnail.setImageURI(uri);
+                        } else {
+                            Toast.makeText(Add_Booklist.this, "No Image Selected", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }
         );
+
+        addThumbnail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent photoPicker = new Intent(Intent.ACTION_PICK);
+                photoPicker.setType("image/*");
+                activityResultLauncher.launch(photoPicker);
+            }
+        });
+
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                uploadData();
+                saveData();
             }
         });
     }
+
+    public void saveData() {
+        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("book covers").child(uri.getLastPathSegment());
+        AlertDialog.Builder builder = new AlertDialog.Builder(Add_Booklist.this);
+        builder.setCancelable(false);
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+        storageReference.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                Task<Uri> uriTask = taskSnapshot.getStorage().getDownloadUrl();
+                while (!uriTask.isComplete());
+                Uri urlImage = uriTask.getResult();
+                imageURL = urlImage.toString();
+                uploadData();
+                dialog.dismiss();
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                dialog.dismiss();
+            }
+        });
+    }
+
 
     private void uploadData() {
         String title = addTitle.getText().toString().trim();
         String summary = addSummary.getText().toString().trim();
         String author = addAuthor.getText().toString().trim();
         String priceString = addPrice.getText().toString().trim();
+        String stockString = addStock.getText().toString().trim();
 
-        if (title.isEmpty() || summary.isEmpty() || author.isEmpty() || priceString.isEmpty()) {
+        if (title.isEmpty() || summary.isEmpty() || author.isEmpty() || priceString.isEmpty() || stockString.isEmpty()) {
             Toast.makeText(this, "Please fill in all the fields.", Toast.LENGTH_SHORT).show();
             return;
         }
 
         double price = Double.parseDouble(priceString);
+        double stock = Double.parseDouble(stockString);
 
         // Generate a unique key for the book
         String bookId = databaseReference.push().getKey();
@@ -115,6 +171,8 @@ public class Add_Booklist extends AppCompatActivity {
         bookData.put("summary", summary);
         bookData.put("author", author);
         bookData.put("price", price);
+        bookData.put("thumbnail", imageURL);
+        bookData.put("stock", stock);
 
 
         ArrayList<String> genres = new ArrayList<>();
@@ -135,6 +193,8 @@ public class Add_Booklist extends AppCompatActivity {
                     addPrice.setText("");
                     genreList.clear();
                     tvGenre.setText("");
+                    addStock.setText("");
+                    addThumbnail.setImageResource(R.drawable.baseline_add_photo_alternate_24);
                 })
                 .addOnFailureListener(e -> {
                     // Error occurred while uploading book data
