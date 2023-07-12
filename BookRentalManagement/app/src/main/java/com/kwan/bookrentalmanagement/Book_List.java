@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.GridLayout;
-import android.widget.SearchView;
+import androidx.appcompat.widget.SearchView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,22 +24,25 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class Book_List extends AppCompatActivity {
 
     SearchView searchView;
+    Book_List_Adapter adapter;
     RecyclerView recyclerView;
     List<BookData> dataList;
     DatabaseReference databaseReference;
     ValueEventListener eventListener;
     FloatingActionButton fab;
-    Book_List_Adapter adapter;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.book_list);
         fab = findViewById(R.id.add_button);
         recyclerView = findViewById(R.id.book_list_recyclerView);
+        searchView = findViewById(R.id.book_list_searchView);
+        searchView.clearFocus();
 
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -62,7 +65,6 @@ public class Book_List extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 dataList.clear();
-
                 for(DataSnapshot itemSnapshot: snapshot.getChildren()) {
                     String bookID = itemSnapshot.getKey();
 
@@ -76,6 +78,20 @@ public class Book_List extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 Log.e("Book_List", "Failed to read data from Firebase", error.toException());
+                dialog.dismiss();
+            }
+        });
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                searchList(newText);
+                return true;
             }
         });
 
@@ -88,4 +104,20 @@ public class Book_List extends AppCompatActivity {
         });
 
     }
+
+    public void searchList(String text)
+    {
+        ArrayList<BookData> searchList = new ArrayList<>();
+        for(BookData bookData: dataList)
+        {
+            if(bookData.getTitle().toLowerCase().contains(text.toLowerCase()) || bookData.getAuthor().toLowerCase().contains(text.toLowerCase())){
+                searchList.add(bookData);
+            }
+         }
+        adapter.searchDataList(searchList);
+    }
+
+
+
+
 }

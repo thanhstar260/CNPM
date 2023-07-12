@@ -86,6 +86,12 @@ public class Book_List_Adapter extends RecyclerView.Adapter<Book_List_Adapter.My
         return dataList.size();
     }
 
+    public void searchDataList(ArrayList<BookData> searchList)
+    {
+        dataList = searchList;
+        notifyDataSetChanged();
+    }
+
     public class MyViewHolder extends RecyclerView.ViewHolder
     {
         ImageView bookThumbnail;
