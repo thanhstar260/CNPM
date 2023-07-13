@@ -72,4 +72,8 @@
         <item name="android:font"> @font/quicksand_book</item>
         <item name="android:lineHeight">40sp</item>
     </style>
+    <style name="roundedImgView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

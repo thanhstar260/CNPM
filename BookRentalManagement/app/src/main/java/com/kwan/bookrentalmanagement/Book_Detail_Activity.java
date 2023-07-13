@@ -20,11 +20,11 @@ public class Book_Detail_Activity extends AppCompatActivity {
         setContentView(R.layout.book_detail);
 
         detailThumbnail = findViewById(R.id.bookDetail_thumbnail);
-        detailGenre = findViewById(R.id.bookDetail_Genre);
-        detailAuthor = findViewById(R.id.bookDetail_Author);
-        detailPrice = findViewById(R.id.bookDetail_Price);
+        detailGenre = findViewById(R.id.staffPhone);
+        detailAuthor = findViewById(R.id.staffEmail);
+        detailPrice = findViewById(R.id.staffGender);
         detailStock = findViewById(R.id.bookDetail_stock);
-        detailTitle = findViewById(R.id.bookDetail_Title);
+        detailTitle = findViewById(R.id.staffName);
         detailSumary = findViewById(R.id.book_detail_sumary);
 
         Bundle bundle = getIntent().getExtras();

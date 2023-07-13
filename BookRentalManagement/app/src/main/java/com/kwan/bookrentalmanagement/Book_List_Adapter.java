@@ -99,7 +99,7 @@ public class Book_List_Adapter extends RecyclerView.Adapter<Book_List_Adapter.My
             bookTitle = itemView.findViewById(R.id.book_title);
             bookAuthor = itemView.findViewById(R.id.book_author);
             bookPrice = itemView.findViewById(R.id.book_price);
-            bookThumbnail = itemView.findViewById(R.id.book_list_card_image);
+            bookThumbnail = itemView.findViewById(R.id.cardImg);
             bookStock = itemView.findViewById(R.id.book_stock);
             bookGenre = itemView.findViewById(R.id.book_genre);
         }

@@ -3151,10 +3151,11 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id addAuthor
-id addPrice
+id addEmail
+id addGender
+id addName
+id addPhone
 id addSumary
-id addTitle
 id add_book_confirm
 id add_button
 id adjust_height
@@ -3181,17 +3182,12 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
-id bookDetail_Author
-id bookDetail_Genre
-id bookDetail_Price
-id bookDetail_Title
 id bookDetail_stock
 id bookDetail_thumbnail
 id book_author
 id book_detail_sumary
 id book_genre
 id book_list_card
-id book_list_card_image
 id book_list_recyclerView
 id book_list_searchView
 id book_price
@@ -3215,6 +3211,12 @@ id cache_measures
 id callMeasure
 id cancel_action
 id cancel_button
+id cardEmail
+id cardGender
+id cardImg
+id cardName
+id cardPhone
+id cardStaff
 id carryVelocity
 id center
 id centerCrop
@@ -3467,9 +3469,12 @@ id postLayout
 id pressed
 id progress_circular
 id progress_horizontal
+id r1
+id r2
 id radio
 id ratio
 id rectangles
+id recyclerView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3540,6 +3545,12 @@ id square
 id src_atop
 id src_in
 id src_over
+id staffAvatar
+id staffEmail
+id staffGender
+id staffName
+id staffPhone
+id staff_searchView
 id standard
 id start
 id startHorizontal
@@ -3583,6 +3594,7 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textView6
 id textView7
 id textView8
 id text_input_end_icon
@@ -3750,7 +3762,10 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_booklist
+layout activity_add_staff
 layout activity_login
+layout activity_staff
+layout activity_staff_detail
 layout book_detail
 layout book_list
 layout book_list_recycler_item
@@ -3842,9 +3857,11 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout order_screen
+layout progress_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout staff_recycler_item
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -5160,6 +5177,7 @@ style bookDetail_title
 style bookItem_book_info
 style bookItem_book_title
 style ng_nh_p_tit
+style roundedImgView
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

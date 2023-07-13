@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/cardStaff"
+app:cardCornerRadius="20dp"
+app:cardElevation="8dp"
+app:cardUseCompatPadding="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/cardImg"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:layout_margin="10dp"
+        android:src="@drawable/no_image_available" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="200dp"
+            android:maxHeight="19dp"
+            android:id="@+id/cardName"
+            android:text="Name"
+            style="@style/bookItem_book_title">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="200dp"
+            android:maxHeight="19dp"
+            android:id="@+id/cardEmail"
+            android:text="Email"
+            style="@style/bookItem_book_info">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="200dp"
+            android:maxHeight="19dp"
+            android:id="@+id/cardPhone"
+            android:text="Phone Number"
+            style="@style/bookItem_book_info">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="200dp"
+            android:maxHeight="19dp"
+            android:id="@+id/cardGender"
+            android:text="Gender"
+            style="@style/bookItem_book_info">
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

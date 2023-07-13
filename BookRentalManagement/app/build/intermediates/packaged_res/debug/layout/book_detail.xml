@@ -14,7 +14,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_border">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -51,18 +52,18 @@
                 style="@style/bookDetail_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/bookDetail_Title"
+                android:id="@+id/staffName"
                 android:text="Title"></TextView>
 
             <TextView
                 style="@style/bookDetail_info"
-                android:id="@+id/bookDetail_Author"
+                android:id="@+id/staffEmail"
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
                 android:text="Author"></TextView>
 
             <TextView
-                android:id="@+id/bookDetail_Genre"
+                android:id="@+id/staffPhone"
                 style="@style/bookDetail_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -70,7 +71,7 @@
 
             <TextView
                 style="@style/bookDetail_info"
-                android:id="@+id/bookDetail_Price"
+                android:id="@+id/staffGender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="price"></TextView>

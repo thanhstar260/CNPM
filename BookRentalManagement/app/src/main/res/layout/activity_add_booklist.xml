@@ -49,10 +49,10 @@
             android:text="Author"
             android:textColor="@color/black"
             android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/addTitle"
+            app:layout_constraintEnd_toEndOf="@+id/addName"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/addTitle"
-            app:layout_constraintTop_toBottomOf="@+id/addTitle" />
+            app:layout_constraintStart_toStartOf="@+id/addName"
+            app:layout_constraintTop_toBottomOf="@+id/addName" />
 
         <TextView
             android:id="@+id/textView8"
@@ -62,13 +62,13 @@
             android:text="Price"
             android:textColor="@color/black"
             android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/addAuthor"
+            app:layout_constraintEnd_toEndOf="@+id/addEmail"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/addAuthor"
-            app:layout_constraintTop_toBottomOf="@+id/addAuthor" />
+            app:layout_constraintStart_toStartOf="@+id/addEmail"
+            app:layout_constraintTop_toBottomOf="@+id/addEmail" />
 
         <EditText
-            android:id="@+id/addTitle"
+            android:id="@+id/addName"
             android:layout_width="335dp"
             android:layout_height="46dp"
             android:layout_marginTop="8dp"
@@ -84,7 +84,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <EditText
-            android:id="@+id/addAuthor"
+            android:id="@+id/addEmail"
             android:layout_width="335dp"
             android:layout_height="46dp"
             android:layout_marginTop="8dp"
@@ -100,7 +100,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <EditText
-            android:id="@+id/addPrice"
+            android:id="@+id/addPhone"
             android:layout_width="335dp"
             android:layout_height="46dp"
             android:background="@drawable/custom_edit_text"
@@ -187,10 +187,10 @@
             android:text="Genre"
             android:textColor="@color/black"
             android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/addPrice"
+            app:layout_constraintEnd_toEndOf="@+id/addPhone"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/addPrice"
-            app:layout_constraintTop_toBottomOf="@+id/addPrice" />
+            app:layout_constraintStart_toStartOf="@+id/addPhone"
+            app:layout_constraintTop_toBottomOf="@+id/addPhone" />
 
         <TextView
             android:id="@+id/textView13"

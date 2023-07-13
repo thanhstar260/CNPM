@@ -8,7 +8,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,19 +19,13 @@ import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ServerValue;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
-import com.google.android.gms.auth.api.signin.internal.Storage;
 import com.google.android.material.card.MaterialCardView;
 
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
 public class Add_Booklist extends AppCompatActivity {
@@ -68,10 +61,10 @@ public class Add_Booklist extends AppCompatActivity {
         genreSelectCard.setOnClickListener(v -> {
             showGenreDialog();
         });
-        addTitle = findViewById(R.id.addTitle);
+        addTitle = findViewById(R.id.addName);
         addSummary = findViewById(R.id.addSumary);
-        addAuthor = findViewById(R.id.addAuthor);
-        addPrice = findViewById(R.id.addPrice);
+        addAuthor = findViewById(R.id.addEmail);
+        addPrice = findViewById(R.id.addPhone);
         saveButton = findViewById(R.id.add_book_confirm);
 
         ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
