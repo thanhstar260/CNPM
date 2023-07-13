@@ -32,11 +32,11 @@ function writeBookData(id,title,author,sumary,price,stock,genre){
     })
     .then(() => {
         console.log("Data inserted successfully!");
-        process.exit();
+        // process.exit();
     })
     .catch((error) => {
         console.error("Error inserting data:", error);
-        process.exit();
+        // process.exit();
     });
 }
 
@@ -263,12 +263,11 @@ for (let i = 0; i < BookData.length; i++) {
 // Userdata
 //
 
-function writeUserData(user_id, username, password, email, first_name, last_name, phone_num, address) {
+function writeUserData(user_id, username, email, first_name, last_name, phone_num, address) {
     const primaryKey = user_id;
     const reference = ref(database, "User/" + primaryKey);
     set(reference, {
       "username": username,
-      "password": password,
       "email": email,
       "first_name": first_name,
       "last_name": last_name,
@@ -276,12 +275,12 @@ function writeUserData(user_id, username, password, email, first_name, last_name
       "address": address
     }).then(() => {
         console.log("Data inserted successfully!");
-        process.exit();
+        // process.exit();
 
       })
         .catch((error) => {
             console.error("Error inserting data:", error);
-            process.exit();
+            // process.exit();
 
         });
 }
@@ -290,7 +289,6 @@ const UserData = [
 {
     "id": 1,
     "username": "thanhstar",
-    "password": "123123qwe",
     "email": "thanhstar260@gmail.com",
     "first_name": "vo",
     "last_name": "thanh",
@@ -300,7 +298,6 @@ const UserData = [
 {
     "id": 2,
     "username": "thanhvo",
-    "password": "thanhngu",
     "email": "123@gmail.com",
     "first_name": "thanh",
     "last_name": "minh vo",
@@ -314,7 +311,6 @@ const user = UserData[i];
 writeUserData(
     user.id,
     user.username,
-    user.password,
     user.email,
     user.first_name,
     user.last_name,
@@ -325,12 +321,11 @@ writeUserData(
 
 
 // StaffData
-function writeStaffData(staff_id, username, password, email, first_name, last_name, phone_num, address) {
+function writeStaffData(staff_id, username, email, first_name, last_name, phone_num, address) {
     const primaryKey = staff_id;
     const reference = ref(database, "Staff/" + primaryKey);
     set(reference, {
       "staffname": username,
-      "password": password,
       "email": email,
       "first_name": first_name,
       "last_name": last_name,
@@ -351,7 +346,6 @@ const StaffData = [
     {
         "id": 1,
         "username": "thanhstar",
-        "password": "123123qwe",
         "email": "thanhstar260@gmail.com",
         "first_name": "vo",
         "last_name": "thanh",
@@ -361,7 +355,6 @@ const StaffData = [
     {
         "id": 2,
         "username": "thanhvo",
-        "password": "thanhngu",
         "email": "123@gmail.com",
         "first_name": "thanh",
         "last_name": "minh vo",
@@ -375,7 +368,6 @@ const staff = StaffData[i];
 writeStaffData(
     staff.id,
     staff.username,
-    staff.password,
     staff.email,
     staff.first_name,
     staff.last_name,
@@ -435,3 +427,12 @@ function writeOrdersData(order_id, user_id,book_id, staff_id, order_status, retu
 writeOrdersData(1,1,[2,5,10],1,"done","25/6","21/6")
 writeOrdersData(2,2,[3,10,8],1,"done","25/6","21/6")
 writeOrdersData(3,2,[2,6,4,3],2,"done","25/6","21/6")
+writeOrdersData(4,1,[12,25,110],1,"done","25/6","21/6")
+writeOrdersData(5,2,[23,21,28],1,"done","25/6","21/6")
+writeOrdersData(6,2,[52,56,54,63],2,"done","25/6","21/6")
+writeOrdersData(7,1,[32,105,50],1,"done","25/6","21/6")
+writeOrdersData(8,2,[43,140,84],1,"done","25/6","21/6")
+writeOrdersData(9,2,[52,56,54,53],2,"done","25/6","21/6")
+writeOrdersData(10,1,[62,65,105],1,"done","25/6","21/6")
+writeOrdersData(11,2,[73,81,18],1,"done","25/6","21/6")
+writeOrdersData(12,2,[52,10,54,13],2,"done","25/6","21/6")
