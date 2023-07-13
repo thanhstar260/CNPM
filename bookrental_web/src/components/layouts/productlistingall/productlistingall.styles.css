@@ -1,6 +1,8 @@
 .product-listing-all-container{
     padding-top: 4rem;
     padding-bottom: 4rem;
+    width: 1000px;
+    margin: 0px !important;
 }
 
 .grid-container{
@@ -34,5 +36,9 @@
 .page-turn button:hover{
     background-color: var(--primary-color-bright);
     color: #fff;
+    cursor: pointer;
+}
+
+.page-turn Left:hover{
     cursor: pointer;
 }
