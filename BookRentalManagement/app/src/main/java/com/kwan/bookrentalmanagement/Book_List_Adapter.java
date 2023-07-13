@@ -73,6 +73,7 @@ public class Book_List_Adapter extends RecyclerView.Adapter<Book_List_Adapter.My
                 intent.putExtra("Genre", genreString);
                 intent.putExtra("Price", dataList.get(holder.getAdapterPosition()).getPrice());
                 intent.putExtra("Sumary", dataList.get(holder.getAdapterPosition()).getSumary());
+                intent.putExtra("Key", dataList.get(holder.getAdapterPosition()).getKey());
 
                 context.startActivity(intent);
 

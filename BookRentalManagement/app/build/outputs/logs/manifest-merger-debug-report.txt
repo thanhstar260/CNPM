@@ -15,6 +15,7 @@ MERGED from [com.google.firebase:firebase-storage-ktx:20.2.1] C:\Users\kwan\.gra
 MERGED from [com.google.firebase:firebase-storage:20.2.1] C:\Users\kwan\.gradle\caches\transforms-3\760a529a2c1d4dde01c0244cf72a0082\transformed\firebase-storage-20.2.1\AndroidManifest.xml:15:1-38:12
 MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\12859bb4ecb38a1270e5105b23d6693a\transformed\glide-4.15.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\kwan\.gradle\caches\transforms-3\84b02866d50d6e966bec19bf90f131bd\transformed\fab-1.6.4\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\kwan\.gradle\caches\transforms-3\d8528c0e11c1c58924ed28aea4e75816\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\f56d8339397b00ee40c8d95bcb4828ec\transformed\firebase-common-ktx-20.3.3\AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:17:1-37:12
@@ -159,6 +160,8 @@ MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\cache
 MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\12859bb4ecb38a1270e5105b23d6693a\transformed\glide-4.15.1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\kwan\.gradle\caches\transforms-3\84b02866d50d6e966bec19bf90f131bd\transformed\fab-1.6.4\AndroidManifest.xml:12:5-20
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\kwan\.gradle\caches\transforms-3\84b02866d50d6e966bec19bf90f131bd\transformed\fab-1.6.4\AndroidManifest.xml:12:5-20
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\f56d8339397b00ee40c8d95bcb4828ec\transformed\firebase-common-ktx-20.3.3\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\f56d8339397b00ee40c8d95bcb4828ec\transformed\firebase-common-ktx-20.3.3\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\6f54f738f4bde98b8bcf530a22a356a1\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:27:5-35:19
@@ -293,6 +296,8 @@ MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\cache
 MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\kwan\.gradle\caches\transforms-3\12859bb4ecb38a1270e5105b23d6693a\transformed\glide-4.15.1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\kwan\.gradle\caches\transforms-3\0cb959e0f4e2ef6e3113b2a13e7f0b9a\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\kwan\.gradle\caches\transforms-3\84b02866d50d6e966bec19bf90f131bd\transformed\fab-1.6.4\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.clans:fab:1.6.4] C:\Users\kwan\.gradle\caches\transforms-3\84b02866d50d6e966bec19bf90f131bd\transformed\fab-1.6.4\AndroidManifest.xml:8:5-10:41
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\kwan\.gradle\caches\transforms-3\d8528c0e11c1c58924ed28aea4e75816\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\kwan\.gradle\caches\transforms-3\d8528c0e11c1c58924ed28aea4e75816\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\kwan\.gradle\caches\transforms-3\f56d8339397b00ee40c8d95bcb4828ec\transformed\firebase-common-ktx-20.3.3\AndroidManifest.xml:5:5-7:41

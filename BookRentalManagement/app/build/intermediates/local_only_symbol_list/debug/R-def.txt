@@ -6,12 +6,15 @@ color order_tab_selected
 color purple_200
 color purple_500
 color purple_700
+color red
 color teal_200
 color teal_700
 color white
 drawable baseline_add_24
 drawable baseline_add_photo_alternate_24
 drawable baseline_arrow_drop_down_24
+drawable baseline_delete_24
+drawable baseline_format_list_bulleted_24
 drawable confirm_button
 drawable custom_edit_text
 drawable ic_launcher_background
@@ -26,6 +29,7 @@ drawable login_activ
 drawable main_button_shape
 drawable main_screen_gray_sqr
 drawable no_image_available
+drawable round_button
 drawable rounded_border
 drawable search_bar
 drawable sharp_check_24
@@ -53,6 +57,7 @@ id bookDetail_Title
 id bookDetail_stock
 id bookDetail_thumbnail
 id book_author
+id book_deleteButton
 id book_detail_sumary
 id book_genre
 id book_list_card
