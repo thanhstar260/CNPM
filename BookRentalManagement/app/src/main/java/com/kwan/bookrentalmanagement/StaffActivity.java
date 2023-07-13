@@ -61,6 +61,7 @@ public class StaffActivity extends AppCompatActivity {
                 staffDataList.clear();
                 for (DataSnapshot itemSnapshot: snapshot.getChildren()){
                     StaffData staffData = itemSnapshot.getValue(StaffData.class);
+                    staffData.setKey(itemSnapshot.getKey());
                     staffDataList.add(staffData);
                 }
                 adapter.notifyDataSetChanged();

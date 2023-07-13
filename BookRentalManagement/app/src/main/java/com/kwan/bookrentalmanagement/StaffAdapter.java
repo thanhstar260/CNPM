@@ -51,6 +51,7 @@ public class StaffAdapter extends RecyclerView.Adapter<MyViewHolder> {
                 intent.putExtra("Phone", staffList.get(holder.getAdapterPosition()).getPhone());
                 intent.putExtra("Gender", staffList.get(holder.getAdapterPosition()).getGender());
                 intent.putExtra("Avatar", staffList.get(holder.getAdapterPosition()).getAvatar());
+                intent.putExtra("Key",staffList.get(holder.getAdapterPosition()).getKey());
                 context.startActivity(intent);
 
             }

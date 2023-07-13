@@ -16,6 +16,9 @@
         android:theme="@style/Theme.BookRentalManagement"
         tools:targetApi="31">
         <activity
+            android:name=".StaffUpdate"
+            android:exported="false" />
+        <activity
             android:name=".StaffDetail"
             android:exported="false" />
         <activity

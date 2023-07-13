@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.kwan.bookrentalmanagement.app-mergeDebugResources-34:/values-ro/values-ro.xml",
+            "outputFile": "com.kwan.bookrentalmanagement.app-mergeDebugResources-35:/values-ro/values-ro.xml",
             "map": [
                 {
                     "source": "C:\\Users\\nguye\\.gradle\\caches\\transforms-3\\d488f2c4c46007d73eddcd94b832f4ea\\transformed\\material-1.9.0\\res\\values-ro\\values-ro.xml",
