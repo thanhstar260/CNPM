@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="border_color">#FF000000</color>
     <color name="order_tab_selected">#D9D9D9</color>
+    <color name="red">#c70000</color>
 </resources>

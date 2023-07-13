@@ -6,6 +6,7 @@
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
+    <color name="red">#c70000</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
@@ -30,6 +31,11 @@
     <string name="order_renting_fragment">Renting</string>
     <string name="order_waiting_fragment">Waiting</string>
     <string name="project_id" translatable="false">bookrental-ae411</string>
+    <style name="Feature_title">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
     <style name="Theme.BookRentalManagement" parent="Theme.AppCompat.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
@@ -42,6 +48,24 @@
         
         <item name="android:statusBarColor" ns1:targetApi="21">?attr/colorPrimaryVariant</item>
         
+    </style>
+    <style name="bookDetail_info">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="bookDetail_title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="bookItem_book_info">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="bookItem_book_title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <style name="ng_nh_p_tit">
         <item name="android:textSize">32sp</item>
