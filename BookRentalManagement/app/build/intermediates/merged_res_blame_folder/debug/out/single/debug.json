@@ -32,12 +32,12 @@
         "source": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-main-38:\\drawable\\main_screen_gray_sqr.xml"
     },
     {
-        "merged": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-merged_res-36:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-main-38:\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-merged_res-36:\\layout_book_list.xml.flat",
         "source": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-main-38:\\layout\\book_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-merged_res-36:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-main-38:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-merged_res-36:\\xml_backup_rules.xml.flat",
@@ -104,12 +104,12 @@
         "source": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-main-38:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-merged_res-36:\\drawable_icon__question_mark_.png.flat",
-        "source": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-main-38:\\drawable\\icon__question_mark_.png"
+        "merged": "com.kwan.bookrentalmanagement.app-merged_res-36:/layout_activity_add_booklist.xml.flat",
+        "source": "com.kwan.bookrentalmanagement.app-main-38:/layout/activity_add_booklist.xml"
     },
     {
-        "merged": "com.kwan.bookrentalmanagement.app-merged_res-36:/layout_book_list.xml.flat",
-        "source": "com.kwan.bookrentalmanagement.app-main-38:/layout/book_list.xml"
+        "merged": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-merged_res-36:\\drawable_icon__question_mark_.png.flat",
+        "source": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-main-38:\\drawable\\icon__question_mark_.png"
     },
     {
         "merged": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-merged_res-36:\\layout_book_list_recycler_item.xml.flat",
@@ -150,6 +150,10 @@
     {
         "merged": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-merged_res-36:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-main-38:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-merged_res-36:\\drawable_baseline_add_photo_alternate_24.xml.flat",
+        "source": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-main-38:\\drawable\\baseline_add_photo_alternate_24.xml"
     },
     {
         "merged": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-merged_res-36:\\xml_data_extraction_rules.xml.flat",

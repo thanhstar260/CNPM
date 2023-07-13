@@ -2930,6 +2930,7 @@ int drawable abc_vector_test 0x7f070077
 int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable baseline_add_24 0x7f07007a
+int drawable baseline_add_photo_alternate_24 0x7f070106
 int drawable baseline_arrow_drop_down_24 0x7f07007b
 int drawable btn_checkbox_checked_mtrl 0x7f07007c
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07007d
@@ -3151,7 +3152,9 @@ int id activity_chooser_view_content 0x7f090047
 int id add 0x7f090048
 int id addAuthor 0x7f090049
 int id addPrice 0x7f09004a
+int id addStock 0x7f09022d
 int id addSumary 0x7f09004b
+int id addThumbnail 0x7f09022e
 int id addTitle 0x7f09004c
 int id add_book_confirm 0x7f09004d
 int id add_button 0x7f09004e
@@ -3581,8 +3584,10 @@ int id textView2 0x7f0901f5
 int id textView3 0x7f0901f6
 int id textView4 0x7f0901f7
 int id textView5 0x7f0901f8
+int id textView6 0x7f09022f
 int id textView7 0x7f0901f9
 int id textView8 0x7f0901fa
+int id textView9 0x7f090230
 int id text_input_end_icon 0x7f0901fb
 int id text_input_error_icon 0x7f0901fc
 int id text_input_start_icon 0x7f0901fd

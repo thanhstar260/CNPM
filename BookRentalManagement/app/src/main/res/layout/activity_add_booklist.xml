@@ -13,7 +13,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".Add_Booklist">
 
 
@@ -62,10 +62,166 @@
             android:text="Price"
             android:textColor="@color/black"
             android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/addStock"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/addStock"
+            app:layout_constraintTop_toBottomOf="@+id/addStock" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Stock"
+            android:textColor="@color/black"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="@+id/addAuthor"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/addAuthor"
             app:layout_constraintTop_toBottomOf="@+id/addAuthor" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/genreCard"
+            android:layout_width="335dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView10"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvGenre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:hint="Select genre"
+
+                    android:paddingLeft="10dp"
+                    android:textColorHint="#A0A0A0" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/baseline_arrow_drop_down_24" />
+
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/genreCard"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/genreCard"
+            app:layout_constraintTop_toBottomOf="@+id/genreCard" />
+
+        <EditText
+            android:id="@+id/addSumary"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_edit_text"
+            android:ems="10"
+            android:hint="Description"
+            android:maxHeight="400dp"
+            android:minHeight="46dp"
+            android:paddingLeft="10dp"
+            android:textColorHint="#A0A0A0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView13"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Upload book cover"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/addSumary"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/addSumary"
+            app:layout_constraintTop_toBottomOf="@+id/addSumary" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Genre"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/addPrice"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/addPrice"
+            app:layout_constraintTop_toBottomOf="@+id/addPrice" />
+
+        <EditText
+            android:id="@+id/addPrice"
+            android:layout_width="335dp"
+            android:layout_height="46dp"
+            android:background="@drawable/custom_edit_text"
+            android:ems="10"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:textColorHint="#A0A0A0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <EditText
+            android:id="@+id/addStock"
+            android:layout_width="335dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_edit_text"
+            android:ems="10"
+            android:hint="Stock"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:textColorHint="#A0A0A0"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <ImageView
+            android:id="@+id/addThumbnail"
+            android:layout_width="90dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_add_photo_alternate_24"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <EditText
             android:id="@+id/addTitle"
@@ -99,111 +255,6 @@
             app:layout_constraintStart_toStartOf="@+id/textView7"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-        <EditText
-            android:id="@+id/addPrice"
-            android:layout_width="335dp"
-            android:layout_height="46dp"
-            android:background="@drawable/custom_edit_text"
-            android:ems="10"
-            android:hint="Price"
-            android:inputType="numberDecimal"
-            android:paddingLeft="10dp"
-            android:textColorHint="#A0A0A0"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/textView8"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView8"
-            app:layout_constraintTop_toBottomOf="@+id/textView8"
-            app:layout_constraintVertical_bias="0.029" />
-
-
-        <EditText
-            android:id="@+id/addSumary"
-            android:layout_width="334dp"
-            android:layout_height="wrap_content"
-            android:minHeight="46dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/custom_edit_text"
-            android:ems="10"
-            android:hint="Description"
-            android:maxHeight="400dp"
-            android:paddingLeft="10dp"
-            android:textColorHint="#A0A0A0"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/textView13"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView13"
-            app:layout_constraintTop_toBottomOf="@+id/textView13"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/genreCard"
-            android:layout_width="335dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="30dp"
-            app:layout_constraintEnd_toEndOf="@+id/textView10"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView10"
-            app:layout_constraintTop_toBottomOf="@+id/textView10"
-            app:layout_constraintVertical_bias="0.029"
-            app:strokeColor="@color/black"
-            app:strokeWidth="2dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/tvGenre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerInParent="true"
-                    android:hint="Select genre"
-                    android:paddingLeft="10dp"
-                    android:textColorHint="#A0A0A0"
-
-                    />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerInParent="true"
-                    android:paddingRight="10dp"
-                    android:src="@drawable/baseline_arrow_drop_down_24" />
-
-
-            </RelativeLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Genre"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/addPrice"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/addPrice"
-            app:layout_constraintTop_toBottomOf="@+id/addPrice" />
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Description"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="@+id/genreCard"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/genreCard"
-            app:layout_constraintTop_toBottomOf="@+id/genreCard" />
 
         <Button
             android:id="@+id/add_book_confirm"
@@ -218,8 +269,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.016" />
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
