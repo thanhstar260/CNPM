@@ -5,19 +5,19 @@ import { BookData } from '../../../util/BookData';
 import { Button } from '@chakra-ui/react';
 import { color } from 'framer-motion';
 
-const ProductListingAll = () => {
+const ProductListingAll = ({ booksData }) => {
     const [currentPage, setCurrentPage] = useState(1)
 	const booksPerPage = 12
 
     const indexOfLastBook = currentPage * booksPerPage
 	const indexOfFirstBook = indexOfLastBook - booksPerPage
-	const currentBooks = BookData.slice(indexOfFirstBook, indexOfLastBook)
+	const currentBooks = booksData.slice(indexOfFirstBook, indexOfLastBook)
 
 	const handlePageChange = pageNumber => {
 		setCurrentPage(pageNumber)
 	}
 
-	const totalPages = Math.ceil(BookData.length / booksPerPage)
+	const totalPages = Math.ceil(booksData.length / booksPerPage)
 
     return (
         <section>
@@ -43,7 +43,7 @@ const ProductListingAll = () => {
 							onClick={() => handlePageChange(pageNumber)}
                             style={
                                 currentPage === pageNumber ? {background: 'var(--primary-color-bright)', color: '#fff'}:{background: '#eee', color: '#000'}
-                            }
+                            }           
 						>
 							{pageNumber}
 						</Button>

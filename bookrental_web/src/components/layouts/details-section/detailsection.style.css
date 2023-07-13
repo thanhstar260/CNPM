@@ -27,16 +27,25 @@
 }
 
 .book-detail-container p{
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .book-description{
-    line-height: 1.7rem;
+    line-height: 1.5rem;
 }
 
 .book-detail-container h3{
     font-size: 1.5rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     color: var(--primary-color-bright);
 }
 
+.see-more-link{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.see-more-link:hover{
+    cursor: pointer;
+    font-style: italic;
+}

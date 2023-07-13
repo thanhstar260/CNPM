@@ -59,8 +59,10 @@ h1{
     transition: 0.2s ease-in;
     font-family: Chivo Mono;
     font-size: 1rem;
+    border-radius: 5px;
 }
 
 .button-primary:hover{
     background-color: #222;
+    cursor: pointer;
 }

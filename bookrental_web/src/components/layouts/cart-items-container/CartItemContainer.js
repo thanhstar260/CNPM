@@ -10,7 +10,7 @@ const CartItemsContainer = () => {
         <section className="cart-item-container">
             <div className="container">
                 {totalAmount === 0 ? (
-                    <h2>Empty Cart</h2>
+                    <p class='empty-cart'>Your shopping cart is empty!</p>
                 ):(
                     <React.Fragment>
                         <h2>Cart</h2>

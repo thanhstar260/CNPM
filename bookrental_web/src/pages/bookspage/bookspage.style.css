@@ -8,3 +8,9 @@
     text-align: center;
     padding-bottom: 10px;
 }
+
+.book-container{
+    display: flex;
+    padding-left: 110px;
+    padding-right: 100px;
+}

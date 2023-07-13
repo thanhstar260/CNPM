@@ -3,8 +3,11 @@ import { useLocation } from 'react-router-dom';
 import Navbar from '../../components/layouts/navbar/Navbar';
 import Footer from '../../components/layouts/footer/Footer';
 import './searchpage.style.css';
+import '../../components/layouts/productlisting/productlisting.style.css';
 import { BookData } from '../../util/BookData';
-import SearchResultCard from '../../components/cards/search-result-card/SearchResultCard';
+import ProductSlider from '../../components/layouts/productslide/ProductSlide';
+import BooksPage from '../bookspage/BooksPage';
+import { ReactComponent as SeeAll } from "../../assets/images/right.svg"
 
 const SearchPage = () => {
     const location = useLocation();
@@ -19,21 +22,39 @@ const SearchPage = () => {
     }, [location.state])
 
     return (
-        <section>
-            <Navbar darkTheme={true} />
-            
-            <div className='search-result-container'>
-                <div className="container">
-                    <h2>Search Results</h2>
+        <div>
+            {searchResult.length === 0 ? (
+                <section>
+                    <Navbar darkTheme={true} />
+                    
+                    <div className='search-result-container'>
+                        <div className="container">
+                            <h3>Couldn't find the book that matches your search value.</h3>
+                        </div>
+                    </div>
 
-                    {searchResult.map((result) => (
-                        <SearchResultCard key={result.id} bookData={result} />
-                    ))}
-                </div>
-            </div>
-
-            <Footer />
-        </section>
+                    <div className='recommend-container'>
+                        <div className="sub-product-container">
+                            <div className="book-cate">
+                                <h2>New Arrival</h2>
+                                <div className="see-all">
+                                    <a href="#" className="product-link">See all</a>
+                                    <SeeAll />
+                                </div>
+                            </div>
+                            <div className="listing-container">
+                                <ProductSlider />
+                            </div>
+                        </div>
+                    </div>
+        
+                    <Footer />
+                </section>
+            ) : (
+                <BooksPage books={searchResult}/>
+            )
+            }
+        </div>
     )
 }
 

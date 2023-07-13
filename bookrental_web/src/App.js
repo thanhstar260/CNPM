@@ -11,6 +11,8 @@ import Signup from "./pages/signuppage/Signup";
 import Login from "./pages/loginpage/Login";
 import SearchPage from "./pages/searchpage/SearchPage";
 import NotificationPage from "./pages/notificationspages/NotificationPage";
+import { BookData } from "./util/BookData";
+import PriceFilterPage from "./pages/pricefilterpage/PriceFilterPage";
 
 export const UserContext = createContext({});
 export const CartContext = createContext({});
@@ -48,9 +50,10 @@ const App = () => {
             <CartContext.Provider value={{cartItems, totalAmount, setCartItems}}>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/books" element={<BooksPage />} />
+                    <Route path="/books" element={<BooksPage books={BookData}/>} />
                     <Route path="/cart" element={<CartPage />} />
                     <Route path="/search" element={<SearchPage />} />
+                    <Route path="/books/price-filter" element={<PriceFilterPage />} />
                     <Route path="/book-details/:id" element={<BookDetails />} />
                     <Route path="/signup" element={<Signup />} />
                     <Route path="/login" element={<Login />} />

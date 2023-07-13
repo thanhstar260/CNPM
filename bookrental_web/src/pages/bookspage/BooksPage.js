@@ -4,8 +4,9 @@ import Navbar from '../../components/layouts/navbar/Navbar';
 import SearchInputForm from "../../components/forms/searchinputForm/SearchInputForm";
 import ProductListingAll from "../../components/layouts/productlistingall/ProductListingAll";
 import Footer from "../../components/layouts/footer/Footer";
+import Filter from "../../components/layouts/filter/Filter";
 
-const BooksPage = () => {
+const BooksPage = ({ books }) => {
     return (
         <section>
             <Navbar darkTheme={true}/>
@@ -15,7 +16,11 @@ const BooksPage = () => {
                 <SearchInputForm darkTheme={false}/>
 
             </div>
-            <ProductListingAll />
+
+            <div className="book-container">
+                <Filter />
+                <ProductListingAll booksData={books}/>
+            </div>
             <Footer />
         </section>
     )

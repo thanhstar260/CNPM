@@ -1,0 +1,16 @@
+#radio-buttons-group{
+    color: #000;
+}
+
+.css-j204z7-MuiFormControlLabel-root{
+    font-size: 17px;
+}
+
+.css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+    color: var(--primary-color-bright) !important;
+}
+
+.css-j204z7-MuiFormControlLabel-root {
+    margin: 0px !important;
+    padding: 0px;
+}
