@@ -11,6 +11,15 @@ public class BookData {
     private String sumary;
     private String thumbnail;
     private Integer stock;
+    private String key;
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
 
     public BookData(String title, String author, Integer price, String sumary, List<String> genre, String thumbnail , Integer stock) {
         this.title = title;
