@@ -11,7 +11,7 @@ const ProductListingCard = ({bookData}) => {
             </div>
             <div className="product-listing-details-container">
                 <p className="author-name">{bookData.author_name}</p>
-                <h3>{bookData.book_name}</h3>
+                <h3>{bookData.title}</h3>
             </div>
             <p className="pricing">{bookData.price} vnd</p>
             <div className="card-btn-container">

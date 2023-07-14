@@ -4,6 +4,9 @@ import ProductListingCard from "../../cards/product-listing-card/ProductListingC
 import { BookData } from "../../../util/BookData";
 import { ReactComponent as SeeAll } from "../../../assets/images/right.svg";
 import ProductSlider from "../productslide/ProductSlide";
+import { NewArrivalData } from "../../../util/NewArrivalData";
+import { HotData } from "../../../util/HotData";
+import { PopularData } from "../../../util/PopularData";
 
 const ProductListing = () => {
     return(
@@ -17,7 +20,7 @@ const ProductListing = () => {
                     </div>
                 </div>
                 <div className="listing-container">
-                    <ProductSlider />
+                    <ProductSlider bookData={NewArrivalData}/>
                 </div>
             </div>
 
@@ -30,7 +33,7 @@ const ProductListing = () => {
                     </div>
                 </div>
                 <div className="listing-container">
-                    <ProductSlider />
+                    <ProductSlider bookData={HotData}/>
                 </div>
             </div>
 
@@ -43,7 +46,7 @@ const ProductListing = () => {
                     </div>
                 </div>
                 <div className="listing-container">
-                    <ProductSlider />
+                    <ProductSlider bookData={PopularData}/>
                 </div>
             </div>
             

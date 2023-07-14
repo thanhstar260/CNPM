@@ -23,7 +23,7 @@ const DetailsSection = () => {
     if (user) {
       //add to cart
       setCartItems([...cartItems, bookData]);
-      alert(`The book ${bookData.book_name} is added to the cart`);
+      alert(`The book ${bookData.title} is added to the cart`);
     } else {
       navigate('/login');
       alert('Please Login or Sign up first..');
@@ -34,9 +34,9 @@ const DetailsSection = () => {
     setExpanded(!expanded);
   };
 
-  const truncatedDescription = bookData.book_description?.slice(0, 300);
+  const truncatedDescription = bookData.sumary?.slice(0, 300);
   const displayDescription = expanded
-    ? bookData.book_description
+    ? bookData.sumary
     : truncatedDescription;
 
   return (
@@ -48,11 +48,11 @@ const DetailsSection = () => {
           </div>
 
           <div className="book-detail-container">
-            <h2>{bookData.book_name}</h2>
+            <h2>{bookData.title}</h2>
             <p className="text-primary">{bookData.author_name}</p>
             <p className="book-description">
               {displayDescription}
-              {bookData.book_description?.length > 800 && (
+              {bookData.sumary?.length > 800 && (
                 <span className="see-more-link" onClick={toggleExpanded}>
                   {expanded ? <i> see less</i> : <i> ... see more</i>}
                 </span>
