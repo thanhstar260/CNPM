@@ -76,4 +76,3 @@ onValue(ref(database, 'Order'), (snapshot) => {
 });
 
 export const HotData = bookData;
-process.exit();

@@ -73,4 +73,3 @@ onValue(ref(database, 'OrderData'), (snapshot) => {
 });
 
 export const PopularData = bookData;
-process.exit();

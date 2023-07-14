@@ -4,9 +4,20 @@ import ProductListingCard from "../../cards/product-listing-card/ProductListingC
 import { BookData } from "../../../util/BookData";
 import { ReactComponent as SeeAll } from "../../../assets/images/right.svg";
 import ProductSlider from "../productslide/ProductSlide";
-import { NewArrivalData } from "../../../util/NewArrivalData";
+//import { NewArrivalData } from "../../../util/NewArrivalData";
 import { HotData } from "../../../util/HotData";
 import { PopularData } from "../../../util/PopularData";
+
+const { NewArrivalData } = require('../../../util/NewArrivalData.js');
+
+NewArrivalData()
+  .then((bookData) => {
+    console.log('New Arrival Data:', bookData);
+    // Use the bookData as needed
+  })
+  .catch((error) => {
+    console.error('Error fetching New Arrival Data:', error);
+  });
 
 const ProductListing = () => {
     return(
@@ -20,7 +31,7 @@ const ProductListing = () => {
                     </div>
                 </div>
                 <div className="listing-container">
-                    <ProductSlider bookData={NewArrivalData}/>
+                    <ProductSlider />
                 </div>
             </div>
 
@@ -33,7 +44,7 @@ const ProductListing = () => {
                     </div>
                 </div>
                 <div className="listing-container">
-                    <ProductSlider bookData={HotData}/>
+                    <ProductSlider />
                 </div>
             </div>
 
@@ -46,7 +57,7 @@ const ProductListing = () => {
                     </div>
                 </div>
                 <div className="listing-container">
-                    <ProductSlider bookData={PopularData}/>
+                    <ProductSlider />
                 </div>
             </div>
             
