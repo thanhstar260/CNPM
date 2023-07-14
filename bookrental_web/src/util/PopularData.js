@@ -20,18 +20,15 @@ const database = getDatabase(app);
 //
 // Step 1: Tạo đối tượng để theo dõi số lần thuê của từng sách
 const rentCount = {};
-
 let bookData = [];
-
 // Step 2: Lắng nghe sự thay đổi dữ liệu từ Firebase Realtime Database
-onValue(ref(database, 'OrderData'), (snapshot) => {
+onValue(ref(database, 'Order'), (snapshot) => {
   const orderData = snapshot.val();
 
   // Step 3: Lặp qua danh sách đơn hàng trong OrderData
   for (const orderId in orderData) {
     const order = orderData[orderId];
     const orderStatus = order.order_status;
-    const returnDate = order.return_date;
 
     // Kiểm tra đơn hàng có order_status là "done"
     if (orderStatus === "done") {
@@ -51,7 +48,6 @@ onValue(ref(database, 'OrderData'), (snapshot) => {
   const top15Books = Object.keys(rentCount).sort((a, b) => rentCount[b] - rentCount[a]).slice(0, 15);
 
   // Step 5: Lấy dữ liệu sách từ Firebase
-
 
   onValue(ref(database, 'Books'), (snapshot) => {
     const books = snapshot.val();
@@ -73,4 +69,4 @@ onValue(ref(database, 'OrderData'), (snapshot) => {
 });
 
 export const PopularData = bookData;
-process.exit();
+// process.exit();

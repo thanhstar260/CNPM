@@ -34,19 +34,24 @@ onValue(ref(database, 'Books'), (snapshot) => {
     const top15Books = sortedBooks.slice(0, 15);
   
     // Step 4: Tạo mảng BookData theo định dạng yêu cầu
-    const bookData = top15Books.map(bookId => {
-      const book = {
-        id: bookId,
-        ...books[bookId],
-        createdDate: books[bookId].createdDate
-      };
-      return book;
-    });
+    onValue(ref(database, 'Books'), (snapshot) => {
+      const books = snapshot.val();
+      top15Books.forEach(bookId => {
+        if (books[bookId]) {
+          const book = {
+            id: bookId,
+            ...books[bookId],
+            createdDate: moment().format('DD/MM/YY')
+          };
+          bookData.push(book);
+        }
+      });
   
     // In kết quả
     // console.log("BookData:");
     // console.log(bookData);
+    });
   });
 
 export const NewArrivalData = bookData;
-process.exit();
+// process.exit();
