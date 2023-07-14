@@ -16,6 +16,7 @@
     "axios": "^1.4.0",
     "firebase": "^9.22.2",
     "framer-motion": "^10.12.18",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",

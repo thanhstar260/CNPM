@@ -1,5 +1,6 @@
 const { initializeApp } = require("firebase/app");
-const { getDatabase, ref, set, } = require("firebase/database");
+const { getDatabase, ref, set, onValue } = require("firebase/database");
+const moment = require('moment');
 
 const firebaseConfig = {
     apiKey: "AIzaSyCIUrrQTjBAWIsGBtBYVPMmZCNIja7Lh7c",
@@ -15,182 +16,147 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
-// OrderData
+// // SÁCH HOT (ĐƯỢC THUÊ NHIỀU NHẤT TRONG 30 NGÀY)
+// //
+// // Step 1: Xác định khoảng thời gian từ ngày hiện tại về trước 30 ngày
+// const currentDate = moment().format('YYYY-MM-DD');
+// const startDate = moment().subtract(30, 'days').format('YYYY-MM-DD');
+
+// // Step 2: Tạo đối tượng để theo dõi số lần thuê của từng sách
+// const rentCount = {};
+
+// // Step 3: Lắng nghe sự thay đổi dữ liệu từ Firebase Realtime Database
+// onValue(ref(database, 'Order'), (snapshot) => {
+//   const orderData = snapshot.val();
+
+//   // Step 4: Lặp qua danh sách đơn hàng trong OrderData
+//   for (const orderId in orderData) {
+//     const order = orderData[orderId];
+//     const orderStatus = order.order_status;
+//     const orderDate = order.verify_date;
+
+//     // Kiểm tra đơn hàng có order_status là "done" và thuộc trong khoảng thời gian 30 ngày trước
+//     if (orderStatus === "done" && moment(orderDate, 'DD/MM/YY').isBetween(startDate, currentDate, undefined, '[]')) {
+//       const bookIds = order.book_id;
+//       bookIds.forEach(bookId => {
+//         // Cập nhật số lần thuê của từng sách trong đối tượng rentCount
+//         if (rentCount[bookId]) {
+//           rentCount[bookId] += 1;
+//         } else {
+//           rentCount[bookId] = 1;
+//         }
+//       });
+//     }
+//   }
+
+//   // Step 5: Lấy top 15 cuốn sách đã được thuê nhiều nhất
+//   const top15Books = Object.keys(rentCount).sort((a, b) => rentCount[b] - rentCount[a]).slice(0, 15).map(bookId => parseInt(bookId));
+
+//     // Step 6: Lấy dữ liệu sách từ Firebase
+//     const bookData = [];
+
+//     onValue(ref(database, 'Books'), (snapshot) => {
+//     const books = snapshot.val();
+//     top15Books.forEach(bookId => {
+//         if (books[bookId]) {
+//         const book = {
+//             id: bookId,
+//             ...books[bookId],
+//             createdDate: moment().format('DD/MM/YY')
+//         };
+//         bookData.push(book);
+//         }
+//     });
+
+//     // In kết quả
+//     console.log("BookData:");
+//     console.log(bookData);
+//     });
+// });
+
+
+// // NEW ARRIVAL (CÓ CREATEDDATE MỚI NHẤT)
+// //
+// // Step 1: Lấy dữ liệu sách từ Firebase
+// onValue(ref(database, 'Books'), (snapshot) => {
+//     const books = snapshot.val();
+  
+//     // Step 2: Sắp xếp sách theo createdDate mới nhất
+//     const sortedBooks = Object.keys(books).sort((a, b) => {
+//       const dateA = moment(books[a].createdDate, 'DD/MM/YY');
+//       const dateB = moment(books[b].createdDate, 'DD/MM/YY');
+//       return dateB.diff(dateA);
+//     });
+  
+//     // Step 3: Lấy top 15 quyển sách mới nhất
+//     const top15Books = sortedBooks.slice(0, 15);
+  
+//     // Step 4: Tạo mảng BookData theo định dạng yêu cầu
+//     const bookData = top15Books.map(bookId => {
+//       const book = {
+//         id: bookId,
+//         ...books[bookId],
+//         createdDate: books[bookId].createdDate
+//       };
+//       return book;
+//     });
+  
+//     // In kết quả
+//     console.log("BookData:");
+//     console.log(bookData);
+//   });
+
+
+// SÁCH POPULAR (ĐƯỢC THUÊ NHIỀU NHẤT)
 //
-function writeOrdersData(order_id, user_id,book_id, staff_id, order_status, return_date, verify_date) {
-    const reference = ref(database, "Order/" + order_id);
-    set(reference, {
-        user_id: user_id,
-        book_id: book_id,
-        staff_id: staff_id,
-        order_status: order_status,
-        return_date: return_date,
-        verify_date: verify_date
-    })
-        .then(() => {
-        console.log("Data inserted successfully!");
-        
-        const userReference = ref(database, "User/" + user_id + "/orders/" + order_id);
-        const staffReference = ref(database, "Staff/" + staff_id + "/orders/" + order_id);
+// Step 1: Tạo đối tượng để theo dõi số lần thuê của từng sách
+const rentCount = {};
 
-        // Ghi nhận khóa ngoại bằng cách cập nhật dữ liệu trong bảng User
-        set(userReference, true)
-            .then(() => {
-            console.log("Foreign key inserted successfully!");
-            // process.exit();
-            })
-            .catch((error) => {
-            console.error("Error inserting foreign key:", error);
-            // process.exit();
-            });
-        
-        // Ghi nhận khóa ngoại bằng cách cập nhật dữ liệu trong bảng Staff
-        set(staffReference, true)
-        .then(() => {
-        console.log("Foreign key inserted successfully!");
-        // process.exit();
-        })
-        .catch((error) => {
-        console.error("Error inserting foreign key:", error);
-        // process.exit();
-        });
-        })
-        .catch((error) => {
-        console.error("Error inserting data:", error);
-        // process.exit();
-        });
-        
-}
+// Step 2: Lắng nghe sự thay đổi dữ liệu từ Firebase Realtime Database
+onValue(ref(database, 'OrderData'), (snapshot) => {
+  const orderData = snapshot.val();
 
-const OrderData = [
-    {
-        "order_id": 1, 
-        "user_id": 1,
-        "book_id": [2,5,10],
-        "staff_id": 1,
-        "order_status": "done", 
-        "return_date": "25/06/23",
-        "verify_date": "21/06/23" 
-    },
-    {
-        "order_id": 2, 
-        "user_id": 1,
-        "book_id": [3,10,8],
-        "staff_id": 1,
-        "order_status": "waiting", 
-        "return_date": "None",
-        "verify_date": "None" 
-    },
-    {
-        "order_id": 3, 
-        "user_id": 2,
-        "book_id": [2,6,4,3],
-        "staff_id": 2,
-        "order_status": "renting", 
-        "return_date": "None",
-        "verify_date": "11/06/23" 
-    },
-    {
-        "order_id": 3, 
-        "user_id": 2,
-        "book_id": [2,6,4,3],
-        "staff_id": 2,
-        "order_status": "renting", 
-        "return_date": "None",
-        "verify_date": "11/06/23" 
-    },
-    {
-        "order_id": 4, 
-        "user_id": 1,
-        "book_id": [12,25,110],
-        "staff_id": 1,
-        "order_status": "done", 
-        "return_date": "05/06/23",
-        "verify_date": "02/06/23" 
-    },
-    {
-        "order_id": 5, 
-        "user_id": 2,
-        "book_id": [23,21,28],
-        "staff_id": 1,
-        "order_status": "waiting", 
-        "return_date": "None",
-        "verify_date": "None" 
-    },
-    {
-        "order_id": 6, 
-        "user_id": 2,
-        "book_id": [52,56,54,63],
-        "staff_id": 2,
-        "order_status": "renting", 
-        "return_date": "None",
-        "verify_date": "11/07/23" 
-    },
-    {
-        "order_id": 7, 
-        "user_id": 1,
-        "book_id": [32,105,50],
-        "staff_id": 1,
-        "order_status": "done", 
-        "return_date": "10/07/23",
-        "verify_date": "08/07/23" 
-    },
-    {
-        "order_id": 8, 
-        "user_id": 2,
-        "book_id": [43,140,84],
-        "staff_id": 1,
-        "order_status": "done", 
-        "return_date": "10/06/23",
-        "verify_date": "08/06/23" 
-    },
-    {
-        "order_id": 9, 
-        "user_id": 2,
-        "book_id": [52,50,54,63],
-        "staff_id": 2,
-        "order_status": "done", 
-        "return_date": "10/06/23",
-        "verify_date": "08/06/23" 
-    },
-    {
-        "order_id": 10, 
-        "user_id": 2,
-        "book_id": [62,54,63],
-        "staff_id": 2,
-        "order_status": "done", 
-        "return_date": "20/06/23",
-        "verify_date": "18/06/23" 
-    },
-    {
-        "order_id": 11, 
-        "user_id": 1,
-        "book_id": [62,54,63],
-        "staff_id": 1,
-        "order_status": "done", 
-        "return_date": "30/06/23",
-        "verify_date": "26/06/23" 
-    },
-    {
-        "order_id": 12, 
-        "user_id": 2,
-        "book_id": [62,54,63],
-        "staff_id": 1,
-        "order_status": "done", 
-        "return_date": "18/06/23",
-        "verify_date": "12/06/23" 
+  // Step 3: Lặp qua danh sách đơn hàng trong OrderData
+  for (const orderId in orderData) {
+    const order = orderData[orderId];
+    const orderStatus = order.order_status;
+    const returnDate = order.return_date;
+
+    // Kiểm tra đơn hàng có order_status là "done"
+    if (orderStatus === "done") {
+      const bookIds = order.book_id;
+      bookIds.forEach(bookId => {
+        // Cập nhật số lần thuê của từng sách trong đối tượng rentCount
+        if (rentCount[bookId]) {
+          rentCount[bookId] += 1;
+        } else {
+          rentCount[bookId] = 1;
+        }
+      });
     }
-];
+  }
 
-for (let i = 0; i < OrderData.length; i++) {
-const order = OrderData[i];
-writeOrdersData(
-    order.order_id,
-    order.user_id,
-    order.book_id,
-    order.staff_id,
-    order.order_status,
-    order.return_date,
-    order.verify_date
-);
-}
+  // Step 4: Lấy top 15 quyển sách được thuê nhiều nhất
+  const top15Books = Object.keys(rentCount).sort((a, b) => rentCount[b] - rentCount[a]).slice(0, 15);
+
+  // Step 5: Lấy dữ liệu sách từ Firebase
+  const bookData = [];
+
+  onValue(ref(database, 'Books'), (snapshot) => {
+    const books = snapshot.val();
+    top15Books.forEach(bookId => {
+      if (books[bookId]) {
+        const book = {
+          id: bookId,
+          ...books[bookId],
+          createdDate: moment().format('DD/MM/YY')
+        };
+        bookData.push(book);
+      }
+    });
+
+    // In kết quả
+    console.log("BookData:");
+    console.log(bookData);
+  });
+});

@@ -16,7 +16,7 @@ const SearchPage = () => {
     useEffect(() => {
         let searchValue = [];
 
-        searchValue = BookData.filter((data) => data.book_name.toLowerCase().includes(location.state.toLowerCase()) || data.author_name.toLowerCase().includes(location.state.toLowerCase()));
+        searchValue = BookData.filter((data) => data.title.toLowerCase().includes(location.state.toLowerCase()) || data.author_name.toLowerCase().includes(location.state.toLowerCase()));
 
         setSearchResult(searchValue);
     }, [location.state])
