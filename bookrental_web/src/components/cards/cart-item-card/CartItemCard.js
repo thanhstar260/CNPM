@@ -18,7 +18,7 @@ const CartItemCard = ({ bookData }) => {
             </div>
             <div className="cart-item-content-container">
                 <h2>{bookData.title}</h2>
-                <p>{bookData.author_name}</p>
+                <p>{bookData.author}</p>
                 <h3 className="cart-item-price">{bookData.price}</h3>
 
                 <button onClick={handleRemove} className='delete_btn'>Remove from Cart</button>

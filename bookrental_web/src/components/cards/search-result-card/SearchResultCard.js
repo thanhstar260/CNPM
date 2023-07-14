@@ -10,7 +10,7 @@ const SearchResultCard = ({ bookData }) => {
             </div>
             <div className="cart-item-content-container">
                 <h2>{bookData.title}</h2>
-                <p>{bookData.author_name}</p>
+                <p>{bookData.author}</p>
                 
                 <Link to={`/book-details/${bookData.id}`} className="button-primary">Product Details</Link>
             </div>

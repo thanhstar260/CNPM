@@ -13,6 +13,8 @@ import SearchPage from "./pages/searchpage/SearchPage";
 import NotificationPage from "./pages/notificationspages/NotificationPage";
 import { BookData } from "./util/BookData";
 import PriceFilterPage from "./pages/pricefilterpage/PriceFilterPage";
+import CategoryFilterPage from "./pages/categoryfilterpage/CategoryFilterPage";
+import CategoryFilterForm from './components/forms/categoryfilterForm/CategoryFilterForm';
 
 export const UserContext = createContext({});
 export const CartContext = createContext({});
@@ -45,23 +47,24 @@ const App = () => {
     },[cartItems])
 
 
-    return(
+    return (
         <UserContext.Provider value={authenticatedUser}>
-            <CartContext.Provider value={{cartItems, totalAmount, setCartItems}}>
-                <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/books" element={<BooksPage books={BookData}/>} />
-                    <Route path="/cart" element={<CartPage />} />
-                    <Route path="/search" element={<SearchPage />} />
-                    <Route path="/books/price-filter" element={<PriceFilterPage />} />
-                    <Route path="/book-details/:id" element={<BookDetails />} />
-                    <Route path="/signup" element={<Signup />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/notification" element={<NotificationPage />} />
-                </Routes>
-            </CartContext.Provider>
+          <CartContext.Provider value={{ cartItems, totalAmount, setCartItems }}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/books" element={<BooksPage books={BookData} />} />
+              <Route path="/cart" element={<CartPage />} />
+              <Route path="/search" element={<SearchPage />} />
+              <Route path="/books/price-filter" element={<PriceFilterPage />} />
+              <Route path="/books/category-filter/:category" element={<CategoryFilterPage />} />
+              <Route path="/book-details/:id" element={<BookDetails />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/notification" element={<NotificationPage />} />
+            </Routes>
+          </CartContext.Provider>
         </UserContext.Provider>
-    )
+    );      
 }
 
 export default App;

@@ -113,14 +113,13 @@ const database = getDatabase(app);
 const rentCount = {};
 
 // Step 2: Lắng nghe sự thay đổi dữ liệu từ Firebase Realtime Database
-onValue(ref(database, 'OrderData'), (snapshot) => {
+onValue(ref(database, 'Order'), (snapshot) => {
   const orderData = snapshot.val();
 
   // Step 3: Lặp qua danh sách đơn hàng trong OrderData
   for (const orderId in orderData) {
     const order = orderData[orderId];
     const orderStatus = order.order_status;
-    const returnDate = order.return_date;
 
     // Kiểm tra đơn hàng có order_status là "done"
     if (orderStatus === "done") {

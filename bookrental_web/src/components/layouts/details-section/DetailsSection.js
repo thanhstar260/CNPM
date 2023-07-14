@@ -49,7 +49,7 @@ const DetailsSection = () => {
 
           <div className="book-detail-container">
             <h2>{bookData.title}</h2>
-            <p className="text-primary">{bookData.author_name}</p>
+            <p className="text-primary">{bookData.author}</p>
             <p className="book-description">
               {displayDescription}
               {bookData.sumary?.length > 800 && (

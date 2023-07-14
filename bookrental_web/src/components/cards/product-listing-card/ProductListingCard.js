@@ -10,7 +10,7 @@ const ProductListingCard = ({bookData}) => {
                 <img src={bookData.book_url} alt="product-listing-image" className="product-listing-image"/>
             </div>
             <div className="product-listing-details-container">
-                <p className="author-name">{bookData.author_name}</p>
+                <p className="author-name">{bookData.author}</p>
                 <h3>{bookData.title}</h3>
             </div>
             <p className="pricing">{bookData.price} vnd</p>

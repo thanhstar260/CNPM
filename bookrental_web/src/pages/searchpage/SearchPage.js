@@ -16,7 +16,7 @@ const SearchPage = () => {
     useEffect(() => {
         let searchValue = [];
 
-        searchValue = BookData.filter((data) => data.title.toLowerCase().includes(location.state.toLowerCase()) || data.author_name.toLowerCase().includes(location.state.toLowerCase()));
+        searchValue = BookData.filter((data) => data.title.toLowerCase().includes(location.state.toLowerCase()) || data.author.toLowerCase().includes(location.state.toLowerCase()));
 
         setSearchResult(searchValue);
     }, [location.state])
@@ -43,7 +43,7 @@ const SearchPage = () => {
                                 </div>
                             </div>
                             <div className="listing-container">
-                                <ProductSlider />
+                                <ProductSlider bookData={BookData}/>
                             </div>
                         </div>
                     </div>

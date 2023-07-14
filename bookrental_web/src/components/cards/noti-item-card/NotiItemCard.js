@@ -19,7 +19,7 @@ const NotiItemCard = ({ notiData }) => {
                 <h2>Gửi yêu cầu thuê thành công</h2>
                 <h3>Ngày: </h3>
                 <h2>{notiData.book_name}</h2>
-                <p>{notiData.author_name}</p>
+                <p>{notiData.author}</p>
                 <h3 className="total-price">{totalAmount}</h3>
 
                 <button onClick={handleRemove} className='delete_btn'>Xóa</button>
