@@ -49,3 +49,34 @@
     cursor: pointer;
     font-style: italic;
 }
+
+.sub-product-container-dt{
+    margin-top: 70px;
+    margin-left: 150px;
+}
+
+.sub-product-container-dt .book-cate{
+    display:flex;
+    justify-content: space-between;
+    align-items:first baseline;
+}
+
+.sub-product-container-dt .product-link{
+    font-size: 17px;
+    text-decoration: underline;
+    color: #000;
+    margin-right: 5px;
+}
+
+.sub-product-container-dt .see-all{
+    display: flex;
+}
+
+.sub-product-container-dt h2{
+    font-size: 30px;
+    font-weight: 200px;
+}
+
+.sub-product-container-dt .sub-product-container{
+    padding-top: 100px;
+}

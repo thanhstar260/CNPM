@@ -1,18 +1,17 @@
 .cart-item{
     display: flex;
     padding: 2rem;
-    margin: 5rem 0;
+    margin: 3rem 0;
     border: 1px solid #555;
     border-radius: 7px;
 }
 
 .cart-item-img{
-    width: 6rem;
+    width: 7rem;
 }
 
 .cart-item-content-container{
     padding-left: 2rem;
-    padding-top:10px;
 }
 
 .cart-item-content-container p{
@@ -20,12 +19,12 @@
 }
 
 .cart-item-price{
-    padding-top: 2rem;
+    padding-top: 1rem;
     color: var(--primary-color-bright);
 }
 
 .delete_btn{
-    background-color: #333;
+    background-color: var(--primary-color-bright);
     color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -35,5 +34,5 @@
 }
 
 .delete_btn:hover{
-    background-color: #555;
+    background-color: #000;
 }

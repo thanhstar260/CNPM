@@ -5,9 +5,25 @@
 .empty-cart{
     display: flex;
     flex-direction: column;
-
     height: 30vh; /* Adjust the height as needed */
     text-align: center;
     
 }
 
+.ur-cart{
+    text-align: center;
+}
+
+.rent_btn{
+    background-color: var(--primary-color-bright);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor:pointer;
+    transition: 0.3s ease;
+}
+
+.rent_btn:hover{
+    background-color: #000;
+}

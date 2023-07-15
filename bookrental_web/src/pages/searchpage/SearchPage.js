@@ -38,7 +38,7 @@ const SearchPage = () => {
                             <div className="book-cate">
                                 <h2>New Arrival</h2>
                                 <div className="see-all">
-                                    <a href="#" className="product-link">See all</a>
+                                    <a href="http://localhost:3000/books/category-filter/new-arrival" className="product-link">See all</a>
                                     <SeeAll />
                                 </div>
                             </div>

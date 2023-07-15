@@ -1,56 +1,100 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./navbar.styles.css";
-import {Link, useNavigate} from 'react-router-dom';
-import { UserContext } from "../../../App";
-import {ReactComponent as Cart} from '../../../assets/images/cart.svg'
-import {getAuth, signOut} from "firebase/auth";
-import app from "../../../firebase/Firebase";
-import { ReactComponent as Notification } from "../../../assets/images/notification.svg";
+import { Link, useNavigate } from "react-router-dom";
+import { UserContext, CartContext, NotificationContext } from "../../../App";
+import { ReactComponent as CartIcon } from "../../../assets/images/cart.svg";
+import { ReactComponent as NotificationIcon } from "../../../assets/images/notification.svg";
 
-const Navbar = ({darkTheme, darkText}) => {
+const Navbar = ({ darkTheme, darkText }) => {
+  const user = useContext(UserContext);
+  const cartItems = useContext(CartContext).cartItems;
+  const notifications = useContext(NotificationContext).notifications;
+  const navigate = useNavigate();
 
-    const user=useContext(UserContext);
-    const auth=getAuth(app);
-    const navigate = useNavigate();
+  const handleLogout = () => {
+    // Handle logout logic
+    navigate("/");
+  };
 
-    const handleLogout = () => {
-        signOut(auth).then(() => {
-            navigate('/');
-        })
-        .catch((err)=>{
-            console.log(err);
-        })
-    }
-    
-    const showLoginAndSignUp = (
-        <nav className="nav-links-container">
-            <Link to="/" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Home</Link>
-            <Link to="/books" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Books</Link>
-            <Link to="/login" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Login</Link>
-            <Link to="/signup" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Sign Up</Link>
-        </nav>
-    )
+  const cartItemCount = cartItems.length;
+  const notificationCount = notifications.length;
 
-    const showLogoutAndCart = (
-        <nav className="nav-links-container">
-            <Link to="/" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Home </Link>
-            <Link to="/books" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Books</Link>
-            <a onClick={handleLogout} to="/logout" className={`${darkText ? 'nav-links-dark':'nav-links'}`}>Logout</a>
-            <Link to="/cart" className="cart-link"><Cart /></Link>
-            <Link to="/notification" className="noti-link"><Notification /></Link>
-        </nav>
-    )
+  const showLoginAndSignUp = (
+    <nav className="nav-links-container">
+      <Link
+        to="/"
+        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
+      >
+        Home
+      </Link>
+      <Link
+        to="/books"
+        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
+      >
+        Books
+      </Link>
+      <Link
+        to="/login"
+        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
+      >
+        Login
+      </Link>
+      <Link
+        to="/signup"
+        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
+      >
+        Sign Up
+      </Link>
+    </nav>
+  );
 
-    return (
-        <section className={`navbar-container ${darkTheme ? 'background-dark relative' : 'background-transparent' }`}>
-            <div className="container flex justify-between align-center">
-                <a href="#" className="logo">Book<span className="text-primary">rental</span></a>
+  const showLogoutAndCart = (
+    <nav className="nav-links-container">
+      <Link
+        to="/"
+        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
+      >
+        Home{" "}
+      </Link>
+      <Link
+        to="/books"
+        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
+      >
+        Books
+      </Link>
+      <a
+        onClick={handleLogout}
+        to="/logout"
+        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
+      >
+        Logout
+      </a>
+      <Link to="/cart" className="cart-link">
+        <CartIcon />
+        {cartItemCount > 0 && <span className="icon-count">{cartItemCount}</span>}
+      </Link>
+      <Link to="/notification" className="noti-link">
+        <NotificationIcon />
+        {notificationCount > 0 && <span className="icon-count">{notificationCount}</span>}
+      </Link>
+    </nav>
+  );
 
-                {user ? showLogoutAndCart : showLoginAndSignUp}
-                
-            </div>
-        </section>
-    )
-}
+  return (
+    <section
+      className={`navbar-container ${
+        darkTheme ? "background-dark relative" : "background-transparent"
+      }`}
+    >
+      <div className="container flex justify-between align-center">
+        <a href="#" className="logo">
+          Book<span className="text-primary">rental</span>
+        </a>
+
+        {user ? showLogoutAndCart : showLoginAndSignUp}
+      </div>
+    </section>
+  );
+};
 
 export default Navbar;

@@ -3,6 +3,8 @@ import './detailsection.style.css';
 import { useParams, useNavigate } from 'react-router-dom';
 import { BookData } from '../../../util/BookData';
 import { UserContext, CartContext } from '../../../App';
+import ProductSlider from '../productslide/ProductSlide';
+import { ReactComponent as SeeAll } from "../../../assets/images/right.svg"
 
 const DetailsSection = () => {
   const { id } = useParams();
@@ -75,6 +77,20 @@ const DetailsSection = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div className='recommend-container'>
+          <div className="sub-product-container-dt">
+              <div className="book-cate">
+                  <h2>Popular</h2>
+                  <div className="see-all">
+                      <a href="http://localhost:3000/books/category-filter/new-arrival" className="product-link">See all</a>
+                      <SeeAll />
+                  </div>
+              </div>
+              <div className="listing-container">
+                  <ProductSlider bookData={BookData}/>
+              </div>
+          </div>
       </div>
     </section>
   );

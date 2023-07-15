@@ -64,3 +64,18 @@
 .relative{
     position: relative !important;
 }
+
+.icon-count{
+    color:#fff;
+    background-color: red;
+    border-radius: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-style: none !important;
+    margin-left: -7px;
+}
+
+.nav-links-container a{
+    text-decoration: none;
+}
+

@@ -2,3 +2,24 @@
     padding-top: 5%;
     padding-bottom: 5rem;
 }
+
+.empty-notification{
+    padding:50px;
+    margin-bottom: 5rem;
+}
+
+.notification-card{
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.notification-card span{
+    font-weight: 700;
+}
+
+.book-info{
+    margin: 10px;
+}

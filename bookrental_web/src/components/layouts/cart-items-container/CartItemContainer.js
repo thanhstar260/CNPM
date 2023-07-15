@@ -1,32 +1,50 @@
-import React, {useContext} from "react";
-import './cart-item-container.style.css';
+import React, { useContext } from "react";
+import "./cart-item-container.style.css";
 import CartItemCard from "../../cards/cart-item-card/CartItemCard";
-import { CartContext } from '../../../App';
+import { CartContext, NotificationContext, UserContext } from "../../../App";
 
 const CartItemsContainer = () => {
-    const { cartItems, totalAmount } = useContext(CartContext);
+  const { cartItems, setCartItems, totalAmount } = useContext(CartContext);
+  const { addNotification } = useContext(NotificationContext);
+  const { authenticatedUser } = useContext(UserContext);
 
-    return (
-        <section className="cart-item-container">
-            <div className="container">
-                {totalAmount === 0 ? (
-                    <p class='empty-cart'>Your shopping cart is empty!</p>
-                ):(
-                    <React.Fragment>
-                        <h2>Cart</h2>
+  const handleRent = () => {
+    // Perform rent action and generate notification
+    const notificationData = {
+      books: cartItems,
+      totalPrice: totalAmount,
+      rentDate: new Date().toLocaleDateString(),
+      user_id: authenticatedUser ? authenticatedUser.uid : null
+    };
 
-                        {cartItems.map((item) => (
-                            <CartItemCard key={item.id} bookData={item} />
-                        ))}
+    addNotification(notificationData);
 
-                        <h2>Total = {totalAmount} vnd</h2>
-                        <button className="button">Rent</button>
+    // Clear the cart items
+    setCartItems([]);
+  };
 
-                    </React.Fragment>
-                )}
-            </div>
-        </section>
-    )
-}
+  return (
+    <section className="cart-item-container">
+      <div className="container">
+        {totalAmount === 0 ? (
+          <p className="empty-cart">Your shopping cart is empty!</p>
+        ) : (
+          <React.Fragment>
+            <h2 className="ur-cart">Your cart</h2>
+
+            {cartItems.map((item) => (
+              <CartItemCard key={item.id} bookData={item} />
+            ))}
+
+            <h3>Total = {totalAmount} vnd</h3>
+            <button className="rent_btn" onClick={handleRent}>
+              Rent
+            </button>
+          </React.Fragment>
+        )}
+      </div>
+    </section>
+  );
+};
 
 export default CartItemsContainer;

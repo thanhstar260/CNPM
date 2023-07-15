@@ -32,7 +32,7 @@ const ProductListing = () => {
         <div className="book-cate">
           <h2>New Arrival</h2>
           <div className="see-all">
-            <a href="#" className="product-link">
+            <a href="http://localhost:3000/books/category-filter/new-arrival" className="product-link">
               See all
             </a>
             <SeeAll />
@@ -47,7 +47,7 @@ const ProductListing = () => {
         <div className="book-cate">
           <h2>Hot</h2>
           <div className="see-all">
-            <a href="#" className="product-link">
+            <a href="http://localhost:3000/books/category-filter/hot" className="product-link">
               See all
             </a>
             <SeeAll />
@@ -62,7 +62,7 @@ const ProductListing = () => {
         <div className="book-cate">
           <h2>Popular</h2>
           <div className="see-all">
-            <a href="#" className="product-link">
+            <a href="popular" className="product-link">
               See all
             </a>
             <SeeAll />
