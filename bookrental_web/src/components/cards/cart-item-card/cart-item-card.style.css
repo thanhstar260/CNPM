@@ -4,6 +4,14 @@
     margin: 3rem 0;
     border: 1px solid #555;
     border-radius: 7px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-content-cart{
+    display: flex;
+    align-items: center;
+    width: 600px;
 }
 
 .cart-item-img{
@@ -21,6 +29,24 @@
 .cart-item-price{
     padding-top: 1rem;
     color: var(--primary-color-bright);
+    text-shadow: 2px 3px 5px #999;
+}
+
+.cart-item-quantity{
+    display:flex;
+    align-items: center;
+}
+
+.quantity-btn{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.quantity{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .delete_btn{

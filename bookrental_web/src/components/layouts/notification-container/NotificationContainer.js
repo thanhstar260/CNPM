@@ -23,11 +23,12 @@ const NotificationContainer = () => {
                     <p>BookID: {book.id}</p>
                     <p>Title: {book.title}</p>
                     <p>Author: {book.author}</p>
+                    <p>Days: {book.quantity? book.quantity:1}</p>
                   </div>
                 ))}
                 <p className="notification-message"><span>Total Price: </span>{notification.totalPrice}</p>
                 <p className="notification-date"><span>Request Date: </span>{notification.rentDate}</p>
-                <p className="notification-date"><span>userID: </span>{notification.user_id}</p>
+                {/* <p className="notification-date"><span>userID: </span>{notification.user_id}</p> */}
               </div>
             ))}
           </React.Fragment>

@@ -46,7 +46,12 @@ const App = () => {
   useEffect(() => {
     let total = 0;
     cartItems.forEach((item) => {
-      total = total + parseInt(item.price) * item.quantity;
+      if(item.quantity){
+        total = total + parseInt(item.price) * item.quantity;
+      } else{
+        total = total + parseInt(item.price)
+      }
+      
     });
 
     setTotalAmount(total);
@@ -57,23 +62,33 @@ const App = () => {
   };
 
   const increaseQuantity = (itemId) => {
-    setCartItems((prevItems) =>
-      prevItems.map((item) =>
-        item.id === itemId ? { ...item, quantity: item.quantity + 1 } : item
-      )
-    );
+    setCartItems((prevItems) => {
+      return prevItems.map((item) => {
+        if (item.id === itemId) {
+          return {
+            ...item,
+            quantity: item.quantity ? item.quantity + 1 : 2,
+          };
+        }
+        return item;
+      });
+    });
   };
-
+  
   const decreaseQuantity = (itemId) => {
-    setCartItems((prevItems) =>
-      prevItems.map((item) =>
-        item.id === itemId && item.quantity > 1
-          ? { ...item, quantity: item.quantity - 1 }
-          : item
-      )
-    );
+    setCartItems((prevItems) => {
+      return prevItems.map((item) => {
+        if (item.id === itemId && item.quantity > 0) {
+          return {
+            ...item,
+            quantity: item.quantity - 1,
+          };
+        }
+        return item;
+      });
+    });
   };
-
+  
   return (
     <UserContext.Provider value={authenticatedUser}>
       <CartContext.Provider value={{cartItems, setCartItems, totalAmount, increaseQuantity, decreaseQuantity }}>

@@ -4,17 +4,25 @@ import { Link, useNavigate } from "react-router-dom";
 import { UserContext, CartContext, NotificationContext } from "../../../App";
 import { ReactComponent as CartIcon } from "../../../assets/images/cart.svg";
 import { ReactComponent as NotificationIcon } from "../../../assets/images/notification.svg";
+import { getAuth, signOut } from "firebase/auth";
+import app from '../../../firebase/Firebase';
 
 const Navbar = ({ darkTheme, darkText }) => {
   const user = useContext(UserContext);
+  const auth = getAuth(app);
   const cartItems = useContext(CartContext).cartItems;
   const notifications = useContext(NotificationContext).notifications;
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    // Handle logout logic
-    navigate("/");
-  };
+
+    const handleLogout = () => {
+        signOut(auth).then(() => {
+            navigate('/');
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+    }
 
   const cartItemCount = cartItems.length;
   const notificationCount = notifications.length;
@@ -64,7 +72,6 @@ const Navbar = ({ darkTheme, darkText }) => {
       </Link>
       <a
         onClick={handleLogout}
-        to="/logout"
         className={`${darkText ? "nav-links-dark" : "nav-links"}`}
       >
         Logout

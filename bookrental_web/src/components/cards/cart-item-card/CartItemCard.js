@@ -5,6 +5,8 @@ import { CartContext } from '../../../App';
 const CartItemCard = ({ bookData }) => {
     const { cartItems, setCartItems, increaseQuantity, decreaseQuantity } = useContext(CartContext);
 
+    const cartItem = cartItems.find(item => item.id === bookData.id);
+
     const handleRemove = () => {
         setCartItems(cartItems.filter((item) => item.id !== bookData.id));
     };
@@ -19,20 +21,25 @@ const CartItemCard = ({ bookData }) => {
 
     return (
         <section className="cart-item">
-            <div className="cart-item-img-container">
-                <img src={bookData.book_url} alt="cart-item-img" className="cart-item-img" />
+            <div className='img-content-cart'>
+                <div className="cart-item-img-container">
+                    <img src={bookData.book_url} alt="cart-item-img" className="cart-item-img" />
+                </div>
+                <div className="cart-item-content-container">
+                    <h2>{bookData.title}</h2>
+                    <p style={{ color: 'var(--primary-color-bright)' }}>{bookData.author}</p>
+                </div>
             </div>
-            <div className="cart-item-content-container">
-                <h2>{bookData.title}</h2>
-                <p>{bookData.author}</p>
-                <h3 className="cart-item-price">{bookData.price}</h3>
-                <div className="cart-item-quantity">
+            <h2 className="cart-item-price">{bookData.price}</h2>
+            <div className="cart-item-quantity">
+                <p style={{marginBottom: '10px'}}>Days</p>
+                <div>
                     <button className="quantity-btn" onClick={handleDecreaseQuantity}>-</button>
-                    <span className="quantity">{bookData.quantity}</span>
+                    <span className="quantity">{cartItem.quantity? cartItem.quantity:1}</span>
                     <button className="quantity-btn" onClick={handleIncreaseQuantity}>+</button>
                 </div>
-                <button onClick={handleRemove} className='delete_btn'>Remove from Cart</button>
             </div>
+            <button onClick={handleRemove} className='delete_btn'>Remove from Cart</button>
         </section>
     );
 };
