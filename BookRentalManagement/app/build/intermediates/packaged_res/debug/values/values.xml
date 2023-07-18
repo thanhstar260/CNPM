@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="http://schemas.android.com/tools">
+<resources>
     <color name="black">#FF000000</color>
     <color name="border_color">#FF000000</color>
+    <color name="main_theme_color">#C7A575</color>
     <color name="order_tab_selected">#D9D9D9</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -46,7 +47,7 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         
-        <item name="android:statusBarColor" ns1:targetApi="21">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         
     </style>
     <style name="bookDetail_info">
@@ -63,9 +64,11 @@
         <item name="android:textColor">@color/black</item>
     </style>
     <style name="bookItem_book_title">
-        <item name="android:textSize">15sp</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowRadius">4</item>
     </style>
     <style name="ng_nh_p_tit">
         <item name="android:textSize">32sp</item>

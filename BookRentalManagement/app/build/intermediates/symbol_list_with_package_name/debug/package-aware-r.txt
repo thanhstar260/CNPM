@@ -1892,6 +1892,7 @@ color m3_timepicker_secondary_text_button_ripple_color
 color m3_timepicker_secondary_text_button_text_color
 color m3_timepicker_time_input_stroke_color
 color m3_tonal_button_ripple_color_selector
+color main_theme_color
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -3004,6 +3005,7 @@ drawable baseline_add_photo_alternate_24
 drawable baseline_arrow_drop_down_24
 drawable baseline_delete_24
 drawable baseline_format_list_bulleted_24
+drawable baseline_search_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3222,6 +3224,7 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
+id activityToolbar
 id activity_chooser_view_content
 id add
 id addAuthor
@@ -3262,17 +3265,13 @@ id bookDetail_Price
 id bookDetail_Title
 id bookDetail_stock
 id bookDetail_thumbnail
-id book_author
+id bookStock
+id bookThumbnail
+id bookTitle
 id book_deleteButton
 id book_detail_sumary
-id book_genre
 id book_list_card
-id book_list_card_image
 id book_list_recyclerView
-id book_list_searchView
-id book_price
-id book_stock
-id book_title
 id bottom
 id bounce
 id bounceBoth
@@ -3418,6 +3417,7 @@ id ignoreRequest
 id image
 id imageView
 id immediateStop
+id include2
 id included
 id indeterminate
 id info
@@ -3565,6 +3565,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id search
 id search_badge
 id search_bar
 id search_bar_text_view
@@ -3660,7 +3661,6 @@ id textView13
 id textView2
 id textView3
 id textView4
-id textView5
 id textView6
 id textView7
 id textView8
@@ -3926,6 +3926,8 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout toolbar
+menu book_list_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
