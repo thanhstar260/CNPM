@@ -47,18 +47,7 @@ public class Book_List_Adapter extends RecyclerView.Adapter<Book_List_Adapter.My
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Glide.with(context).load((dataList).get(position).getThumbnail()).placeholder(R.drawable.no_image_available).into(holder.bookThumbnail);
         holder.bookTitle.setText(dataList.get(position).getTitle());
-        holder.bookAuthor.setText("author:" + dataList.get(position).getAuthor());
-        holder.bookStock.setText("stock: " + String.valueOf(dataList.get(position).getStock()));
-        List<String> genres = dataList.get(position).getGenre();
-        StringBuilder genreString = new StringBuilder();
-        for (String genre : genres) {
-            genreString.append(genre).append(", ");
-        }
-        if (genreString.length() > 0) {
-            genreString.deleteCharAt(genreString.length() - 1); // Xóa dấu ',' cuối cùng
-        }
-        holder.bookGenre.setText("genre: " + genreString.toString());
-        holder.bookPrice.setText("price: " + String.valueOf(dataList.get(position).getPrice()));
+        holder.bookPrice.setText(String.valueOf(dataList.get(position).getPrice()));
 
         holder.bookCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,19 +85,17 @@ public class Book_List_Adapter extends RecyclerView.Adapter<Book_List_Adapter.My
     public class MyViewHolder extends RecyclerView.ViewHolder
     {
         ImageView bookThumbnail;
-        TextView bookTitle, bookAuthor, bookPrice, bookStock, bookGenre;
+        TextView bookTitle, bookPrice;
         CardView bookCard;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             bookCard = itemView.findViewById(R.id.book_list_card);
-            bookTitle = itemView.findViewById(R.id.book_title);
-            bookAuthor = itemView.findViewById(R.id.book_author);
-            bookPrice = itemView.findViewById(R.id.book_price);
-            bookThumbnail = itemView.findViewById(R.id.book_list_card_image);
-            bookStock = itemView.findViewById(R.id.book_stock);
-            bookGenre = itemView.findViewById(R.id.book_genre);
+            bookTitle = itemView.findViewById(R.id.bookTitle);
+            bookPrice = itemView.findViewById(R.id.bookStock);
+            bookThumbnail = itemView.findViewById(R.id.bookThumbnail);
+
         }
     }
 }

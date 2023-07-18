@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 color black
 color border_color
+color main_theme_color
 color order_tab_selected
 color purple_200
 color purple_500
@@ -15,6 +16,7 @@ drawable baseline_add_photo_alternate_24
 drawable baseline_arrow_drop_down_24
 drawable baseline_delete_24
 drawable baseline_format_list_bulleted_24
+drawable baseline_search_24
 drawable confirm_button
 drawable custom_edit_text
 drawable ic_launcher_background
@@ -42,6 +44,7 @@ font quicksand_dash
 font quicksand_light
 font quicksand_light_oblique
 id BookList_SearchBar
+id activityToolbar
 id addAuthor
 id addPrice
 id addStock
@@ -56,17 +59,13 @@ id bookDetail_Price
 id bookDetail_Title
 id bookDetail_stock
 id bookDetail_thumbnail
-id book_author
+id bookStock
+id bookThumbnail
+id bookTitle
 id book_deleteButton
 id book_detail_sumary
-id book_genre
 id book_list_card
-id book_list_card_image
 id book_list_recyclerView
-id book_list_searchView
-id book_price
-id book_stock
-id book_title
 id btn_book
 id btn_customer
 id btn_orders
@@ -79,11 +78,13 @@ id edittext_pa
 id edittext_us
 id genreCard
 id imageView
+id include2
 id linearLayout
 id login_activ
 id login_btn
 id ng_nh_p_tit
 id pager
+id search
 id tab
 id tabs_name
 id textView
@@ -92,7 +93,6 @@ id textView13
 id textView2
 id textView3
 id textView4
-id textView5
 id textView6
 id textView7
 id textView8
@@ -109,6 +109,8 @@ layout fragment_order_renting_list
 layout fragment_order_waiting_list
 layout main_screen
 layout order_screen
+layout toolbar
+menu book_list_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string Main_Screen_Btn_HT
