@@ -152,6 +152,10 @@
         "source": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-main-39:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-merged_res-37:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-main-39:\\menu\\bottom_nav_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-merged_res-37:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-main-39:\\mipmap-mdpi\\ic_launcher.webp"
     },
@@ -210,10 +214,6 @@
     {
         "merged": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-merged_res-37:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\kwan\\.gradle\\daemon\\7.5\\com.kwan.bookrentalmanagement.app-main-39:\\xml\\backup_rules.xml"
-    },
-    {
-        "merged": "com.kwan.bookrentalmanagement.app-merged_res-37:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.kwan.bookrentalmanagement.app-main-39:/menu/bottom_nav_menu.xml"
     },
     {
         "merged": "com.kwan.bookrentalmanagement.app-merged_res-37:/layout_book_list.xml.flat",
