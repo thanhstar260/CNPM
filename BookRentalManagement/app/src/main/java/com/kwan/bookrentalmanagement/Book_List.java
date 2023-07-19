@@ -19,7 +19,9 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -39,12 +41,30 @@ public class Book_List extends AppCompatActivity {
     DatabaseReference databaseReference;
     ValueEventListener eventListener;
     FloatingActionButton fab;
+    BottomNavigationView bottomNavigationView;
 
     Toolbar toolbar;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.book_list);
+
+        bottomNavigationView = findViewById(R.id.bottom_nav);
+
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.bottom_nav_book_list:
+                    startActivity(new Intent(this, Book_List.class));
+                    overridePendingTransition(0,0);
+                    return true;
+                case R.id.bottom_nav_order:
+                    startActivity(new Intent(this, Order_screen.class));
+                    overridePendingTransition(0,0);
+                    return true;
+
+            }
+            return true;
+        });
 
         toolbar = (Toolbar) findViewById(R.id.include2);
         setSupportActionBar(toolbar);

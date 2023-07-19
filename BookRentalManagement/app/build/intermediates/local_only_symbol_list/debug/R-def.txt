@@ -66,6 +66,11 @@ id book_deleteButton
 id book_detail_sumary
 id book_list_card
 id book_list_recyclerView
+id bottom_nav
+id bottom_nav_book_list
+id bottom_nav_customer
+id bottom_nav_order
+id bottom_nav_staff
 id btn_book
 id btn_customer
 id btn_orders
@@ -111,6 +116,7 @@ layout main_screen
 layout order_screen
 layout toolbar
 menu book_list_menu
+menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string Main_Screen_Btn_HT

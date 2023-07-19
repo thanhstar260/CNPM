@@ -3272,6 +3272,11 @@ int id book_detail_sumary 0x7f090074
 int id book_list_card 0x7f090075
 int id book_list_recyclerView 0x7f090076
 int id bottom 0x7f090077
+int id bottom_nav 0x7f090232
+int id bottom_nav_book_list 0x7f090233
+int id bottom_nav_customer 0x7f090234
+int id bottom_nav_order 0x7f090235
+int id bottom_nav_staff 0x7f090236
 int id bounce 0x7f090078
 int id bounceBoth 0x7f090079
 int id bounceEnd 0x7f09007a
@@ -3927,6 +3932,7 @@ int layout select_dialog_singlechoice_material 0x7f0c007b
 int layout support_simple_spinner_dropdown_item 0x7f0c007c
 int layout toolbar 0x7f0c007d
 int menu book_list_menu 0x7f0e0000
+int menu bottom_nav_menu 0x7f0e0001
 int mipmap ic_launcher 0x7f0f0000
 int mipmap ic_launcher_round 0x7f0f0001
 int plurals mtrl_badge_content_description 0x7f100000
