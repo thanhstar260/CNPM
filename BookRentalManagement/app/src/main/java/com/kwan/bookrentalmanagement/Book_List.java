@@ -51,23 +51,26 @@ public class Book_List extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
 
+        bottomNavigationView.setSelectedItemId(R.id.bottom_nav_book_list);
+
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.bottom_nav_book_list:
-                    startActivity(new Intent(this, Book_List.class));
-                    overridePendingTransition(0,0);
                     return true;
                 case R.id.bottom_nav_order:
                     startActivity(new Intent(this, Order_screen.class));
                     overridePendingTransition(0,0);
+                    finish();
                     return true;
 
             }
-            return true;
+            return false;
         });
 
-        toolbar = (Toolbar) findViewById(R.id.include2);
+        toolbar = (Toolbar) findViewById(R.id.bookList_toolbar);
+        toolbar.setTitle("");
         setSupportActionBar(toolbar);
+        toolbar.setTitle("Book list");
 
         fab = findViewById(R.id.add_button);
         recyclerView = findViewById(R.id.book_list_recyclerView);

@@ -43,7 +43,6 @@ font quicksand_book_oblique
 font quicksand_dash
 font quicksand_light
 font quicksand_light_oblique
-id BookList_SearchBar
 id activityToolbar
 id addAuthor
 id addPrice
@@ -59,6 +58,7 @@ id bookDetail_Price
 id bookDetail_Title
 id bookDetail_stock
 id bookDetail_thumbnail
+id bookList_toolbar
 id bookStock
 id bookThumbnail
 id bookTitle
@@ -88,6 +88,7 @@ id linearLayout
 id login_activ
 id login_btn
 id ng_nh_p_tit
+id order_toolsbar
 id pager
 id search
 id tab
@@ -96,7 +97,6 @@ id textView
 id textView10
 id textView13
 id textView2
-id textView3
 id textView4
 id textView6
 id textView7
@@ -117,6 +117,7 @@ layout order_screen
 layout toolbar
 menu book_list_menu
 menu bottom_nav_menu
+menu order_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string Main_Screen_Btn_HT

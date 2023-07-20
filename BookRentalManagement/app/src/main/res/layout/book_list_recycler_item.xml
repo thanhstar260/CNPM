@@ -7,7 +7,7 @@
     android:layout_height="250dp"
     android:id="@+id/book_list_card"
     app:cardCornerRadius="10dp"
-    android:layout_margin="4dp">
+    android:layout_margin="12dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
