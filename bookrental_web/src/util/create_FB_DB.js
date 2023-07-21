@@ -2623,12 +2623,12 @@ function writeStaffData(staff_id, username, email, first_name, last_name, phone_
       "address": address
     }).then(() => {
         console.log("Data inserted successfully!");
-        process.exit();
+        // process.exit();
 
       })
         .catch((error) => {
             console.error("Error inserting data:", error);
-            process.exit();
+            // process.exit();
 
         });
 }
@@ -2728,7 +2728,7 @@ const OrderData = [
       "order_id": 2, 
       "user_id": 1,
       "book_id": [3,10,8],
-      "staff_id": 1,
+      "staff_id": "None",
       "order_status": "waiting", 
       "return_date": "None",
       "verify_date": "None" 
@@ -2764,7 +2764,7 @@ const OrderData = [
       "order_id": 5, 
       "user_id": 2,
       "book_id": [23,21,28],
-      "staff_id": 1,
+      "staff_id": "None",
       "order_status": "waiting", 
       "return_date": "None",
       "verify_date": "None" 
@@ -2856,8 +2856,8 @@ const OrderData = [
     "book_id": [93,48,73],
     "staff_id": 2,
     "order_status": "done", 
-    "return_date": "18/07/23",
-    "verify_date": "21/07/23" 
+    "return_date": "21/07/23",
+    "verify_date": "18/07/23" 
   }
 ];
 
