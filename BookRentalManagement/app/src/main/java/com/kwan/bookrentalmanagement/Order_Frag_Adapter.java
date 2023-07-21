@@ -28,6 +28,9 @@ public class Order_Frag_Adapter extends FragmentStateAdapter {
             case 2:
                 return new Order_CompleteList();
 
+            case 3:
+                return new Order_ExpiredList();
+
             default:
                 return new Order_WaitingList();
         }
@@ -35,7 +38,7 @@ public class Order_Frag_Adapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 4;
     }
 
     @Nullable
@@ -54,7 +57,7 @@ public class Order_Frag_Adapter extends FragmentStateAdapter {
                 title = "Complete";
                 break;
             case 3:
-                title = "Cancel";
+                title = "Expired";
                 break;
         }
         return title;

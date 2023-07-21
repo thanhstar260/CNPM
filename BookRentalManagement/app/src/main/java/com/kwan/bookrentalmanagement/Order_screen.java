@@ -73,6 +73,8 @@ public class Order_screen extends AppCompatActivity {
                         case 2:
                             tab.setText("Complete");
                             break;
+                        case 3:
+                            tab.setText("Expired");
                     }
                 }).attach();
 

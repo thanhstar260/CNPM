@@ -108,8 +108,8 @@ layout activity_login
 layout book_detail
 layout book_list
 layout book_list_recycler_item
-layout fragment_order_cancel_list
 layout fragment_order_complete_list
+layout fragment_order_expired_list
 layout fragment_order_renting_list
 layout fragment_order_waiting_list
 layout main_screen
