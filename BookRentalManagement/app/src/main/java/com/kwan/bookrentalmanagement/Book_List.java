@@ -69,6 +69,7 @@ public class Book_List extends AppCompatActivity {
                     String bookID = itemSnapshot.getKey();
 
                     BookData bookData = itemSnapshot.getValue(BookData.class);
+                    bookData.setKey(itemSnapshot.getKey());
                     dataList.add(bookData);
                 }
                 adapter.notifyDataSetChanged();
