@@ -5,52 +5,41 @@ import { UserContext, CartContext, NotificationContext } from "../../../App";
 import { ReactComponent as CartIcon } from "../../../assets/images/cart.svg";
 import { ReactComponent as NotificationIcon } from "../../../assets/images/notification.svg";
 import { getAuth, signOut } from "firebase/auth";
-import app from '../../../firebase/Firebase';
+import app from "../../../firebase/Firebase";
 
 const Navbar = ({ darkTheme, darkText }) => {
-  const user = useContext(UserContext);
-  const auth = getAuth(app);
-  const cartItems = useContext(CartContext).cartItems;
-  const notifications = useContext(NotificationContext).notifications;
-  const navigate = useNavigate();
+    const user = useContext(UserContext);
+    const auth = getAuth(app);
+    const cartItems = useContext(CartContext).cartItems || []; // Initialize with an empty array if undefined
+    const notifications = useContext(NotificationContext).notifications || []; // Initialize with an empty array if undefined
+    const navigate = useNavigate();
 
-
-    const handleLogout = () => {
-        signOut(auth).then(() => {
-            navigate('/');
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-    }
+  const handleLogout = () => {
+    const auth = getAuth(app);
+    signOut(auth)
+      .then(() => {
+        navigate("/");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   const cartItemCount = cartItems.length;
   const notificationCount = notifications.length;
 
   const showLoginAndSignUp = (
     <nav className="nav-links-container">
-      <Link
-        to="/"
-        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
-      >
+      <Link to="/" className={`${darkText ? "nav-links-dark" : "nav-links"}`}>
         Home
       </Link>
-      <Link
-        to="/books"
-        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
-      >
+      <Link to="/books" className={`${darkText ? "nav-links-dark" : "nav-links"}`}>
         Books
       </Link>
-      <Link
-        to="/login"
-        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
-      >
+      <Link to="/login" className={`${darkText ? "nav-links-dark" : "nav-links"}`}>
         Login
       </Link>
-      <Link
-        to="/signup"
-        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
-      >
+      <Link to="/signup" className={`${darkText ? "nav-links-dark" : "nav-links"}`}>
         Sign Up
       </Link>
     </nav>
@@ -58,22 +47,13 @@ const Navbar = ({ darkTheme, darkText }) => {
 
   const showLogoutAndCart = (
     <nav className="nav-links-container">
-      <Link
-        to="/"
-        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
-      >
-        Home{" "}
+      <Link to="/" className={`${darkText ? "nav-links-dark" : "nav-links"}`}>
+        Home
       </Link>
-      <Link
-        to="/books"
-        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
-      >
+      <Link to="/books" className={`${darkText ? "nav-links-dark" : "nav-links"}`}>
         Books
       </Link>
-      <a
-        onClick={handleLogout}
-        className={`${darkText ? "nav-links-dark" : "nav-links"}`}
-      >
+      <a onClick={handleLogout} className={`${darkText ? "nav-links-dark" : "nav-links"}`}>
         Logout
       </a>
       <Link to="/cart" className="cart-link">

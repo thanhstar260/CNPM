@@ -1,10 +1,12 @@
-import React, { useContext } from "react";
-import { NotificationContext } from '../../../App';
-import './notification-container.style.css'
 
-const NotificationContainer = () => {
+import React, { useContext } from 'react';
+import './notification-container.style.css';
+import { NotificationContext } from '../../../App';
+
+const NotificationContainer = ({ user }) => {
   const { notifications } = useContext(NotificationContext);
-  console.log(notifications)
+  const { uid, email,} = user;
+  console.log(notifications);
 
   return (
     <section className="notification-container">
@@ -23,12 +25,12 @@ const NotificationContainer = () => {
                     <p>BookID: {book.id}</p>
                     <p>Title: {book.title}</p>
                     <p>Author: {book.author}</p>
-                    <p>Days: {book.quantity? book.quantity:1}</p>
+                    <p>Days: {book.quantity ? book.quantity : 1}</p>
                   </div>
                 ))}
                 <p className="notification-message"><span>Total Price: </span>{notification.totalPrice}</p>
                 <p className="notification-date"><span>Request Date: </span>{notification.rentDate}</p>
-                {/* <p className="notification-date"><span>userID: </span>{notification.user_id}</p> */}
+                <p className="notification-date"><span>User Email: </span>{email}</p>
               </div>
             ))}
           </React.Fragment>
@@ -39,4 +41,3 @@ const NotificationContainer = () => {
 };
 
 export default NotificationContainer;
-

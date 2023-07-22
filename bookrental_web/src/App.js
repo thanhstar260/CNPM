@@ -14,8 +14,10 @@ import NotificationPage from "./pages/notificationspages/NotificationPage";
 import { BookData } from "./util/BookData";
 import PriceFilterPage from "./pages/pricefilterpage/PriceFilterPage";
 import CategoryFilterPage from "./pages/categoryfilterpage/CategoryFilterPage";
+import UserProfilePage from "./pages/userprofilepage/UserProfilePage";
 
-export const UserContext = createContext({});
+export const UserContext = createContext(null); // Initialize with null
+
 export const CartContext = createContext({
   cartItems: [],
   setCartItems: () => {},
@@ -23,6 +25,7 @@ export const CartContext = createContext({
   increaseQuantity: () => {},
   decreaseQuantity: () => {},
 });
+
 export const NotificationContext = createContext({});
 
 const App = () => {
@@ -41,7 +44,7 @@ const App = () => {
         setAuthenticatedUser(null);
       }
     });
-  }, []);
+  }, [auth]);
 
   useEffect(() => {
     let total = 0;
@@ -107,6 +110,7 @@ const App = () => {
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
             <Route path="/notification" element={<NotificationPage />} />
+            <Route path="/user" element={<UserProfilePage />} />
           </Routes>
         </NotificationContext.Provider>
       </CartContext.Provider>
