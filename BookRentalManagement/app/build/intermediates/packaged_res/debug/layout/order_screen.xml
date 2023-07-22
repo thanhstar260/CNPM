@@ -5,6 +5,23 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <include
+        android:id="@+id/order_toolsbar"
+        layout="@layout/toolbar">
+
+    </include>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_theme_color"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab"
         android:layout_width="match_parent"
@@ -13,8 +30,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BookList_SearchBar"
-        app:layout_constraintVertical_bias="0.097"
+        app:layout_constraintTop_toBottomOf="@+id/order_toolsbar"
+        app:layout_constraintVertical_bias="0.0"
         app:tabSelectedTextColor="@color/order_tab_selected"
         tools:ignore="MissingConstraints" />
 
@@ -23,42 +40,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tab"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
-
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/BookList_SearchBar"
-        android:layout_width="384dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="452dp"
-        android:background="@drawable/search_bar"
-        android:elevation="5dp"
-        android:outlineAmbientShadowColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:queryHint="Search...." />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:layout_marginBottom="30dp"
-        android:text="Order"
-        android:textColor="@color/black"
-        android:textSize="50sp"
-        app:layout_constraintBottom_toTopOf="@+id/BookList_SearchBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
